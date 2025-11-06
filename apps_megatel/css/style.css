@@ -1,0 +1,107 @@
+/* Color corporativo para el Navbar */
+.navbar-dark.bg-dark {
+    background-color: #0274be !important; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* Estilo para los iconos de bandera en el botón de idioma */
+.flag-icon {
+    margin-right: 5px; 
+    font-size: 1.1em;
+}
+
+/* ========== BOTONES FLOTANTES (Mantenidos) ========== */
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 1050; 
+    transition: opacity 0.3s, visibility 0.3s;
+    border: none; /* Mejor estética para botones circulares */
+}
+
+.whatsapp-btn {
+    right: 20px;
+}
+
+.top-btn {
+    left: 20px;
+    opacity: 0; 
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ========== ESTILOS DE PANTALLA COMPLETA (CRUCIALES) ========== */
+
+/* La barra de navegación es fija, por lo que el contenido debe empezar por debajo */
+body {
+    padding-top: 56px; /* Altura estándar del navbar de Bootstrap */
+}
+
+/* Clase principal para forzar 100% de la altura de la ventana */
+.full-screen-section {
+    height: calc(100vh - 56px); /* 100% de la altura de la ventana menos la altura del navbar */
+    background-size: cover; /* Cubre todo el área de la sección */
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex; /* Para centrar el contenido verticalmente */
+    align-items: center;
+    position: relative; /* Necesario para la capa de opacidad */
+}
+
+/* Capa de opacidad para mejorar la lectura del texto sobre la imagen */
+.full-screen-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Sombra oscura para texto claro */
+    z-index: 1;
+}
+.full-screen-section > .container {
+    z-index: 2; /* Asegura que el contenido quede por encima de la capa de opacidad */
+}
+
+/* 1. Fondo BLOQUE PRINCIPAL (HERO) - (Reemplace con una imagen de 1920x1080) */
+.section-hero {
+    background-image: url('../images/desarrollador-megatel.png');
+}
+
+/* 2. Fondo BLOQUE DE CONFIANZA (QUIÉNES SOMOS) - (Reemplace con una imagen de 1920x1080) */
+.section-confidence {
+    background-image: url('../images/teamwork-megatel.png');
+}
+
+/* 3. Fondo BLOQUE DE PRODUCTOS - (Reemplace con una imagen de 1920x1080) */
+.section-products {
+    background-image: url('../images/service-megatel.png');
+}
+
+/* 4. Fondo BLOQUE DE SERVICIOS - (Reemplace con una imagen de 1920x1080) */
+.section-services {
+    background-image: url('../images/desarrollador-megatel.png');
+}
+.section-services::before {
+    /* Sombra más clara para fondos claros */
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+/* 5. Fondo BLOQUE DE CIERRE (CONTACTO) - (Reemplace con una imagen de 1920x1080) */
+.section-closing {
+    background-image: url('../images/contacto-megatel.png');
+}

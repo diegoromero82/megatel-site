@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megatel SAS | Soluciones de Software Empresarial</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/data.js"></script>    <script src="js/i18n.js"></script>   <script src="js/script.js"></script> ```
-    
-</head>
-<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="50">
 
+    <!-- CSS y Librerías -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Enlace a Font Awesome para iconos de bandera y botones flotantes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5j72R7b5h5xR3Ff6xX2gL9/H6xL7ZJ7pBv1lS/5S/qA8eN2sO/7rK8U6Xz8bEw6T1+5G9y4bA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- La barra de navegación se mantiene fija -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="#home">Megatel SAS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">Megatel SAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces a archivos HTML -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#home" data-i18n="nav_home">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html" data-i18n="nav_home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#apps" data-i18n="nav_apps">Apps Empresariales</a>
+                        <a class="nav-link" href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#web" data-i18n="nav_web">Sitios Web</a>
+                        <a class="nav-link" href="productos.html" data-i18n="nav_products">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#agile" data-i18n="nav_agile">Metodologías Ágiles</a>
+                        <a class="nav-link" href="servicios.html" data-i18n="nav_services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" data-i18n="nav_contact">Contacto</a>
+                        <a class="nav-link" href="contacto.html" data-i18n="nav_contact">Contacto</a>
                     </li>
                     <li class="nav-item ms-lg-3">
                         <button class="btn btn-outline-light btn-sm" id="lang-toggle-btn" data-current-lang="es">
-                            <span data-i18n="lang_switch_text">Switch to EN</span>
+                            <span id="lang-content">
+                                <i class="flag-icon fas fa-globe"></i>
+                                <span data-i18n="lang_switch_text">EN</span>
+                            </span>
                         </button>
                     </li>
                 </ul>
@@ -45,85 +56,111 @@
         </div>
     </nav>
 
-    <main class="pt-5">
+    <!-- ========== CONTENIDO PRINCIPAL - SECCIONES FULL-SCREEN ========== -->
+    <main class="page-container">
 
-        <section id="home" class="py-5 bg-light text-center">
-            <div class="container py-5">
-                <h1 class="display-4" data-i18n="home_title">Desarrollo de Software a la Medida</h1>
-                <p class="lead" data-i18n="home_subtitle">Potenciamos su negocio con tecnología moderna y metodologías ágiles.</p>
-                <a href="#apps" class="btn btn-primary btn-lg mt-3" data-i18n="home_cta">Ver Servicios</a>
-            </div>
-        </section>
+        <!-- 1. BLOQUE PRINCIPAL (HERO) - Fondo de Desarrollador -->
+        <section id="hero" class="full-screen-section section-hero">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100 text-white">
+                    
+                    <!-- Columna Izquierda: Contenido Principal -->
+                    <div class="col-md-6 bg-dark bg-opacity-75 p-4 rounded-3 shadow-lg">
+                        <h1 class="display-5 fw-bold mb-3" data-i18n="index_home_title">Bienvenidos a Megatel</h1>
+                        <p class="lead" data-i18n="index_home_subtitle">Su aliado estratégico en la transformación digital desde 1994.</p>
+                        
+                        <!-- Botón de Redirección -->
+                        <a href="servicios.html" class="btn btn-primary btn-lg mt-3" data-i18n="index_home_cta">Conocer Más</a>
+                    </div>
+                    
+                    <!-- Columna Derecha: Se deja vacía para la imagen de fondo -->
 
-        <section id="apps" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5" data-i18n="apps_title">Servicios de Aplicaciones Empresariales</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title" data-i18n="apps_backend_title">Backend Sólido</h5>
-                                <p class="card-text" data-i18n="apps_backend_desc">Especialistas en Java, C#, .NET y Python para soluciones robustas.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title" data-i18n="apps_frontend_title">Experiencias Modernas</h5>
-                                <p class="card-text" data-i18n="apps_frontend_desc">Interfaces con Angular, Next JS y JavaScript de alto rendimiento.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title" data-i18n="apps_maint_title">Evolución y Soporte</h5>
-                                <p class="card-text" data-i18n="apps_maint_desc">Desarrollo de nuevas funcionalidades y corrección de bugs.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="web" class="py-5 bg-light">
-             <div class="container">
-                <h2 class="text-center mb-5" data-i18n="web_title">Sitios Web Modernos y Gestión de Contenidos</h2>
-                <p class="text-center lead" data-i18n="web_desc">Desarrollo de sitios modernos (Next JS, JavaScript) y gestión profesional de plataformas CMS (WordPress).</p>
+        <!-- 2. BLOQUE DE CONFIANZA (QUIÉNES SOMOS) - Fondo de Misión/Visión -->
+        <section id="confidence" class="full-screen-section section-confidence">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-md-8 mx-auto text-center bg-white bg-opacity-90 p-5 rounded-3 shadow-lg">
+                        <h2 class="mb-4" data-i18n="index_about_title">Nuestro Compromiso con la Excelencia</h2>
+                        <p data-i18n="index_about_subtitle">Conozca nuestra historia, nuestro equipo certificado y los valores que nos guían en cada proyecto.</p>
+                        
+                        <!-- Botón de Redirección -->
+                        <a href="quienes-somos.html" class="btn btn-secondary btn-lg mt-4" data-i18n="index_about_cta">Conoce Nuestra Historia</a>
+                    </div>
                 </div>
-        </section>
-
-        <section id="agile" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5" data-i18n="agile_title">Gestión y Adopción de Proyectos Ágiles</h2>
-                <div class="accordion" id="agileAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScrum" aria-expanded="true" data-i18n="agile_scrum_title">Scrum</button></h2>
-                        <div id="collapseScrum" class="accordion-collapse collapse show" data-bs-parent="#agileAccordion">
-                            <div class="accordion-body" data-i18n="agile_scrum_desc">Gestión de proyectos basada en iteraciones (Sprints) para entrega de valor incremental.</div>
-                        </div>
-                    </div>
-                    </div>
             </div>
         </section>
         
-        <section id="contact" class="py-5 bg-dark text-white">
-            <div class="container">
-                <h2 class="text-center mb-5" data-i18n="contact_title">Hablemos de su Próximo Proyecto</h2>
+        <!-- 3. BLOQUE DE PRODUCTOS - Fondo de Soluciones Propias -->
+        <section id="products" class="full-screen-section section-products">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-md-8 mx-auto text-center text-white bg-dark bg-opacity-75 p-5 rounded-3 shadow-lg">
+                        <h2 class="mb-4" data-i18n="products_title">Descubra Nuestros Productos de Software</h2>
+                        <p data-i18n="products_text">Soluciones prefabricadas, licencias y herramientas que aceleran su transformación digital. </p>
+                        
+                        <!-- Botón de Redirección -->
+                        <a href="productos.html" class="btn btn-warning btn-lg mt-4" data-i18n="products_cta">Ver Portafolio de Productos</a>
+                    </div>
                 </div>
+            </div>
         </section>
-        
+
+        <!-- 4. BLOQUE DE SERVICIOS - Fondo de Metodologías Ágiles -->
+        <section id="services" class="full-screen-section section-services">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-md-8 mx-auto text-center bg-light bg-opacity-90 p-5 rounded-3 shadow-lg">
+                        <h2 class="mb-4" data-i18n="services_title">Servicios: Desarrollo a la Medida y Consultoría</h2>
+                        <p data-i18n="services_text">Desde aplicaciones empresariales hasta sitios web de vanguardia. Vea nuestro stack tecnológico.</p>
+                        
+                        <!-- Botón de Redirección -->
+                        <a href="servicios.html" class="btn btn-primary btn-lg mt-4" data-i18n="services_cta">Explorar Servicios y Tecnologías</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BLOQUE DE CIERRE (CONTACTO) - Fondo de llamada a la acción -->
+        <section id="closing" class="full-screen-section section-closing">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-md-8 mx-auto text-center text-white bg-danger bg-opacity-75 p-5 rounded-3 shadow-lg">
+                        <h2 class="mb-4" data-i18n="closing_title">¿Listo para Convertir su Visión en Realidad?</h2>
+                        <p data-i18n="closing_text">Hable con nuestros expertos y solicite una consultoría sin compromiso.</p>
+                        
+                        <!-- Botón de Redirección -->
+                        <a href="contacto.html" class="btn btn-light btn-lg mt-4" data-i18n="closing_cta">Solicite una Consultoría Gratuita</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="bg-primary text-white text-center py-3">
         <p class="mb-0" data-i18n="footer_text">&copy; 2024 Megatel SAS. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Botones Flotantes -->
+    <a href="https://wa.me/XXXXXXXXXX" target="_blank" class="btn btn-success rounded-circle shadow-lg floating-btn whatsapp-btn" data-i18n-title="whatsapp_contact_title">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="back-to-top-btn" class="btn btn-primary rounded-circle shadow-lg floating-btn top-btn" title="Subir al inicio">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="js/data.js"></script>
     <script src="js/i18n.js"></script>
-    <script src="js/script.js"></script> 
-    </body>
+    <script src="js/script.js"></script>
+
+</body>
+
 </html>
