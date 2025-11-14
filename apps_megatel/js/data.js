@@ -56,39 +56,39 @@ const translations = {
         "en": "tbd"
 },
 "index_products_title": {
-    "es": "Nuestro Compromiso con la Excelencia.",
+    "es": "Descubra Nuestro Portafolio de Productos.",
         "en": "TBD."
 },
 "index_products_subtitle": {
-    "es": "Conozca nuestra historia, nuestro equipo certificado y los valores que nos guían en cada proyecto.",
+    "es": "Soluciones de comunicaciones, conectividad y seguridad electrónica que aceleran su transformación digital.",
         "en": "TBD."
 },
 "index_products_cta": {
-    "es": "Conoce Nuestra Historia",
+    "es": "Ver Portafolio de Productos",
         "en": "tbd"
 },
 "index_service_title": {
-    "es": "Nuestro Compromiso con la Excelencia.",
+    "es": "Servicios profesionales y Consultoría.",
         "en": "TBD."
 },
 "index_service_subtitle": {
-    "es": "Conozca nuestra historia, nuestro equipo certificado y los valores que nos guían en cada proyecto.",
+    "es": "Desde servicio técnico hasta aplicaciones empresariales de vanguardia. Conozca nuestro portafolio de servicios.",
         "en": "TBD."
 },
 "index_service_cta": {
-    "es": "Conoce Nuestra Historia",
+    "es": "Explora Nuestros Servicios",
         "en": "tbd"
 },
 "index_contact_title": {
-    "es": "Nuestro Compromiso con la Excelencia.",
+    "es": "¿Listo para Convertir su Visión en Realidad?.",
         "en": "TBD."
 },
 "index_contact_subtitle": {
-    "es": "Conozca nuestra historia, nuestro equipo certificado y los valores que nos guían en cada proyecto.",
+    "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
         "en": "TBD."
 },
 "index_contact_cta": {
-    "es": "Conoce Nuestra Historia",
+    "es": "Solicite una Consultoría Gratuita",
         "en": "tbd"
 },
 // Claves de la Sección APPS EMPRESARIALES (#apps)

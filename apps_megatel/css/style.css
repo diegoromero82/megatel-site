@@ -79,7 +79,7 @@ body {
 
 /* 1. Fondo BLOQUE PRINCIPAL (HERO) - (Reemplace con una imagen de 1920x1080) */
 .section-hero {
-    background-image: url('../images/desarrollador-megatel.png');
+    background-image: url('../images/innovation-megatel.png');
 }
 
 /* 2. Fondo BLOQUE DE CONFIANZA (QUIÉNES SOMOS) - (Reemplace con una imagen de 1920x1080) */
@@ -96,12 +96,121 @@ body {
 .section-services {
     background-image: url('../images/desarrollador-megatel.png');
 }
-.section-services::before {
-    /* Sombra más clara para fondos claros */
+/*.section-services::before {    
     background-color: rgba(255, 255, 255, 0.5); 
-}
+}*/
 
 /* 5. Fondo BLOQUE DE CIERRE (CONTACTO) - (Reemplace con una imagen de 1920x1080) */
 .section-closing {
     background-image: url('../images/contacto-megatel.png');
 }
+/* Estilos específicos para esta Landing Page telefonia.html */
+        .section-ip-hero {
+            background-image: url('../images/telefonia-megatel.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .solution-card {
+            border: none;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 0.75rem;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .solution-card-cloud {
+            border-bottom: 5px solid #F90101; 
+        }
+        .solution-card-onpremise {
+            border-bottom: 5px solid #28a745; 
+        }
+        .device-icon {
+            font-size: 2.5rem;
+            color: var(--bs-primary);
+        }
+        .bg-gradient-blue {
+            background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+        }
+
+        /* Estilos específicos para esta Landing Page Videoconferencia.html*/
+        .section-videoconf-hero {
+            background-image: url('../images/videoconference-megatel.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Efecto Parallax sutil */
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--bs-primary);
+        }
+        .cta-form-section {
+            background-color: #f8f9fa; /* Gris claro */
+        }
+        .form-card {
+            border: none;
+            border-top: 5px solid var(--bs-danger);
+        }
+
+        /* Estilos específicos para Servicios */
+        .section-services-hero {
+            background-image: url('../images/desarrollador-megatel.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .service-card {
+            border: none;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 0.75rem;
+            padding: 20px;
+            text-align: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        .service-icon {
+            font-size: 3.5rem;
+            color: var(--bs-primary);
+            margin-bottom: 15px;
+        }
+        .service-card-dev .service-icon { color: #dc3545; } /* Rojo */
+        .service-card-web .service-icon { color: #ffc107; } /* Amarillo */
+        .service-card-support .service-icon { color: #0d6efd; } /* Azul */
+        .service-card-repair .service-icon { color: #20c997; } /* Turquesa */
+
+        .bg-gradient-gray {
+            background: #f8f9fa; /* Gris claro */
+        }
+
+
+        /* Estilos específicos para Contacto */
+        .section-contact-hero {
+            background-image: url('../images/contacto-megatel.png');
+            background-size: cover;
+            background-position: center;
+            padding-top: 100px; /* Evita que el navbar tape el contenido */
+            padding-bottom: 50px;
+        }
+        .contact-info-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 0.75rem;
+            height: 100%;
+        }
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .contact-icon-bg {
+            font-size: 2rem;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: var(--bs-primary);
+            color: white;
+        }
+        .form-section {
+            background-color: #f8f9fa;
+            border-radius: 0.75rem;
+        }

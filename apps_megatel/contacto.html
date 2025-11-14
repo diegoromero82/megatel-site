@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megatel SAS | Contacto: Hablemos de su Proyecto</title>
+
+    <!-- CSS y Librerías -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5j72R7b5h5xR3Ff6xX2gL9/H6xL7ZJ7pBv1lS/5S/qA8eN2sO/7rK8U6Xz8bEw6T1+5G9y4bA==c"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+        
+</head>
+
+<body>
+    <!-- La barra de navegación se mantiene fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Megatel SAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces a archivos HTML -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav_home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html" data-i18n="nav_products">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html" data-i18n="nav_services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html" data-i18n="nav_contact">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-outline-light btn-sm" id="lang-toggle-btn" data-current-lang="es">
+                            <span id="lang-content">
+                                <i class="flag-icon fas fa-globe"></i>
+                                <span data-i18n="lang_switch_text">EN</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== CONTENIDO PRINCIPAL: CONTACTO ========== -->
+    <main>
+
+        <!-- 1. BLOQUE HERO DE CONTACTO -->      
+        
+        <section id="contact-hero" class="full-screen-section section-contact-hero bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto text-center p-4 rounded-3">
+                        <h1 class="display-4 fw-bold mb-3" data-i18n="contact_hero_title">Estamos Listos para Escucharlo</h1>
+                        <p class="lead" data-i18n="contact_hero_subtitle">
+                            Elija el canal de comunicación que mejor se adapte a sus necesidades. Nuestro equipo responderá a la brevedad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. BLOQUE DE INFORMACIÓN DE CONTACTO DIRECTO -->
+        <section id="contact-info" class="py-5 bg-white">
+            <div class="container my-4">
+                <div class="row g-4">
+                    
+                    <!-- Tarjeta 1: WhatsApp -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-3 shadow-sm contact-info-card">
+                            <div class="card-body text-center">
+                                <i class="fab fa-whatsapp contact-icon-bg bg-success"></i>
+                                <h5 class="fw-bold mt-3" data-i18n="contact_wa_title">WhatsApp</h5>
+                                <p class="mb-0 text-muted" data-i18n="contact_wa_text">Respuesta inmediata para consultas rápidas.</p>
+                                <a href="https://wa.me/3107630363" target="_blank" class="btn btn-sm btn-success mt-2 fw-bold" data-i18n="contact_wa_cta">Iniciar Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta 2: Llamada Telefónica -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-3 shadow-sm contact-info-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-phone-alt contact-icon-bg bg-primary"></i>
+                                <h5 class="fw-bold mt-3" data-i18n="contact_phone_title">Llamada Telefónica</h5>
+                                <p class="mb-0 text-muted" data-i18n="contact_phone_text">Comuníquese directamente con un asesor.</p>
+                                <a href="tel:+573107630363 class="btn btn-sm btn-primary mt-2 fw-bold" data-i18n="contact_phone_number">+57 (310) 763 0363</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Correo Electrónico -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-3 shadow-sm contact-info-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope contact-icon-bg bg-info"></i>
+                                <h5 class="fw-bold mt-3" data-i18n="contact_email_title">Correo Electrónico</h5>
+                                <p class="mb-0 text-muted" data-i18n="contact_email_text">Para documentos, cotizaciones formales o solicitudes detalladas.</p>
+                                <a href="mailto:ventas@megatelsas.com" class="btn btn-sm btn-info text-white mt-2 fw-bold" data-i18n="contact_email_address">ventas@megatelsas.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta 4: LinkedIn -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-3 shadow-sm contact-info-card">
+                            <div class="card-body text-center">
+                                <i class="fab fa-linkedin contact-icon-bg bg-dark"></i>
+                                <h5 class="fw-bold mt-3" data-i18n="contact_linkedin_title">LinkedIn</h5>
+                                <p class="mb-0 text-muted" data-i18n="contact_linkedin_text">Síganos y conéctese con nuestros profesionales.</p>
+                                <a href="https://www.linkedin.com/company/megatelsas" target="_blank" class="btn btn-sm btn-dark mt-2 fw-bold" data-i18n="contact_linkedin_cta">Ver Perfil</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. BLOQUE DE FORMULARIO DE CONTACTO -->
+        <section id="contact-form" class="py-5">
+            <div class="container my-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="p-5 form-section shadow-lg">
+                            <h2 class="text-center mb-4 fw-bold text-primary" data-i18n="form_main_title">Envíenos un Mensaje Directo</h2>
+                            <p class="text-center mb-5 text-muted" data-i18n="form_main_subtitle">Llene el formulario y le contactaremos en menos de 24 horas hábiles.</p>
+                            
+                            <!-- Formulario (Usamos un action temporal ya que el backend no está implementado) -->
+                            <form action="#" method="POST" id="main-contact-form">
+                                
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="form_nombre" class="form-label small" data-i18n="form_label_name">Nombre Completo *</label>
+                                        <input type="text" class="form-control" id="form_nombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="form_empresa" class="form-label small" data-i18n="form_label_company">Empresa / Organización</label>
+                                        <input type="text" class="form-control" id="form_empresa">
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="form_email" class="form-label small" data-i18n="form_label_email">Correo Electrónico *</label>
+                                        <input type="email" class="form-control" id="form_email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="form_telefono" class="form-label small" data-i18n="form_label_phone">Teléfono de Contacto *</label>
+                                        <input type="tel" class="form-control" id="form_telefono" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="form_servicio" class="form-label small" data-i18n="form_label_service_interest">Tema de Interés *</label>
+                                    <select class="form-select" id="form_servicio" required>
+                                        <option value="" selected data-i18n="form_option_select">-- Seleccione el Servicio --</option>
+                                        <option value="telefonia_ip" data-i18n="form_option_ip_telephony">Telefonía IP / Cloud PBX</option>
+                                        <option value="videoconferencia" data-i18n="form_option_videoconf">Video Conferencia</option>
+                                        <option value="desarrollo_app" data-i18n="form_option_app_dev">Desarrollo de Aplicaciones</option>
+                                        <option value="web_design" data-i18n="form_option_web_design">Diseño Web / E-commerce</option>
+                                        <option value="soporte" data-i18n="form_option_support">Contrato de Soporte / Mantenimiento</option>
+                                        <option value="reparacion" data-i18n="form_option_repair">Reparación de Equipos</option>
+                                        <option value="general" data-i18n="form_option_general">Consulta General</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="form_mensaje" class="form-label small" data-i18n="form_label_message">Su Mensaje / Requerimiento Detallado *</label>
+                                    <textarea class="form-control" id="form_mensaje" rows="4" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary w-100 btn-lg fw-bold" data-i18n="form_submit_cta">Enviar Mensaje</button>
+
+                                <p class="text-center small mt-3 text-muted" data-i18n="form_required_note">* Campos requeridos</p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-0" data-i18n="footer_text">&copy; 2024 Megatel SAS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botones Flotantes (Se mantienen) -->
+    <a href="https://wa.me/3107630363" target="_blank" class="btn btn-success rounded-circle shadow-lg floating-btn whatsapp-btn" data-i18n-title="whatsapp_contact_title">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="back-to-top-btn" class="btn btn-primary rounded-circle shadow-lg floating-btn top-btn" title="Subir al inicio">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Función para pre-seleccionar un servicio basado en el parámetro URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+
+            if (service) {
+                const selectElement = document.getElementById('form_servicio');
+                if (selectElement) {
+                    // Mapear los valores de los servicios a los valores del formulario
+                    const serviceMap = {
+                        'cloud': 'telefonia_ip',
+                        'onpremise': 'telefonia_ip',
+                        'hibrida': 'telefonia_ip',
+                        'telefonos': 'telefonia_ip',
+                        'app_dev': 'desarrollo_app',
+                        'web_design': 'web_design',
+                        'support': 'soporte',
+                        'repair': 'reparacion'
+                    };
+                    
+                    const mappedService = serviceMap[service] || service;
+
+                    // Iterar sobre las opciones y seleccionar la que coincida
+                    for (let i = 0; i < selectElement.options.length; i++) {
+                        if (selectElement.options[i].value === mappedService) {
+                            selectElement.value = mappedService;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            // Función para mostrar un mensaje al enviar el formulario (simulado)
+            const form = document.getElementById('main-contact-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const submitBtn = form.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Enviando...';
+
+                setTimeout(() => {
+                    alert('¡Mensaje enviado con éxito! Un asesor se pondrá en contacto pronto.');
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Enviar Mensaje';
+                    // Re-aplicar traducción después de resetear
+                    applyTranslations(); 
+                }, 1500);
+            });
+        });
+
+        /*
+         * NOTA: Se usan números de contacto genéricos (XXXXXXXXXX)
+         * Se usa una función alert() simple como PLACEHOLDER
+         * de la respuesta del servidor al enviar el formulario.
+         * En un entorno real, esto sería reemplazado por un modal o
+         * un mensaje dinámico en la página.
+         */
+    </script>
+</body>
+
+</html>
