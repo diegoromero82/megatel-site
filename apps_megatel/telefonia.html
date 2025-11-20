@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megatel SAS | Soluciones de Telefonía IP y Comunicaciones Unificadas</title>
+
+    <!-- CSS y Librerías -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5j72R7b5h5xR3Ff6xX2gL9/H6xL7ZJ7pBv1lS/5S/qA8eN2sO/7rK8U6Xz8bEw6T1+5G9y4bA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">      
+</head>
+
+<body>
+    <!-- La barra de navegación se mantiene fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Megatel SAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces a archivos HTML -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav_home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html" data-i18n="nav_products">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html" data-i18n="nav_services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html" data-i18n="nav_contact">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-outline-light btn-sm" id="lang-toggle-btn" data-current-lang="es">
+                            <span id="lang-content">
+                                <i class="flag-icon fas fa-globe"></i>
+                                <span data-i18n="lang_switch_text">EN</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== CONTENIDO PRINCIPAL: LANDING PAGE TELEFONÍA IP ========== -->
+    <main>
+
+        <!-- 1. BLOQUE HERO DE LA LANDING (FULL-SCREEN) -->
+        <section id="ip-hero" class="full-screen-section section-ip-hero">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-lg-10 mx-auto text-center bg-dark bg-opacity-75 p-5 rounded-3 shadow-lg text-white">
+                        <span class="badge bg-primary mb-3 fw-bold" data-i18n="ip_tag">COMUNICACIONES UNIFICADAS</span>
+                        <h1 class="display-4 fw-bold mb-4" data-i18n="ip_hero_title">Telefonía IP: El Futuro de la Comunicación Empresarial</h1>
+                        <p class="lead" data-i18n="ip_hero_subtitle">
+                            Reduzca costos, escale su operación y trabaje desde cualquier lugar con una central telefónica virtual o física de última generación.
+                        </p>
+                        <!-- CTA principal a la sección del formulario -->
+                        <a href="#solicitar-asesoria" class="btn btn-warning btn-lg mt-4 scroll-down-btn fw-bold" data-i18n="ip_hero_cta">Quiero mi Asesoría Gratuita <i class="fas fa-phone-volume ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. BLOQUE DE SOLUCIONES PRINCIPALES (CLOUD vs ON-PREMISE) -->
+        <section id="pilares" class="py-5 bg-light">
+            <div class="container my-5">
+                <h2 class="text-center mb-5 text-dark" data-i18n="ip_pilars_title">Dos Caminos, Múltiples Beneficios: Elija su Central</h2>
+                
+                <div class="row g-4">
+                    
+                    <!-- Solución 1: Telefonía Cloud (Net2Phone) -->
+                    <div class="col-md-6">
+                        <div class="card h-100 p-4 shadow solution-card solution-card-cloud">
+                            <div class="card-body">
+                                <i class="fas fa-cloud fa-3x text-danger mb-3"></i>
+                                <h4 class="card-title fw-bold text-danger" data-i18n="ip_cloud_title">Net2Phone (Telefonía en la Nube)</h4>
+                                <p class="card-text lead" data-i18n="ip_cloud_tagline">Ideal para empresas con crecimiento rápido o equipos remotos.</p>
+                                <p data-i18n="ip_cloud_text">
+                                    Disfrute de un servicio 100% hospedado que elimina la necesidad de hardware costoso. Pago por usuario, alta escalabilidad y acceso a la red de Net2Phone con troncales SIP integradas.
+                                </p>
+                                <ul class="list-unstyled small">
+                                    <li data-i18n="ip_cloud_feat1"><i class="fas fa-star me-2 text-danger"></i> Cero Inversión Inicial en Central</li>
+                                    <li data-i18n="ip_cloud_feat2"><i class="fas fa-star me-2 text-danger"></i> Movilidad Total (Apps Móviles/PC)</li>
+                                    <li data-i18n="ip_cloud_feat3"><i class="fas fa-star me-2 text-danger"></i> Actualizaciones y Mantenimiento Incluidos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Solución 2: Telefonía On-Premise (Yeastar) -->
+                    <div class="col-md-6">
+                        <div class="card h-100 p-4 shadow solution-card solution-card-onpremise">
+                            <div class="card-body">
+                                <i class="fas fa-server fa-3x text-success mb-3"></i>
+                                <h4 class="card-title fw-bold text-success" data-i18n="ip_onpremise_title">Yeastar (Telefonía Local - On-Premise)</h4>
+                                <p class="card-text lead" data-i18n="ip_onpremise_tagline">Perfecto para control total y uso de infraestructura existente.</p>
+                                <p data-i18n="ip_onpremise_text">
+                                    Instalamos una central física de Yeastar en su oficina. Esto le brinda máxima seguridad, control total sobre las configuraciones y permite integrar líneas analógicas, E1 y líneas IP simultáneamente.
+                                </p>
+                                <ul class="list-unstyled small">
+                                    <li data-i18n="ip_onpremise_feat1"><i class="fas fa-check-circle me-2 text-success"></i> Propiedad del Hardware, Sin Rentas Mensuales de Central</li>
+                                    <li data-i18n="ip_onpremise_feat2"><i class="fas fa-check-circle me-2 text-success"></i> Integración con Infraestructura Híbrida</li>
+                                    <li data-i18n="ip_onpremise_feat3"><i class="fas fa-check-circle me-2 text-success"></i> Máximo Control de Seguridad Local</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. BLOQUE DE TELEFONOS IP (YEALINK) -->
+        <section id="terminales" class="py-5 bg-white">
+            <div class="container my-5">
+                <h2 class="text-center mb-4 text-dark" data-i18n="ip_phones_title">Terminales IP Yealink: El Dispositivo Perfecto para Cada Rol</h2>
+                <p class="text-center mb-5 text-muted lead" data-i18n="ip_phones_subtitle">Desde el escritorio de recepción hasta la oficina ejecutiva, Yealink ofrece calidad, durabilidad y un rendimiento superior.</p>
+                
+                <div class="row g-4 text-center">
+                    
+                    <!-- Teléfono 1: Gama Ejecutiva (GigaEthernet) -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <i class="fas fa-award device-icon mb-3"></i>
+                            <h5 class="fw-bold" data-i18n="ip_phone1_title">Gama Ejecutiva y Gerencial</h5>
+                            <p class="small text-muted" data-i18n="ip_phone1_subtitle">T4x / T5x Series - Potencia y Lujo</p>
+                            <p data-i18n="ip_phone1_text">Teléfonos con pantalla táctil HD, puertos **GigaEthernet** y WiFi, ideales para usuarios de alto tráfico que necesitan características avanzadas y diseño premium.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Teléfono 2: Gama Básica/Estándar (Escritorio) -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <i class="fas fa-headset device-icon mb-3"></i>
+                            <h5 class="fw-bold" data-i18n="ip_phone2_title">Gama Estándar de Escritorio</h5>
+                            <p class="small text-muted" data-i18n="ip_phone2_subtitle">T3x / T40G Series - Confiabilidad Diaria</p>
+                            <p data-i18n="ip_phone2_text">Equipos robustos y económicos que ofrecen audio HD, PoE (Power over Ethernet) y la funcionalidad necesaria para puestos de trabajo operativos y de alto volumen.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Teléfono 3: Movilidad Inalámbrica (DECT) -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <i class="fas fa-walking device-icon mb-3"></i>
+                            <h5 class="fw-bold" data-i18n="ip_phone3_title">Movilidad (DECT y WiFi)</h5>
+                            <p class="small text-muted" data-i18n="ip_phone3_subtitle">Serie W / T5xW - Trabaje sin ataduras</p>
+                            <p data-i18n="ip_phone3_text">Teléfonos DECT para almacenes y oficinas grandes, y teléfonos de escritorio con WiFi integrado, perfectos para entornos que requieren flexibilidad y desplazamiento constante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. BLOQUE DE LLAMADA A LA ACCIÓN (Formulario de Contacto Simple) -->
+        <section id="solicitar-asesoria" class="py-5 bg-primary bg-gradient-blue text-white">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-4">
+                        <h2 data-i18n="ip_cta_form_title">¿Listo para Cortar el Cable?</h2>
+                        <p class="lead" data-i18n="ip_cta_form_subtitle">Díganos qué tipo de solución le interesa más (Cloud, On-Premise o Híbrida) y le enviaremos una cotización detallada.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card p-4 shadow-lg form-card bg-white">
+                            <!-- Formulario (Usamos un action temporal ya que el backend no está implementado) -->
+                            <form action="#" method="POST">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label small text-dark" data-i18n="form_label_name">Nombre Completo *</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="empresa" class="form-label small text-dark" data-i18n="form_label_company">Empresa *</label>
+                                    <input type="text" class="form-control" id="empresa" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label small text-dark" data-i18n="form_label_email">Correo Electrónico *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tipo_solucion" class="form-label small text-dark" data-i18n="ip_form_label_solution">Tipo de Solución Deseada</label>
+                                    <select class="form-select" id="tipo_solucion">
+                                        <option value="" selected data-i18n="ip_form_option_default">Seleccione una opción</option>
+                                        <option value="cloud" data-i18n="ip_form_option_cloud">Cloud (Net2Phone)</option>
+                                        <option value="onpremise" data-i18n="ip_form_option_onpremise">On-Premise (Yeastar)</option>
+                                        <option value="hibrida" data-i18n="ip_form_option_hybrid">Híbrida (Ambas)</option>
+                                        <option value="telefonos" data-i18n="ip_form_option_phones">Solo Teléfonos IP</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100 btn-lg mt-3 fw-bold" data-i18n="ip_cta_form_submit">Contactar con Asesor</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-0" data-i18n="footer_text">&copy; 2024 Megatel SAS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botones Flotantes -->
+    <a href="https://wa.me/3107630363" target="_blank" class="btn btn-success rounded-circle shadow-lg floating-btn whatsapp-btn" data-i18n-title="whatsapp_contact_title">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="back-to-top-btn" class="btn btn-primary rounded-circle shadow-lg floating-btn top-btn" title="Subir al inicio">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

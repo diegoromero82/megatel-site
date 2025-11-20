@@ -1,0 +1,67 @@
+# robots.txt para Megatel SAS
+# Optimizado para SEO y rastreo eficiente
+
+User-agent: *
+# Permitir acceso a todo el sitio
+Allow: /
+
+# Bloquear archivos y directorios que no deben indexarse
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /_old/
+Disallow: /backup/
+
+# Bloquear archivos sensibles
+Disallow: *.log$
+Disallow: *.sql$
+Disallow: *.bak$
+
+# Permitir acceso a recursos CSS y JS (importante para Google)
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# Bloquear parámetros de búsqueda y tracking que crean contenido duplicado
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*ref=
+Disallow: /*?*sid=
+
+# Permitir el parámetro lang para versiones multilingües
+Allow: /*?lang=es
+Allow: /*?lang=en
+
+# Crawl-delay para evitar sobrecarga del servidor (opcional)
+# Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://www.megatelsas.com/sitemap.xml
+
+# Configuración específica para bots principales
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

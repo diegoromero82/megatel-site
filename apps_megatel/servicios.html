@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megatel SAS | Portafolio de Servicios Tecnológicos y Soporte</title>
+
+    <!-- CSS y Librerías -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5j72R7b5h5xR3Ff6xX2gL9/H6xL7ZJ7pBv1lS/5S/qA8eN2sO/7rK8U6Xz8bEw6T1+5G9y4bA==c"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">  
+    
+</head>
+
+<body>
+    <!-- La barra de navegación se mantiene fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Megatel SAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces a archivos HTML -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav_home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html" data-i18n="nav_products">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="servicios.html" data-i18n="nav_services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html" data-i18n="nav_contact">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-outline-light btn-sm" id="lang-toggle-btn" data-current-lang="es">
+                            <span id="lang-content">
+                                <i class="flag-icon fas fa-globe"></i>
+                                <span data-i18n="lang_switch_text">EN</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== CONTENIDO PRINCIPAL: LANDING PAGE SERVICIOS ========== -->
+    <main>
+
+        <!-- 1. BLOQUE HERO DE LA LANDING -->
+        <section id="services-hero" class="full-screen-section section-services-hero">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-lg-10 mx-auto text-center bg-dark bg-opacity-75 p-5 rounded-3 shadow-lg text-white">
+                        <span class="badge bg-danger mb-3 fw-bold" data-i18n="services_tag">SOLUCIONES 360°</span>
+                        <h1 class="display-4 fw-bold mb-4" data-i18n="services_hero_title">Portafolio Integral de Servicios Tecnológicos</h1>
+                        <p class="lead" data-i18n="services_hero_subtitle">
+                            Potencie su infraestructura y operaciones con nuestro equipo experto, cubriendo desde el desarrollo de software hasta el mantenimiento de hardware.
+                        </p>
+                        <!-- CTA principal a la sección de servicios -->
+                        <a href="#servicios-detalle" class="btn btn-warning btn-lg mt-4 scroll-down-btn fw-bold" data-i18n="services_hero_cta">Conozca Nuestros Servicios <i class="fas fa-arrow-down ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. BLOQUE DE DETALLE DE SERVICIOS (4 PILARES) -->
+        <section id="servicios-detalle" class="py-5 bg-gradient-gray">
+            <div class="container my-5">
+                <h2 class="text-center mb-5 text-dark" data-i18n="services_detail_title">Nuestra Oferta de Valor</h2>
+                
+                <div class="row g-4">
+                    
+                    <!-- Servicio 1: Desarrollo de Aplicaciones Empresariales -->
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="card h-100 shadow service-card service-card-dev">
+                            <div class="card-body">
+                                <i class="fas fa-cogs service-icon"></i>
+                                <h4 class="card-title fw-bold text-danger" data-i18n="service1_title">Desarrollo de Aplicaciones Empresariales</h4>
+                                <p class="card-text" data-i18n="service1_text">
+                                    Creamos software a la medida (ERP, CRM, Intranets) para optimizar procesos internos, automatizar tareas y generar ventajas competitivas.
+                                </p>
+                                <a href="contacto.html?service=app_dev" class="btn btn-sm btn-outline-danger mt-3" data-i18n="service_cta">Solicitar Cotización <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Servicio 2: Diseño de Páginas Web y E-commerce -->
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="card h-100 shadow service-card service-card-web">
+                            <div class="card-body">
+                                <i class="fas fa-laptop-code service-icon"></i>
+                                <h4 class="card-title fw-bold text-warning" data-i18n="service2_title">Diseño de Páginas Web y E-commerce</h4>
+                                <p class="card-text" data-i18n="service2_text">
+                                    Diseño responsive y optimizado para SEO, desde sitios informativos hasta plataformas de comercio electrónico robustas con pasarelas de pago.
+                                </p>
+                                <a href="contacto.html?service=web_design" class="btn btn-sm btn-outline-warning mt-3" data-i18n="service_cta">Solicitar Cotización <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3: Contrato de Soporte Preventivo y Correctivo -->
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="card h-100 shadow service-card service-card-support">
+                            <div class="card-body">
+                                <i class="fas fa-hands-helping service-icon"></i>
+                                <h4 class="card-title fw-bold text-primary" data-i18n="service3_title">Contrato de Soporte Preventivo y Correctivo</h4>
+                                <p class="card-text" data-i18n="service3_text">
+                                    Asegure la continuidad de su negocio con asistencia técnica remota y en sitio. Mantenimiento proactivo de redes, servidores y estaciones de trabajo.
+                                </p>
+                                <a href="contacto.html?service=support" class="btn btn-sm btn-outline-primary mt-3" data-i18n="service_cta">Solicitar Contrato <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Servicio 4: Reparación y Mantenimiento de Equipos -->
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="card h-100 shadow service-card service-card-repair">
+                            <div class="card-body">
+                                <i class="fas fa-wrench service-icon"></i>
+                                <h4 class="card-title fw-bold text-success" data-i18n="service4_title">Reparación de Equipos y Hardware</h4>
+                                <p class="card-text" data-i18n="service4_text">
+                                    Diagnóstico y reparación profesional de computadores, laptops, impresoras y hardware de red. Recuperación de datos y reemplazo de componentes.
+                                </p>
+                                <a href="contacto.html?service=repair" class="btn btn-sm btn-outline-success mt-3" data-i18n="service_cta">Consultar Reparación <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. BLOQUE ADICIONAL (Beneficios de Trabajar con Megatel) -->
+        <section id="beneficios" class="py-5 bg-white">
+            <div class="container my-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-4 text-primary" data-i18n="benefits_title">¿Por qué Elegir Megatel para sus Servicios?</h3>
+                        <p data-i18n="benefits_intro">
+                            Nos dedicamos a ser el socio tecnológico integral que su empresa necesita. Nuestra experiencia garantiza soluciones eficientes y resultados medibles.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2" data-i18n="benefits_feat1"><i class="fas fa-shield-alt me-2 text-primary"></i> **Seguridad y Garantía:** Servicios respaldados por profesionales certificados.</li>
+                            <li class="mb-2" data-i18n="benefits_feat2"><i class="fas fa-clock me-2 text-primary"></i> **Tiempo de Respuesta:** Compromiso con SLAs para soporte rápido y efectivo.</li>
+                            <li class="mb-2" data-i18n="benefits_feat3"><i class="fas fa-dollar-sign me-2 text-primary"></i> **Optimización de Costos:** Soluciones que reducen gastos operativos a largo plazo.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0 text-center">
+                         <!-- Placeholder de imagen representativa de soluciones integrales -->
+                        <img src="https://placehold.co/500x350/004085/FFFFFF?text=Soluciones+Integrales" class="img-fluid rounded-3 shadow-lg" alt="Diagrama de Soluciones Integrales">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. BLOQUE FINAL DE CONTACTO (Llamada a la Acción) -->
+        <section id="contact-cta" class="full-screen-section section-closing">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-md-8 mx-auto text-center text-white bg-dark bg-opacity-75 p-5 rounded-3 shadow-lg">
+                        <h2 class="mb-4" data-i18n="closing_title">Transforme su Operación Hoy Mismo</h2>
+                        <p data-i18n="closing_text">Contáctenos para una evaluación gratuita de sus necesidades tecnológicas.</p>
+                        
+                        <!-- Botón de Redirección -->
+                        <a href="contacto.html" class="btn btn-light btn-lg mt-4" data-i18n="closing_cta">Hablemos de su Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-0" data-i18n="footer_text">&copy; 2024 Megatel SAS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botones Flotantes -->
+    <a href="https://wa.me/3107630363" target="_blank" class="btn btn-success rounded-circle shadow-lg floating-btn whatsapp-btn" data-i18n-title="whatsapp_contact_title">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="back-to-top-btn" class="btn btn-primary rounded-circle shadow-lg floating-btn top-btn" title="Subir al inicio">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
