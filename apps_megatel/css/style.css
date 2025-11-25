@@ -717,3 +717,113 @@ a:focus {
     transform: scale(1.05);
     filter: grayscale(0%);
 }
+
+/* ===== ESTILOS CORREGIDOS PARA ALIADOS ESTRATÉGICOS ===== */
+
+/* Contenedor de imagen del partner */
+.partner-logo-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    overflow: hidden;
+}
+
+/* Logo del partner - RESTRICCIONES IMPORTANTES */
+.partner-logo {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(20%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Tarjeta de partner con altura fija para consistencia */
+.partner-card {
+    height: 100%;
+    border: none;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Efecto hover en imagen */
+.partner-card:hover .partner-logo {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* Cuerpo de la tarjeta */
+.partner-card .card-body {
+    padding: 1rem;
+}
+
+/* Título del partner */
+.partner-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+/* Descripción del partner */
+.partner-card .card-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* ===== RESPONSIVE PARA PARTNERS ===== */
+
+@media (max-width: 992px) {
+    .partner-logo-container {
+        height: 80px;
+        padding: 10px;
+    }
+    
+    .partner-logo {
+        max-height: 60px;
+    }
+    
+    .partner-card .card-title {
+        font-size: 1rem;
+    }
+    
+    .partner-card .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .partner-logo-container {
+        height: 70px;
+        padding: 8px;
+    }
+    
+    .partner-logo {
+        max-height: 50px;
+    }
+    
+    .partner-card .card-body {
+        padding: 0.75rem;
+    }
+    
+    .partner-card .card-title {
+        font-size: 0.95rem;
+    }
+    
+    .partner-card .card-text {
+        font-size: 0.75rem;
+    }
+}

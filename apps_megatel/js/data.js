@@ -4,6 +4,7 @@
  * Contiene el catálogo de textos para la internacionalización (i18n).
  * Se organiza por la clave usada en el atributo data-i18n en el HTML.
  */
+
 const translations = {
     // ===== BARRA DE NAVEGACIÓN (NAVBAR) =====
     "nav_home": {
@@ -119,26 +120,164 @@ const translations = {
         "en": "Back to top"
     },
 
-    // ===== PÁGINA: QUIÉNES SOMOS =====
-    "about_hero_title": {
-        "es": "Nuestra Historia",
-        "en": "Our History"
+    // ===== PÁGINA: QUIÉNES SOMOS - CONTENIDO PRINCIPAL =====
+    "about_main_title": {
+        "es": "Megatel SAS: 30 Años de Trayectoria Tecnológica",
+        "en": "Megatel SAS: 30 Years of Technological Track Record"
     },
-    "about_hero_subtitle": {
-        "es": "Más de 30 años transformando empresas",
-        "en": "Over 30 years transforming businesses"
+    "about_p1": {
+        "es": "Megatel SAS es una empresa colombiana con más de 30 años de experiencia en la venta consultiva y prestación de servicios profesionales en soluciones de telecomunicaciones, seguridad electrónica, conectividad, desarrollo de aplicaciones empresariales y sitios web.",
+        "en": "Megatel SAS is a Colombian company with over 30 years of experience in consultative sales and professional services in telecommunications solutions, electronic security, connectivity, enterprise application development and websites."
     },
-    "about_mission_title": {
+    "about_p2": {
+        "es": "Contamos con personal certificado a nivel comercial y técnico con el fin de ofrecer soluciones que cumplan con las necesidades de nuestros clientes, garantizando siempre la máxima calidad y eficiencia en la ejecución de cada proyecto.",
+        "en": "We have certified commercial and technical staff to offer solutions that meet our clients' needs, always guaranteeing maximum quality and efficiency in the execution of each project."
+    },
+
+    // ===== MISIÓN, VISIÓN Y VALORES =====
+    "mision_vision_title": {
+        "es": "Nuestra Misión, Visión y Valores",
+        "en": "Our Mission, Vision and Values"
+    },
+    "mision_title": {
         "es": "Misión",
         "en": "Mission"
     },
-    "about_vision_title": {
+    "mision_text": {
+        "es": "Establecer relaciones a largo plazo con nuestros clientes brindando soluciones tecnológicas que impacten positivamente sus negocios y operaciones.",
+        "en": "Establish long-term relationships with our clients by providing technological solutions that positively impact their businesses and operations."
+    },
+    "vision_title": {
         "es": "Visión",
         "en": "Vision"
     },
-    "about_values_title": {
+    "vision_text": {
+        "es": "Ser una empresa destacada en el territorio colombiano reconocida como un socio de negocio de valor agregado que permite el crecimiento y la vigencia de las empresas colombianas en el ámbito tecnológico.",
+        "en": "To be a leading company in Colombia recognized as a value-added business partner that enables the growth and relevance of Colombian companies in the technological field."
+    },
+    "valores_title": {
         "es": "Valores",
         "en": "Values"
+    },
+    "valor_responsabilidad": {
+        "es": "Responsabilidad",
+        "en": "Responsibility"
+    },
+    "valor_compromiso": {
+        "es": "Compromiso",
+        "en": "Commitment"
+    },
+    "valor_lealtad": {
+        "es": "Lealtad",
+        "en": "Loyalty"
+    },
+    "valor_respeto": {
+        "es": "Respeto",
+        "en": "Respect"
+    },
+    "valor_cumplimiento": {
+        "es": "Cumplimiento",
+        "en": "Compliance"
+    },
+
+    // ===== ALIADOS ESTRATÉGICOS =====
+    "aliados_title": {
+        "es": "Nuestros Aliados Estratégicos",
+        "en": "Our Strategic Partners"
+    },
+    "aliados_subtitle": {
+        "es": "Trabajamos con los principales fabricantes y proveedores de tecnología para ofrecer las mejores soluciones a nuestros clientes.",
+        "en": "We work with leading manufacturers and technology providers to offer the best solutions to our clients."
+    },
+    
+    // Partner 1: SiteGround
+    "partner1_name": {
+        "es": "SiteGround",
+        "en": "SiteGround"
+    },
+    "partner1_desc": {
+        "es": "Proveedor premium de hosting web y soluciones de alojamiento en la nube con infraestructura optimizada para WordPress y aplicaciones empresariales.",
+        "en": "Premium web hosting provider and cloud hosting solutions with optimized infrastructure for WordPress and enterprise applications."
+    },
+    
+    // Partner 2: Microsoft
+    "partner2_name": {
+        "es": "Microsoft",
+        "en": "Microsoft"
+    },
+    "partner2_desc": {
+        "es": "Partner certificado en soluciones Microsoft 365, Azure Cloud, desarrollo .NET y herramientas de productividad empresarial.",
+        "en": "Certified partner in Microsoft 365 solutions, Azure Cloud, .NET development and enterprise productivity tools."
+    },
+    
+    // Partner 3: Oracle
+    "partner3_name": {
+        "es": "Oracle",
+        "en": "Oracle"
+    },
+    "partner3_desc": {
+        "es": "Aliado en soluciones de bases de datos empresariales, Oracle Cloud Infrastructure y sistemas de gestión empresarial (ERP/CRM).",
+        "en": "Partner in enterprise database solutions, Oracle Cloud Infrastructure and enterprise management systems (ERP/CRM)."
+    },
+    
+    // Partner 4: Yeastar
+    "partner4_name": {
+        "es": "Yeastar",
+        "en": "Yeastar"
+    },
+    "partner4_desc": {
+        "es": "Distribuidor autorizado de sistemas de telefonía IP (PBX), soluciones de comunicaciones unificadas y centralitas virtuales para empresas.",
+        "en": "Authorized distributor of IP telephony systems (PBX), unified communications solutions and virtual switchboards for businesses."
+    },
+    
+    // Partner 5: Yealink
+    "partner5_name": {
+        "es": "Yealink",
+        "en": "Yealink"
+    },
+    "partner5_desc": {
+        "es": "Proveedor certificado de teléfonos IP, dispositivos de videoconferencia y equipos de comunicación empresarial de alta calidad.",
+        "en": "Certified provider of IP phones, video conferencing devices and high-quality enterprise communication equipment."
+    },
+    
+    // Partner 6: Dahua
+    "partner6_name": {
+        "es": "Dahua",
+        "en": "Dahua"
+    },
+    "partner6_desc": {
+        "es": "Distribuidor oficial de sistemas de videovigilancia, cámaras IP, NVR/DVR y soluciones integrales de seguridad electrónica.",
+        "en": "Official distributor of video surveillance systems, IP cameras, NVR/DVR and comprehensive electronic security solutions."
+    },
+    
+    // Partner 7: Jusan
+    "partner7_name": {
+        "es": "Jusan",
+        "en": "Jusan"
+    },
+    "partner7_desc": {
+        "es": "Aliado estratégico en soluciones de control de acceso, sistemas biométricos y tecnología de seguridad perimetral avanzada.",
+        "en": "Strategic partner in access control solutions, biometric systems and advanced perimeter security technology."
+    },
+    
+    // Partner 8: Net2Phone
+    "partner8_name": {
+        "es": "Net2Phone",
+        "en": "Net2Phone"
+    },
+    "partner8_desc": {
+        "es": "Partner certificado en telefonía VoIP en la nube, comunicaciones empresariales UCaaS y soluciones de contact center.",
+        "en": "Certified partner in cloud VoIP telephony, UCaaS enterprise communications and contact center solutions."
+    },
+
+    // ===== CIERRE COMÚN =====
+    "closing_title": {
+        "es": "¿Listo para Convertir su Visión en Realidad?",
+        "en": "Ready to Turn Your Vision into Reality?"
+    },
+    "closing_text": {
+        "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
+        "en": "Talk to our experts and request a no-obligation consultation."
     },
 
     // ===== PÁGINA: PRODUCTOS =====
@@ -391,121 +530,7 @@ const translations = {
         "en": "Request Demo"
     },
     "common_request_quote": {
-    },
-    "common_request_quote": {
         "es": "Solicitar Cotización",
         "en": "Request Quote"
-    },
-
-    // ===== PÁGINA: QUIÉNES SOMOS - CONTENIDO PRINCIPAL =====
-    "about_main_title": {
-        "es": "Megatel SAS: 30 Años de Trayectoria Tecnológica",
-        "en": "Megatel SAS: 30 Years of Technological Track Record"
-    },
-    "about_p1": {
-        "es": "Megatel SAS es una empresa colombiana con más de 30 años de experiencia en la venta consultiva y prestación de servicios profesionales en soluciones de telecomunicaciones, seguridad electrónica, conectividad, desarrollo de aplicaciones empresariales y sitios web.",
-        "en": "Megatel SAS is a Colombian company with over 30 years of experience in consultative sales and professional services in telecommunications solutions, electronic security, connectivity, enterprise application development and websites."
-    },
-    "about_p2": {
-        "es": "Contamos con personal certificado a nivel comercial y técnico con el fin de ofrecer soluciones que cumplan con las necesidades de nuestros clientes, garantizando siempre la máxima calidad y eficiencia en la ejecución de cada proyecto.",
-        "en": "We have certified commercial and technical staff to offer solutions that meet our clients' needs, always guaranteeing maximum quality and efficiency in the execution of each project."
-    },
-
-    // ===== MISIÓN, VISIÓN Y VALORES =====
-    "mision_vision_title": {
-        "es": "Nuestra Misión, Visión y Valores",
-        "en": "Our Mission, Vision and Values"
-    },
-    "mision_title": {
-        "es": "Misión",
-        "en": "Mission"
-    },
-    "mision_text": {
-        "es": "Establecer relaciones a largo plazo con nuestros clientes brindando soluciones tecnológicas que impacten positivamente sus negocios y operaciones.",
-        "en": "Establish long-term relationships with our clients by providing technological solutions that positively impact their businesses and operations."
-    },
-    "vision_title": {
-        "es": "Visión",
-        "en": "Vision"
-    },
-    "vision_text": {
-        "es": "Ser una empresa destacada en el territorio colombiano reconocida como un socio de negocio de valor agregado que permite el crecimiento y la vigencia de las empresas colombianas en el ámbito tecnológico.",
-        "en": "To be a leading company in Colombia recognized as a value-added business partner that enables the growth and relevance of Colombian companies in the technological field."
-    },
-    "valores_title": {
-        "es": "Valores",
-        "en": "Values"
-    },
-    "valor_responsabilidad": {
-        "es": "Responsabilidad",
-        "en": "Responsibility"
-    },
-    "valor_compromiso": {
-        "es": "Compromiso",
-        "en": "Commitment"
-    },
-    "valor_lealtad": {
-        "es": "Lealtad",
-        "en": "Loyalty"
-    },
-    "valor_respeto": {
-        "es": "Respeto",
-        "en": "Respect"
-    },
-    "valor_cumplimiento": {
-        "es": "Cumplimiento",
-        "en": "Compliance"
-    },
-
-    // ===== ALIADOS ESTRATÉGICOS =====
-    "aliados_title": {
-        "es": "Nuestros Aliados Estratégicos",
-        "en": "Our Strategic Partners"
-    },
-    "aliados_subtitle": {
-        "es": "Trabajamos con los principales fabricantes y proveedores de tecnología para ofrecer las mejores soluciones a nuestros clientes.",
-        "en": "We work with leading manufacturers and technology providers to offer the best solutions to our clients."
-    },
-    "partner1_name": {
-        "es": "Fabricante A (Software)",
-        "en": "Manufacturer A (Software)"
-    },
-    "partner1_desc": {
-        "es": "Partner Certificado y distribuidor exclusivo de soluciones de gestión empresarial.",
-        "en": "Certified Partner and exclusive distributor of business management solutions."
-    },
-    "partner2_name": {
-        "es": "Fabricante B (Telecom)",
-        "en": "Manufacturer B (Telecom)"
-    },
-    "partner2_desc": {
-        "es": "Representantes oficiales de equipos de conectividad y redes de alta velocidad.",
-        "en": "Official representatives of high-speed connectivity and networking equipment."
-    },
-    "partner3_name": {
-        "es": "Fabricante C (Seguridad)",
-        "en": "Manufacturer C (Security)"
-    },
-    "partner3_desc": {
-        "es": "Distribuidores autorizados de soluciones de seguridad electrónica y vigilancia IP.",
-        "en": "Authorized distributors of electronic security and IP surveillance solutions."
-    },
-    "partner4_name": {
-        "es": "Fabricante D (Cloud/Dev)",
-        "en": "Manufacturer D (Cloud/Dev)"
-    },
-    "partner4_desc": {
-        "es": "Consultores expertos en plataformas de computación en la nube para desarrollo de apps.",
-        "en": "Expert consultants in cloud computing platforms for app development."
-    },
-
-    // ===== CIERRE COMÚN =====
-    "closing_title": {
-        "es": "¿Listo para Convertir su Visión en Realidad?",
-        "en": "Ready to Turn Your Vision into Reality?"
-    },
-    "closing_text": {
-        "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
-        "en": "Talk to our experts and request a no-obligation consultation."
     }
 };
