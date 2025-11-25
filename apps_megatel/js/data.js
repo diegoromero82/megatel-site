@@ -302,30 +302,111 @@ const translations = {
         "en": "Electronic Security"
     },
 
-    // ===== PÁGINA: SERVICIOS =====
+    // ===== PÁGINA: SERVICIOS - LANDING PAGE COMPLETA =====
+    // Hero Section
+    "services_tag": {
+        "es": "SOLUCIONES 360°",
+        "en": "360° SOLUTIONS"
+    },
     "services_hero_title": {
-        "es": "Nuestros Servicios",
-        "en": "Our Services"
+        "es": "Portafolio Integral de Servicios Tecnológicos",
+        "en": "Comprehensive Technology Services Portfolio"
     },
     "services_hero_subtitle": {
-        "es": "Soluciones profesionales a su medida",
-        "en": "Professional solutions tailored to you"
+        "es": "Potencie su infraestructura y operaciones con nuestro equipo experto, cubriendo desde el desarrollo de software hasta el mantenimiento de hardware.",
+        "en": "Empower your infrastructure and operations with our expert team, covering everything from software development to hardware maintenance."
     },
-    "services_development_title": {
-        "es": "Desarrollo de Software",
-        "en": "Software Development"
+    "services_hero_cta": {
+        "es": "Conozca Nuestros Servicios",
+        "en": "Discover Our Services"
     },
-    "services_web_title": {
-        "es": "Desarrollo Web",
-        "en": "Web Development"
+
+    // Sección de Detalle de Servicios
+    "services_detail_title": {
+        "es": "Nuestra Oferta de Valor",
+        "en": "Our Value Proposition"
     },
-    "services_support_title": {
-        "es": "Soporte Técnico",
-        "en": "Technical Support"
+
+    // Servicio 1: Desarrollo de Aplicaciones Empresariales
+    "service1_title": {
+        "es": "Desarrollo de Aplicaciones Empresariales",
+        "en": "Enterprise Application Development"
     },
-    "services_consulting_title": {
-        "es": "Consultoría",
-        "en": "Consulting"
+    "service1_text": {
+        "es": "Creamos software a la medida (ERP, CRM, Intranets) para optimizar procesos internos, automatizar tareas y generar ventajas competitivas.",
+        "en": "We create custom software (ERP, CRM, Intranets) to optimize internal processes, automate tasks and generate competitive advantages."
+    },
+
+    // Servicio 2: Diseño de Páginas Web y E-commerce
+    "service2_title": {
+        "es": "Diseño de Páginas Web y E-commerce",
+        "en": "Web Design and E-commerce"
+    },
+    "service2_text": {
+        "es": "Diseño responsive y optimizado para SEO, desde sitios informativos hasta plataformas de comercio electrónico robustas con pasarelas de pago.",
+        "en": "Responsive and SEO-optimized design, from informational sites to robust e-commerce platforms with payment gateways."
+    },
+
+    // Servicio 3: Contrato de Soporte Preventivo y Correctivo
+    "service3_title": {
+        "es": "Contrato de Soporte Preventivo y Correctivo",
+        "en": "Preventive and Corrective Support Contract"
+    },
+    "service3_text": {
+        "es": "Asegure la continuidad de su negocio con asistencia técnica remota y en sitio. Mantenimiento proactivo de redes, servidores y estaciones de trabajo.",
+        "en": "Ensure your business continuity with remote and on-site technical assistance. Proactive maintenance of networks, servers and workstations."
+    },
+
+    // Servicio 4: Reparación y Mantenimiento de Equipos
+    "service4_title": {
+        "es": "Reparación de Equipos y Hardware",
+        "en": "Equipment and Hardware Repair"
+    },
+    "service4_text": {
+        "es": "Diagnóstico y reparación profesional de computadores, laptops, impresoras y hardware de red. Recuperación de datos y reemplazo de componentes.",
+        "en": "Professional diagnosis and repair of computers, laptops, printers and network hardware. Data recovery and component replacement."
+    },
+
+    // CTA de servicios
+    "service_cta": {
+        "es": "Solicitar Cotización",
+        "en": "Request Quote"
+    },
+
+    // Sección de Beneficios
+    "benefits_title": {
+        "es": "¿Por qué Elegir Megatel para sus Servicios?",
+        "en": "Why Choose Megatel for Your Services?"
+    },
+    "benefits_intro": {
+        "es": "Nos dedicamos a ser el socio tecnológico integral que su empresa necesita. Nuestra experiencia garantiza soluciones eficientes y resultados medibles.",
+        "en": "We are dedicated to being the comprehensive technology partner your company needs. Our experience guarantees efficient solutions and measurable results."
+    },
+    "benefits_feat1": {
+        "es": "<strong>Seguridad y Garantía:</strong> Servicios respaldados por profesionales certificados.",
+        "en": "<strong>Security and Warranty:</strong> Services backed by certified professionals."
+    },
+    "benefits_feat2": {
+        "es": "<strong>Tiempo de Respuesta:</strong> Compromiso con SLAs para soporte rápido y efectivo.",
+        "en": "<strong>Response Time:</strong> Commitment to SLAs for fast and effective support."
+    },
+    "benefits_feat3": {
+        "es": "<strong>Optimización de Costos:</strong> Soluciones que reducen gastos operativos a largo plazo.",
+        "en": "<strong>Cost Optimization:</strong> Solutions that reduce long-term operational expenses."
+    },
+
+    // Sección de Cierre
+    "closing_title": {
+        "es": "Transforme su Operación Hoy Mismo",
+        "en": "Transform Your Operation Today"
+    },
+    "closing_text": {
+        "es": "Contáctenos para una evaluación gratuita de sus necesidades tecnológicas.",
+        "en": "Contact us for a free evaluation of your technology needs."
+    },
+    "closing_cta": {
+        "es": "Hablemos de su Proyecto",
+        "en": "Let's Talk About Your Project"
     },
 
     // ===== PÁGINA: CONTACTO =====
