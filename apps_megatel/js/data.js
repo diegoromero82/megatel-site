@@ -613,5 +613,167 @@ const translations = {
     "common_request_quote": {
         "es": "Solicitar Cotización",
         "en": "Request Quote"
+    },
+    
+    // ===== PÁGINA: PRODUCTOS - TRADUCCIONES ADICIONALES =====
+    "products_page_title": {
+        "es": "Portafolio de Productos Tecnológicos",
+        "en": "Technology Product Portfolio"
+    },
+    "products_page_subtitle": {
+        "es": "Ofrecemos soluciones de hardware y software de fabricantes líderes para potenciar la infraestructura y las comunicaciones de su empresa.",
+        "en": "We offer hardware and software solutions from leading manufacturers to enhance your company's infrastructure and communications."
+    },
+    "products_page_cta": {
+        "es": "Explorar Categorías <i class=\"fas fa-arrow-down ms-2\"></i>",
+        "en": "Explore Categories <i class=\"fas fa-arrow-down ms-2\"></i>"
+    },
+    "catalog_section_title": {
+        "es": "Nuestras Soluciones de Hardware y Software",
+        "en": "Our Hardware and Software Solutions"
+    },
+    "prod_cat1_title": {
+        "es": "Telefonía y VoIP",
+        "en": "Telephony and VoIP"
+    },
+    "prod_cat1_desc": {
+        "es": "Sistemas PBX, teléfonos IP y soluciones de comunicación unificada.",
+        "en": "PBX systems, IP phones and unified communication solutions."
+    },
+    "prod_cat2_title": {
+        "es": "Seguridad Electrónica",
+        "en": "Electronic Security"
+    },
+    "prod_cat2_desc": {
+        "es": "Cámaras IP, control de acceso y sistemas de videovigilancia avanzados.",
+        "en": "IP cameras, access control and advanced video surveillance systems."
+    },
+    "prod_cat3_title": {
+        "es": "Conectividad y Redes",
+        "en": "Connectivity and Networks"
+    },
+    "prod_cat3_desc": {
+        "es": "Switches, routers, fibra óptica y soluciones Wi-Fi de alto rendimiento.",
+        "en": "Switches, routers, fiber optics and high-performance Wi-Fi solutions."
+    },
+    "prod_cat4_title": {
+        "es": "Protección (UPS)",
+        "en": "Power Protection (UPS)"
+    },
+    "prod_cat4_desc": {
+        "es": "Sistemas de alimentación ininterrumpida para proteger su inversión.",
+        "en": "Uninterruptible power supply systems to protect your investment."
+    },
+    "prod_cat5_title": {
+        "es": "Accesorios y Periféricos",
+        "en": "Accessories and Peripherals"
+    },
+    "prod_cat5_desc": {
+        "es": "Diademas, micrófonos y accesorios para call centers y oficinas.",
+        "en": "Headsets, microphones and accessories for call centers and offices."
+    },
+    "prod_cat6_title": {
+        "es": "Videoconferencia",
+        "en": "Video Conferencing"
+    },
+    "prod_cat6_desc": {
+        "es": "Sistemas de colaboración visual para salas de juntas y oficinas.",
+        "en": "Visual collaboration systems for meeting rooms and offices."
+    },
+    "tab_telephony": {
+        "es": "Telefonía",
+        "en": "Telephony"
+    },
+    "tab_security": {
+        "es": "Seguridad",
+        "en": "Security"
+    },
+    "tab_connectivity": {
+        "es": "Conectividad",
+        "en": "Connectivity"
+    },
+    "tab_more_products": {
+        "es": "Más Productos",
+        "en": "More Products"
+    },
+    "detail1_title": {
+        "es": "Comunicaciones Unificadas Modernas",
+        "en": "Modern Unified Communications"
+    },
+    "detail1_p1": {
+        "es": "Sistemas de telefonía IP que ofrecen flexibilidad, reducción de costos y funciones avanzadas como IVR, grabación de llamadas y movilidad.",
+        "en": "IP telephony systems offering flexibility, cost reduction and advanced features such as IVR, call recording and mobility."
+    },
+    "detail1_item1": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Teléfonos IP de escritorio y DECT.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Desktop and DECT IP phones."
+    },
+    "detail1_item2": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Centralitas Virtuales y Hardware (PBX).",
+        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Virtual and Hardware Switchboards (PBX)."
+    },
+    "detail1_item3": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Gateways y troncales SIP.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Gateways and SIP trunks."
+    },
+    "detail2_title": {
+        "es": "Protección Inteligente para su Empresa",
+        "en": "Intelligent Protection for Your Business"
+    },
+    "detail2_p1": {
+        "es": "Soluciones de seguridad electrónica para prevenir riesgos y controlar el acceso a sus instalaciones.",
+        "en": "Electronic security solutions to prevent risks and control access to your facilities."
+    },
+    "detail2_item1": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Cámaras de vigilancia IP de alta resolución (CCTV).",
+        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>High-resolution IP surveillance cameras (CCTV)."
+    },
+    "detail2_item2": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Sistemas de alarma y detección de intrusos.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Alarm and intrusion detection systems."
+    },
+    "detail2_item3": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Lectores biométricos y control de acceso.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Biometric readers and access control."
+    },
+    "detail3_title": {
+        "es": "Infraestructura de Red Robusta",
+        "en": "Robust Network Infrastructure"
+    },
+    "detail3_p1": {
+        "es": "Implementación de redes cableadas e inalámbricas optimizadas para el tráfico de datos, voz y video.",
+        "en": "Implementation of wired and wireless networks optimized for data, voice and video traffic."
+    },
+    "detail3_item1": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Switches gestionables y no gestionables.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Managed and unmanaged switches."
+    },
+    "detail3_item2": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Routers empresariales y firewalls.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Enterprise routers and firewalls."
+    },
+    "detail3_item3": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Cableado estructurado UTP y fibra óptica.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Structured UTP cabling and fiber optics."
+    },
+    "detail4_title": {
+        "es": "Complementos Esenciales",
+        "en": "Essential Complements"
+    },
+    "detail4_p1": {
+        "es": "Artículos complementarios que aseguran la continuidad de su operación y optimizan la colaboración.",
+        "en": "Complementary items that ensure business continuity and optimize collaboration."
+    },
+    "detail4_p_ups": {
+        "es": "Soluciones monofásicas y trifásicas para garantizar energía limpia e ininterrumpida.",
+        "en": "Single-phase and three-phase solutions to guarantee clean and uninterrupted power."
+    },
+    "detail4_p_acc": {
+        "es": "Diademas ergonómicas y dispositivos de entrada para call centers y oficinas.",
+        "en": "Ergonomic headsets and input devices for call centers and offices."
+    },
+    "detail4_p_vid": {
+        "es": "Equipos para salas de juntas, desde cámaras PTZ hasta barras de colaboración.",
+        "en": "Equipment for meeting rooms, from PTZ cameras to collaboration bars."
     }
 };
