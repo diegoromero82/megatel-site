@@ -63,6 +63,56 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
+    <!-- Estilos específicos para el iframe de APEX -->
+    <style>
+        .apex-iframe-container {
+            width: 100%;
+            min-height: 750px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .apex-iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
+            display: block;
+        }
+
+        /* Ajuste responsivo del iframe */
+        @media (max-width: 768px) {
+            .apex-iframe-container {
+                min-height: 900px;
+            }
+
+            .apex-iframe {
+                height: 900px;
+            }
+        }
+
+        /* Loader mientras carga el iframe */
+        .iframe-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .iframe-loader .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            color: #0274be;
+        }
+
+        .iframe-loaded .iframe-loader {
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -114,20 +164,22 @@
     <!-- ========== CONTENIDO PRINCIPAL: CONTACTO (SCROLL NORMAL) ========== -->
     <main role="main">
 
-        <!-- 1. HERO DE CONTACTO - Con altura automática, sin full-screen -->
-        <section id="contact-hero" class="section-contact-hero bg-primary text-white py-5"
-            aria-label="Sección de bienvenida a contacto" style="min-height: 40vh;">
+        <!-- 1. HERO DE CONTACTO -->
+        <section id="contact-hero" class="full-screen-section section-confidence"
+            aria-label="Sección de bienvenida a contacto">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-lg-10 col-md-10 col-12 mx-auto text-center">
+                        <div class="bg-dark bg-opacity-75 p-4 p-md-5 rounded-3 shadow-lg text-white">
 
-            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-                <div class="row">
-                    <div class="col-lg-10 col-12 mx-auto text-center">
-                        <h1 class="display-4 fw-bold mb-3" data-i18n="contact_hero_title">
-                            Estamos Listos para Escucharlo
-                        </h1>
-                        <p class="lead" data-i18n="contact_hero_subtitle">
-                            Elija el canal de comunicación que mejor se adapte a sus necesidades. Nuestro equipo
-                            responderá a la brevedad.
-                        </p>
+                            <h1 class="display-4 fw-bold mb-4" data-i18n="contact_hero_title">
+                                Estamos Listos para Escucharlo
+                            </h1>
+                            <p class="lead mb-4" data-i18n="contact_hero_subtitle">
+                                Elija el canal de comunicación que mejor se adapte a sus necesidades. Nuestro equipo
+                                responderá a la brevedad.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,164 +199,129 @@
                                 <p class="mb-0 text-muted" data-i18n="contact_wa_text">Respuesta inmediata para
                                     consultas rápidas.</p>
                                 <a href="https://wa.me/+573107630363" target="_blank" rel="noopener noreferrer"
-                                    class="btn btn-sm btn-success mt-2 fw-bold" data-i18n="contact_wa_cta"
-                                    aria-label="Iniciar chat por WhatsApp">
-                                    Iniciar Chat
+                                    class="btn btn-success btn-sm mt-3" data-i18n="contact_wa_cta">
+                                    Chatear Ahora
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 2: Llamada Telefónica -->
+                    <!-- Tarjeta 2: Teléfono -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card p-3 shadow-sm contact-info-card h-100">
                             <div class="card-body text-center">
-                                <i class="fas fa-phone-alt contact-icon-bg bg-primary" aria-hidden="true"></i>
-                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_phone_title">Llamada Telefónica</h2>
-                                <p class="mb-0 text-muted" data-i18n="contact_phone_text">Comuníquese directamente con
-                                    un asesor.</p>
-                                <a href="tel:+573107630363" class="btn btn-sm btn-primary mt-2 fw-bold"
-                                    data-i18n="contact_phone_number" aria-label="Llamar a Megatel SAS">
-                                    +57 (310) 763 0363
+                                <i class="fas fa-phone contact-icon-bg bg-primary" aria-hidden="true"></i>
+                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_phone_title">Teléfono</h2>
+                                <p class="mb-0 text-muted" data-i18n="contact_phone_text">Llámenos en horario de
+                                    oficina.</p>
+                                <a href="tel:+573107630363" class="btn btn-primary btn-sm mt-3"
+                                    data-i18n="contact_phone_cta">
+                                    Llamar Ahora
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 3: Correo Electrónico -->
+                    <!-- Tarjeta 3: Email -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card p-3 shadow-sm contact-info-card h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope contact-icon-bg bg-info" aria-hidden="true"></i>
-                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_email_title">Correo Electrónico</h2>
-                                <p class="mb-0 text-muted" data-i18n="contact_email_text">Para documentos, cotizaciones
-                                    formales o solicitudes detalladas.</p>
-                                <a href="mailto:info@megatelsas.com" class="btn btn-sm btn-info text-white mt-2 fw-bold"
-                                    data-i18n="contact_email_address" aria-label="Enviar email a Megatel SAS">
-                                    info@megatelsas.com
+                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_email_title">Email</h2>
+                                <p class="mb-0 text-muted" data-i18n="contact_email_text">Para consultas detalladas por
+                                    escrito.</p>
+                                <a href="mailto:contacto@megatelsas.com" class="btn btn-info btn-sm mt-3"
+                                    data-i18n="contact_email_cta">
+                                    Enviar Email
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 4: LinkedIn -->
+                    <!-- Tarjeta 4: Ubicación -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card p-3 shadow-sm contact-info-card h-100">
                             <div class="card-body text-center">
-                                <i class="fab fa-linkedin contact-icon-bg bg-dark" aria-hidden="true"></i>
-                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_linkedin_title">LinkedIn</h2>
-                                <p class="mb-0 text-muted" data-i18n="contact_linkedin_text">Síganos y conéctese con
-                                    nuestros profesionales.</p>
-                                <a href="https://www.linkedin.com/company/megatelsas" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-sm btn-dark mt-2 fw-bold"
-                                    data-i18n="contact_linkedin_cta" aria-label="Ver perfil de Megatel SAS en LinkedIn">
-                                    Ver Perfil
-                                </a>
+                                <i class="fas fa-map-marker-alt contact-icon-bg bg-danger" aria-hidden="true"></i>
+                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_location_title">Ubicación</h2>
+                                <p class="mb-0 text-muted" data-i18n="contact_location_text">Bogotá, Colombia</p>
+                                <p class="small text-muted mt-2" data-i18n="contact_location_hours">Lunes a Viernes,
+                                    8:00 AM - 6:00 PM</p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- 3. BLOQUE DE FORMULARIO DE CONTACTO -->
+        <!-- 3. FORMULARIO DE CONTACTO (INTEGRADO CON ORACLE APEX) -->
         <section id="contact-form" class="py-5 bg-light" aria-label="Formulario de contacto">
             <div class="container my-4">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="p-4 p-md-5 form-section shadow-lg bg-white rounded-3">
-                            <h2 class="text-center mb-4 fw-bold text-primary" data-i18n="form_main_title">
-                                Envíenos un Mensaje Directo
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8 mx-auto">
+
+                        <!-- Encabezado del Formulario -->
+                        <div class="text-center mb-4">
+                            <h2 class="h3 fw-bold" data-i18n="form_title">
+                                Envíenos su Consulta
                             </h2>
-                            <p class="text-center mb-5 text-muted" data-i18n="form_main_subtitle">
-                                Llene el formulario y le contactaremos en menos de 24 horas hábiles.
+                            <p class="text-muted" data-i18n="form_subtitle">
+                                Complete el formulario y nos pondremos en contacto con usted en menos de 24 horas
                             </p>
-
-                            <!-- Formulario -->
-                            <form action="#" method="POST" id="main-contact-form" novalidate>
-
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="form_nombre" class="form-label small fw-bold"
-                                            data-i18n="form_label_name">
-                                            Nombre Completo *
-                                        </label>
-                                        <input type="text" class="form-control" id="form_nombre" name="nombre"
-                                            required aria-required="true">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="form_empresa" class="form-label small fw-bold"
-                                            data-i18n="form_label_company">
-                                            Empresa / Organización
-                                        </label>
-                                        <input type="text" class="form-control" id="form_empresa" name="empresa">
-                                    </div>
-                                </div>
-
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="form_email" class="form-label small fw-bold"
-                                            data-i18n="form_label_email">
-                                            Correo Electrónico *
-                                        </label>
-                                        <input type="email" class="form-control" id="form_email" name="email" required
-                                            aria-required="true">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="form_telefono" class="form-label small fw-bold"
-                                            data-i18n="form_label_phone">
-                                            Teléfono de Contacto *
-                                        </label>
-                                        <input type="tel" class="form-control" id="form_telefono" name="telefono"
-                                            required aria-required="true">
-                                    </div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="form_servicio" class="form-label small fw-bold"
-                                        data-i18n="form_label_service_interest">
-                                        Tema de Interés *
-                                    </label>
-                                    <select class="form-select" id="form_servicio" name="servicio" required
-                                        aria-required="true">
-                                        <option value="" selected data-i18n="form_option_select">-- Seleccione el
-                                            Servicio --</option>
-                                        <option value="telefonia_ip" data-i18n="form_option_ip_telephony">Telefonía IP /
-                                            Cloud PBX</option>
-                                        <option value="videoconferencia" data-i18n="form_option_videoconf">Video
-                                            Conferencia</option>
-                                        <option value="desarrollo_app" data-i18n="form_option_app_dev">Desarrollo de
-                                            Aplicaciones</option>
-                                        <option value="web_design" data-i18n="form_option_web_design">Diseño Web /
-                                            E-commerce</option>
-                                        <option value="soporte" data-i18n="form_option_support">Contrato de Soporte /
-                                            Mantenimiento</option>
-                                        <option value="reparacion" data-i18n="form_option_repair">Reparación de Equipos
-                                        </option>
-                                        <option value="general" data-i18n="form_option_general">Consulta General</option>
-                                    </select>
-                                </div>
-
-                                <div class="mb-4">
-                                    <label for="form_mensaje" class="form-label small fw-bold"
-                                        data-i18n="form_label_message">
-                                        Su Mensaje / Requerimiento Detallado *
-                                    </label>
-                                    <textarea class="form-control" id="form_mensaje" name="mensaje" rows="4" required
-                                        aria-required="true"></textarea>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary w-100 btn-lg fw-bold"
-                                    data-i18n="form_submit_cta">
-                                    Enviar Mensaje
-                                </button>
-
-                                <p class="text-center small mt-3 text-muted" data-i18n="form_required_note">
-                                    * Campos requeridos
-                                </p>
-
-                            </form>
                         </div>
+
+                        <!-- Contenedor del iFrame de APEX -->
+                        <div class="apex-iframe-container position-relative">
+                            <!-- Loader mientras carga -->
+                            <div class="iframe-loader">
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Cargando formulario...</span>
+                                </div>
+                                <p class="mt-3 text-muted">Cargando formulario...</p>
+                            </div>
+
+                            <!-- iFrame del Formulario APEX - URL REAL DE MEGATEL CRM -->
+                            <iframe 
+                                id="apex-contact-form"
+                                class="apex-iframe"
+                                src="https://oracleapex.com/ords/r/drstest/megatel-crm/leads-form"
+                                title="Formulario de Contacto Megatel"
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                        </div>
+
+                        <!-- Nota de Privacidad -->
+                        <div class="text-center mt-3">
+                            <p class="small text-muted" data-i18n="form_privacy_note">
+                                <i class="fas fa-lock me-1"></i>
+                                Sus datos están protegidos y solo serán utilizados para responder a su consulta.
+                            </p>
+                        </div>
+
+                        <!-- Métodos Alternativos de Contacto -->
+                        <div class="mt-4 p-3 bg-white rounded shadow-sm">
+                            <p class="mb-2 fw-bold text-center" data-i18n="form_alternative_title">
+                                ¿Prefiere otro medio de contacto?
+                            </p>
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <a href="https://wa.me/+573107630363" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-sm btn-outline-success">
+                                    <i class="fab fa-whatsapp me-1"></i>
+                                    <span data-i18n="contact_wa_short">WhatsApp</span>
+                                </a>
+                                <a href="tel:+573107630363" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-phone me-1"></i>
+                                    <span data-i18n="contact_phone_short">Llamar</span>
+                                </a>
+                                <a href="mailto:contacto@megatelsas.com" class="btn btn-sm btn-outline-info">
+                                    <i class="fas fa-envelope me-1"></i>
+                                    <span data-i18n="contact_email_short">Email</span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -350,70 +367,53 @@
     <!-- 5. Script principal - DEBE CARGAR AL FINAL -->
     <script src="js/script.js"></script>
 
-    <!-- Script específico del formulario de contacto -->
+    <!-- Script específico para el iframe de APEX -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Función para pre-seleccionar un servicio basado en el parámetro URL
+            const iframe = document.getElementById('apex-contact-form');
+            const container = document.querySelector('.apex-iframe-container');
+
+            // Ocultar el loader cuando el iframe cargue
+            iframe.addEventListener('load', function () {
+                container.classList.add('iframe-loaded');
+                console.log('✅ Formulario APEX cargado correctamente');
+            });
+
+            // Manejar errores de carga
+            iframe.addEventListener('error', function () {
+                console.error('❌ Error al cargar el formulario APEX');
+                const loader = container.querySelector('.iframe-loader');
+                if (loader) {
+                    loader.innerHTML = `
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Error al cargar el formulario. Por favor, use nuestros canales alternativos de contacto.
+                        </div>
+                    `;
+                }
+            });
+
+            // Ajustar altura del iframe dinámicamente (si APEX envía mensajes)
+            window.addEventListener('message', function (event) {
+                // Solo aceptar mensajes del dominio APEX
+                if (event.origin === 'https://oracleapex.com') {
+                    if (event.data && event.data.height) {
+                        iframe.style.height = event.data.height + 'px';
+                        container.style.minHeight = event.data.height + 'px';
+                        console.log('📏 Altura del iframe ajustada:', event.data.height + 'px');
+                    }
+                }
+            });
+
+            // Pre-seleccionar servicio si viene en la URL
             const urlParams = new URLSearchParams(window.location.search);
             const service = urlParams.get('service');
 
             if (service) {
-                const selectElement = document.getElementById('form_servicio');
-                if (selectElement) {
-                    // Mapear los valores de los servicios a los valores del formulario
-                    const serviceMap = {
-                        'cloud': 'telefonia_ip',
-                        'onpremise': 'telefonia_ip',
-                        'hibrida': 'telefonia_ip',
-                        'telefonos': 'telefonia_ip',
-                        'app_dev': 'desarrollo_app',
-                        'web_design': 'web_design',
-                        'support': 'soporte',
-                        'repair': 'reparacion'
-                    };
-
-                    const mappedService = serviceMap[service] || service;
-
-                    // Iterar sobre las opciones y seleccionar la que coincida
-                    for (let i = 0; i < selectElement.options.length; i++) {
-                        if (selectElement.options[i].value === mappedService) {
-                            selectElement.value = mappedService;
-                            break;
-                        }
-                    }
-                }
+                console.log('🔗 Parámetro de servicio detectado:', service);
+                // Nota: APEX debería manejar esto en su propio formulario
+                // Puedes pasar parámetros añadiéndolos a la URL del iframe si APEX los soporta
             }
-
-            // Función para mostrar un mensaje al enviar el formulario (simulado)
-            const form = document.getElementById('main-contact-form');
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-
-                // Validación básica
-                if (!form.checkValidity()) {
-                    form.classList.add('was-validated');
-                    return;
-                }
-
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const originalText = submitBtn.textContent;
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Enviando...';
-
-                // Simulación de envío (reemplazar con backend real)
-                setTimeout(() => {
-                    alert('¡Mensaje enviado con éxito! Un asesor se pondrá en contacto pronto.');
-                    form.reset();
-                    form.classList.remove('was-validated');
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = originalText;
-
-                    // Re-aplicar traducción después de resetear
-                    if (typeof applyTranslations === 'function') {
-                        applyTranslations();
-                    }
-                }, 1500);
-            });
         });
     </script>
 
