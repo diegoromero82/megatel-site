@@ -4,6 +4,7 @@
  * Contiene el catálogo de textos para la internacionalización (i18n).
  * Se organiza por la clave usada en el atributo data-i18n en el HTML.
  */
+
 const translations = {
     // ===== BARRA DE NAVEGACIÓN (NAVBAR) =====
     "nav_home": {
@@ -119,26 +120,164 @@ const translations = {
         "en": "Back to top"
     },
 
-    // ===== PÁGINA: QUIÉNES SOMOS =====
-    "about_hero_title": {
-        "es": "Nuestra Historia",
-        "en": "Our History"
+    // ===== PÁGINA: QUIÉNES SOMOS - CONTENIDO PRINCIPAL =====
+    "about_main_title": {
+        "es": "Megatel SAS: 30 Años de Trayectoria Tecnológica",
+        "en": "Megatel SAS: 30 Years of Technological Track Record"
     },
-    "about_hero_subtitle": {
-        "es": "Más de 30 años transformando empresas",
-        "en": "Over 30 years transforming businesses"
+    "about_p1": {
+        "es": "Megatel SAS es una empresa colombiana con más de 30 años de experiencia en la venta consultiva y prestación de servicios profesionales en soluciones de telecomunicaciones, seguridad electrónica, conectividad, desarrollo de aplicaciones empresariales y sitios web.",
+        "en": "Megatel SAS is a Colombian company with over 30 years of experience in consultative sales and professional services in telecommunications solutions, electronic security, connectivity, enterprise application development and websites."
     },
-    "about_mission_title": {
+    "about_p2": {
+        "es": "Contamos con personal certificado a nivel comercial y técnico con el fin de ofrecer soluciones que cumplan con las necesidades de nuestros clientes, garantizando siempre la máxima calidad y eficiencia en la ejecución de cada proyecto.",
+        "en": "We have certified commercial and technical staff to offer solutions that meet our clients' needs, always guaranteeing maximum quality and efficiency in the execution of each project."
+    },
+
+    // ===== MISIÓN, VISIÓN Y VALORES =====
+    "mision_vision_title": {
+        "es": "Nuestra Misión, Visión y Valores",
+        "en": "Our Mission, Vision and Values"
+    },
+    "mision_title": {
         "es": "Misión",
         "en": "Mission"
     },
-    "about_vision_title": {
+    "mision_text": {
+        "es": "Establecer relaciones a largo plazo con nuestros clientes brindando soluciones tecnológicas que impacten positivamente sus negocios y operaciones.",
+        "en": "Establish long-term relationships with our clients by providing technological solutions that positively impact their businesses and operations."
+    },
+    "vision_title": {
         "es": "Visión",
         "en": "Vision"
     },
-    "about_values_title": {
+    "vision_text": {
+        "es": "Ser una empresa destacada en el territorio colombiano reconocida como un socio de negocio de valor agregado que permite el crecimiento y la vigencia de las empresas colombianas en el ámbito tecnológico.",
+        "en": "To be a leading company in Colombia recognized as a value-added business partner that enables the growth and relevance of Colombian companies in the technological field."
+    },
+    "valores_title": {
         "es": "Valores",
         "en": "Values"
+    },
+    "valor_responsabilidad": {
+        "es": "Responsabilidad",
+        "en": "Responsibility"
+    },
+    "valor_compromiso": {
+        "es": "Compromiso",
+        "en": "Commitment"
+    },
+    "valor_lealtad": {
+        "es": "Lealtad",
+        "en": "Loyalty"
+    },
+    "valor_respeto": {
+        "es": "Respeto",
+        "en": "Respect"
+    },
+    "valor_cumplimiento": {
+        "es": "Cumplimiento",
+        "en": "Compliance"
+    },
+
+    // ===== ALIADOS ESTRATÉGICOS =====
+    "aliados_title": {
+        "es": "Nuestros Aliados Estratégicos",
+        "en": "Our Strategic Partners"
+    },
+    "aliados_subtitle": {
+        "es": "Trabajamos con los principales fabricantes y proveedores de tecnología para ofrecer las mejores soluciones a nuestros clientes.",
+        "en": "We work with leading manufacturers and technology providers to offer the best solutions to our clients."
+    },
+    
+    // Partner 1: SiteGround
+    "partner1_name": {
+        "es": "SiteGround",
+        "en": "SiteGround"
+    },
+    "partner1_desc": {
+        "es": "Proveedor premium de hosting web y soluciones de alojamiento en la nube con infraestructura optimizada para WordPress y aplicaciones empresariales.",
+        "en": "Premium web hosting provider and cloud hosting solutions with optimized infrastructure for WordPress and enterprise applications."
+    },
+    
+    // Partner 2: Microsoft
+    "partner2_name": {
+        "es": "Microsoft",
+        "en": "Microsoft"
+    },
+    "partner2_desc": {
+        "es": "Partner certificado en soluciones Microsoft 365, Azure Cloud, desarrollo .NET y herramientas de productividad empresarial.",
+        "en": "Certified partner in Microsoft 365 solutions, Azure Cloud, .NET development and enterprise productivity tools."
+    },
+    
+    // Partner 3: Oracle
+    "partner3_name": {
+        "es": "Oracle",
+        "en": "Oracle"
+    },
+    "partner3_desc": {
+        "es": "Aliado en soluciones de bases de datos empresariales, Oracle Cloud Infrastructure y sistemas de gestión empresarial (ERP/CRM).",
+        "en": "Partner in enterprise database solutions, Oracle Cloud Infrastructure and enterprise management systems (ERP/CRM)."
+    },
+    
+    // Partner 4: Yeastar
+    "partner4_name": {
+        "es": "Yeastar",
+        "en": "Yeastar"
+    },
+    "partner4_desc": {
+        "es": "Distribuidor autorizado de sistemas de telefonía IP (PBX), soluciones de comunicaciones unificadas y centralitas virtuales para empresas.",
+        "en": "Authorized distributor of IP telephony systems (PBX), unified communications solutions and virtual switchboards for businesses."
+    },
+    
+    // Partner 5: Yealink
+    "partner5_name": {
+        "es": "Yealink",
+        "en": "Yealink"
+    },
+    "partner5_desc": {
+        "es": "Proveedor certificado de teléfonos IP, dispositivos de videoconferencia y equipos de comunicación empresarial de alta calidad.",
+        "en": "Certified provider of IP phones, video conferencing devices and high-quality enterprise communication equipment."
+    },
+    
+    // Partner 6: Dahua
+    "partner6_name": {
+        "es": "Dahua",
+        "en": "Dahua"
+    },
+    "partner6_desc": {
+        "es": "Distribuidor oficial de sistemas de videovigilancia, cámaras IP, NVR/DVR y soluciones integrales de seguridad electrónica.",
+        "en": "Official distributor of video surveillance systems, IP cameras, NVR/DVR and comprehensive electronic security solutions."
+    },
+    
+    // Partner 7: Jusan
+    "partner7_name": {
+        "es": "Jusan",
+        "en": "Jusan"
+    },
+    "partner7_desc": {
+        "es": "Aliado estratégico en soluciones de control de acceso, sistemas biométricos y tecnología de seguridad perimetral avanzada.",
+        "en": "Strategic partner in access control solutions, biometric systems and advanced perimeter security technology."
+    },
+    
+    // Partner 8: Net2Phone
+    "partner8_name": {
+        "es": "Net2Phone",
+        "en": "Net2Phone"
+    },
+    "partner8_desc": {
+        "es": "Partner certificado en telefonía VoIP en la nube, comunicaciones empresariales UCaaS y soluciones de contact center.",
+        "en": "Certified partner in cloud VoIP telephony, UCaaS enterprise communications and contact center solutions."
+    },
+
+    // ===== CIERRE COMÚN =====
+    "closing_title": {
+        "es": "¿Listo para Convertir su Visión en Realidad?",
+        "en": "Ready to Turn Your Vision into Reality?"
+    },
+    "closing_text": {
+        "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
+        "en": "Talk to our experts and request a no-obligation consultation."
     },
 
     // ===== PÁGINA: PRODUCTOS =====
@@ -163,30 +302,111 @@ const translations = {
         "en": "Electronic Security"
     },
 
-    // ===== PÁGINA: SERVICIOS =====
+    // ===== PÁGINA: SERVICIOS - LANDING PAGE COMPLETA =====
+    // Hero Section
+    "services_tag": {
+        "es": "SOLUCIONES 360°",
+        "en": "360° SOLUTIONS"
+    },
     "services_hero_title": {
-        "es": "Nuestros Servicios",
-        "en": "Our Services"
+        "es": "Portafolio Integral de Servicios Tecnológicos",
+        "en": "Comprehensive Technology Services Portfolio"
     },
     "services_hero_subtitle": {
-        "es": "Soluciones profesionales a su medida",
-        "en": "Professional solutions tailored to you"
+        "es": "Potencie su infraestructura y operaciones con nuestro equipo experto, cubriendo desde el desarrollo de software hasta el mantenimiento de hardware.",
+        "en": "Empower your infrastructure and operations with our expert team, covering everything from software development to hardware maintenance."
     },
-    "services_development_title": {
-        "es": "Desarrollo de Software",
-        "en": "Software Development"
+    "services_hero_cta": {
+        "es": "Conozca Nuestros Servicios",
+        "en": "Discover Our Services"
     },
-    "services_web_title": {
-        "es": "Desarrollo Web",
-        "en": "Web Development"
+
+    // Sección de Detalle de Servicios
+    "services_detail_title": {
+        "es": "Nuestra Oferta de Valor",
+        "en": "Our Value Proposition"
     },
-    "services_support_title": {
-        "es": "Soporte Técnico",
-        "en": "Technical Support"
+
+    // Servicio 1: Desarrollo de Aplicaciones Empresariales
+    "service1_title": {
+        "es": "Desarrollo de Aplicaciones Empresariales",
+        "en": "Enterprise Application Development"
     },
-    "services_consulting_title": {
-        "es": "Consultoría",
-        "en": "Consulting"
+    "service1_text": {
+        "es": "Creamos software a la medida (ERP, CRM, Intranets) para optimizar procesos internos, automatizar tareas y generar ventajas competitivas.",
+        "en": "We create custom software (ERP, CRM, Intranets) to optimize internal processes, automate tasks and generate competitive advantages."
+    },
+
+    // Servicio 2: Diseño de Páginas Web y E-commerce
+    "service2_title": {
+        "es": "Diseño de Páginas Web y E-commerce",
+        "en": "Web Design and E-commerce"
+    },
+    "service2_text": {
+        "es": "Diseño responsive y optimizado para SEO, desde sitios informativos hasta plataformas de comercio electrónico robustas con pasarelas de pago.",
+        "en": "Responsive and SEO-optimized design, from informational sites to robust e-commerce platforms with payment gateways."
+    },
+
+    // Servicio 3: Contrato de Soporte Preventivo y Correctivo
+    "service3_title": {
+        "es": "Contrato de Soporte Preventivo y Correctivo",
+        "en": "Preventive and Corrective Support Contract"
+    },
+    "service3_text": {
+        "es": "Asegure la continuidad de su negocio con asistencia técnica remota y en sitio. Mantenimiento proactivo de redes, servidores y estaciones de trabajo.",
+        "en": "Ensure your business continuity with remote and on-site technical assistance. Proactive maintenance of networks, servers and workstations."
+    },
+
+    // Servicio 4: Reparación y Mantenimiento de Equipos
+    "service4_title": {
+        "es": "Reparación de Equipos y Hardware",
+        "en": "Equipment and Hardware Repair"
+    },
+    "service4_text": {
+        "es": "Diagnóstico y reparación profesional de computadores, laptops, impresoras y hardware de red. Recuperación de datos y reemplazo de componentes.",
+        "en": "Professional diagnosis and repair of computers, laptops, printers and network hardware. Data recovery and component replacement."
+    },
+
+    // CTA de servicios
+    "service_cta": {
+        "es": "Solicitar Cotización",
+        "en": "Request Quote"
+    },
+
+    // Sección de Beneficios
+    "benefits_title": {
+        "es": "¿Por qué Elegir Megatel para sus Servicios?",
+        "en": "Why Choose Megatel for Your Services?"
+    },
+    "benefits_intro": {
+        "es": "Nos dedicamos a ser el socio tecnológico integral que su empresa necesita. Nuestra experiencia garantiza soluciones eficientes y resultados medibles.",
+        "en": "We are dedicated to being the comprehensive technology partner your company needs. Our experience guarantees efficient solutions and measurable results."
+    },
+    "benefits_feat1": {
+        "es": "<strong>Seguridad y Garantía:</strong> Servicios respaldados por profesionales certificados.",
+        "en": "<strong>Security and Warranty:</strong> Services backed by certified professionals."
+    },
+    "benefits_feat2": {
+        "es": "<strong>Tiempo de Respuesta:</strong> Compromiso con SLAs para soporte rápido y efectivo.",
+        "en": "<strong>Response Time:</strong> Commitment to SLAs for fast and effective support."
+    },
+    "benefits_feat3": {
+        "es": "<strong>Optimización de Costos:</strong> Soluciones que reducen gastos operativos a largo plazo.",
+        "en": "<strong>Cost Optimization:</strong> Solutions that reduce long-term operational expenses."
+    },
+
+    // Sección de Cierre
+    "closing_title": {
+        "es": "Transforme su Operación Hoy Mismo",
+        "en": "Transform Your Operation Today"
+    },
+    "closing_text": {
+        "es": "Contáctenos para una evaluación gratuita de sus necesidades tecnológicas.",
+        "en": "Contact us for a free evaluation of your technology needs."
+    },
+    "closing_cta": {
+        "es": "Hablemos de su Proyecto",
+        "en": "Let's Talk About Your Project"
     },
 
     // ===== PÁGINA: CONTACTO =====
@@ -391,121 +611,169 @@ const translations = {
         "en": "Request Demo"
     },
     "common_request_quote": {
-    },
-    "common_request_quote": {
         "es": "Solicitar Cotización",
         "en": "Request Quote"
     },
-
-    // ===== PÁGINA: QUIÉNES SOMOS - CONTENIDO PRINCIPAL =====
-    "about_main_title": {
-        "es": "Megatel SAS: 30 Años de Trayectoria Tecnológica",
-        "en": "Megatel SAS: 30 Years of Technological Track Record"
+    
+    // ===== PÁGINA: PRODUCTOS - TRADUCCIONES ADICIONALES =====
+    "products_page_title": {
+        "es": "Portafolio de Productos Tecnológicos",
+        "en": "Technology Product Portfolio"
     },
-    "about_p1": {
-        "es": "Megatel SAS es una empresa colombiana con más de 30 años de experiencia en la venta consultiva y prestación de servicios profesionales en soluciones de telecomunicaciones, seguridad electrónica, conectividad, desarrollo de aplicaciones empresariales y sitios web.",
-        "en": "Megatel SAS is a Colombian company with over 30 years of experience in consultative sales and professional services in telecommunications solutions, electronic security, connectivity, enterprise application development and websites."
+    "products_page_subtitle": {
+        "es": "Ofrecemos soluciones de hardware y software de fabricantes líderes para potenciar la infraestructura y las comunicaciones de su empresa.",
+        "en": "We offer hardware and software solutions from leading manufacturers to enhance your company's infrastructure and communications."
     },
-    "about_p2": {
-        "es": "Contamos con personal certificado a nivel comercial y técnico con el fin de ofrecer soluciones que cumplan con las necesidades de nuestros clientes, garantizando siempre la máxima calidad y eficiencia en la ejecución de cada proyecto.",
-        "en": "We have certified commercial and technical staff to offer solutions that meet our clients' needs, always guaranteeing maximum quality and efficiency in the execution of each project."
+    "products_page_cta": {
+        "es": "Explorar Categorías <i class=\"fas fa-arrow-down ms-2\"></i>",
+        "en": "Explore Categories <i class=\"fas fa-arrow-down ms-2\"></i>"
     },
-
-    // ===== MISIÓN, VISIÓN Y VALORES =====
-    "mision_vision_title": {
-        "es": "Nuestra Misión, Visión y Valores",
-        "en": "Our Mission, Vision and Values"
+    "catalog_section_title": {
+        "es": "Nuestras Soluciones de Hardware y Software",
+        "en": "Our Hardware and Software Solutions"
     },
-    "mision_title": {
-        "es": "Misión",
-        "en": "Mission"
+    "prod_cat1_title": {
+        "es": "Telefonía y VoIP",
+        "en": "Telephony and VoIP"
     },
-    "mision_text": {
-        "es": "Establecer relaciones a largo plazo con nuestros clientes brindando soluciones tecnológicas que impacten positivamente sus negocios y operaciones.",
-        "en": "Establish long-term relationships with our clients by providing technological solutions that positively impact their businesses and operations."
+    "prod_cat1_desc": {
+        "es": "Sistemas PBX, teléfonos IP y soluciones de comunicación unificada.",
+        "en": "PBX systems, IP phones and unified communication solutions."
     },
-    "vision_title": {
-        "es": "Visión",
-        "en": "Vision"
+    "prod_cat2_title": {
+        "es": "Seguridad Electrónica",
+        "en": "Electronic Security"
     },
-    "vision_text": {
-        "es": "Ser una empresa destacada en el territorio colombiano reconocida como un socio de negocio de valor agregado que permite el crecimiento y la vigencia de las empresas colombianas en el ámbito tecnológico.",
-        "en": "To be a leading company in Colombia recognized as a value-added business partner that enables the growth and relevance of Colombian companies in the technological field."
+    "prod_cat2_desc": {
+        "es": "Cámaras IP, control de acceso y sistemas de videovigilancia avanzados.",
+        "en": "IP cameras, access control and advanced video surveillance systems."
     },
-    "valores_title": {
-        "es": "Valores",
-        "en": "Values"
+    "prod_cat3_title": {
+        "es": "Conectividad y Redes",
+        "en": "Connectivity and Networks"
     },
-    "valor_responsabilidad": {
-        "es": "Responsabilidad",
-        "en": "Responsibility"
+    "prod_cat3_desc": {
+        "es": "Switches, routers, fibra óptica y soluciones Wi-Fi de alto rendimiento.",
+        "en": "Switches, routers, fiber optics and high-performance Wi-Fi solutions."
     },
-    "valor_compromiso": {
-        "es": "Compromiso",
-        "en": "Commitment"
+    "prod_cat4_title": {
+        "es": "Protección (UPS)",
+        "en": "Power Protection (UPS)"
     },
-    "valor_lealtad": {
-        "es": "Lealtad",
-        "en": "Loyalty"
+    "prod_cat4_desc": {
+        "es": "Sistemas de alimentación ininterrumpida para proteger su inversión.",
+        "en": "Uninterruptible power supply systems to protect your investment."
     },
-    "valor_respeto": {
-        "es": "Respeto",
-        "en": "Respect"
+    "prod_cat5_title": {
+        "es": "Accesorios y Periféricos",
+        "en": "Accessories and Peripherals"
     },
-    "valor_cumplimiento": {
-        "es": "Cumplimiento",
-        "en": "Compliance"
+    "prod_cat5_desc": {
+        "es": "Diademas, micrófonos y accesorios para call centers y oficinas.",
+        "en": "Headsets, microphones and accessories for call centers and offices."
     },
-
-    // ===== ALIADOS ESTRATÉGICOS =====
-    "aliados_title": {
-        "es": "Nuestros Aliados Estratégicos",
-        "en": "Our Strategic Partners"
+    "prod_cat6_title": {
+        "es": "Videoconferencia",
+        "en": "Video Conferencing"
     },
-    "aliados_subtitle": {
-        "es": "Trabajamos con los principales fabricantes y proveedores de tecnología para ofrecer las mejores soluciones a nuestros clientes.",
-        "en": "We work with leading manufacturers and technology providers to offer the best solutions to our clients."
+    "prod_cat6_desc": {
+        "es": "Sistemas de colaboración visual para salas de juntas y oficinas.",
+        "en": "Visual collaboration systems for meeting rooms and offices."
     },
-    "partner1_name": {
-        "es": "Fabricante A (Software)",
-        "en": "Manufacturer A (Software)"
+    "tab_telephony": {
+        "es": "Telefonía",
+        "en": "Telephony"
     },
-    "partner1_desc": {
-        "es": "Partner Certificado y distribuidor exclusivo de soluciones de gestión empresarial.",
-        "en": "Certified Partner and exclusive distributor of business management solutions."
+    "tab_security": {
+        "es": "Seguridad",
+        "en": "Security"
     },
-    "partner2_name": {
-        "es": "Fabricante B (Telecom)",
-        "en": "Manufacturer B (Telecom)"
+    "tab_connectivity": {
+        "es": "Conectividad",
+        "en": "Connectivity"
     },
-    "partner2_desc": {
-        "es": "Representantes oficiales de equipos de conectividad y redes de alta velocidad.",
-        "en": "Official representatives of high-speed connectivity and networking equipment."
+    "tab_more_products": {
+        "es": "Más Productos",
+        "en": "More Products"
     },
-    "partner3_name": {
-        "es": "Fabricante C (Seguridad)",
-        "en": "Manufacturer C (Security)"
+    "detail1_title": {
+        "es": "Comunicaciones Unificadas Modernas",
+        "en": "Modern Unified Communications"
     },
-    "partner3_desc": {
-        "es": "Distribuidores autorizados de soluciones de seguridad electrónica y vigilancia IP.",
-        "en": "Authorized distributors of electronic security and IP surveillance solutions."
+    "detail1_p1": {
+        "es": "Sistemas de telefonía IP que ofrecen flexibilidad, reducción de costos y funciones avanzadas como IVR, grabación de llamadas y movilidad.",
+        "en": "IP telephony systems offering flexibility, cost reduction and advanced features such as IVR, call recording and mobility."
     },
-    "partner4_name": {
-        "es": "Fabricante D (Cloud/Dev)",
-        "en": "Manufacturer D (Cloud/Dev)"
+    "detail1_item1": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Teléfonos IP de escritorio y DECT.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Desktop and DECT IP phones."
     },
-    "partner4_desc": {
-        "es": "Consultores expertos en plataformas de computación en la nube para desarrollo de apps.",
-        "en": "Expert consultants in cloud computing platforms for app development."
+    "detail1_item2": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Centralitas Virtuales y Hardware (PBX).",
+        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Virtual and Hardware Switchboards (PBX)."
     },
-
-    // ===== CIERRE COMÚN =====
-    "closing_title": {
-        "es": "¿Listo para Convertir su Visión en Realidad?",
-        "en": "Ready to Turn Your Vision into Reality?"
+    "detail1_item3": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Gateways y troncales SIP.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Gateways and SIP trunks."
     },
-    "closing_text": {
-        "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
-        "en": "Talk to our experts and request a no-obligation consultation."
+    "detail2_title": {
+        "es": "Protección Inteligente para su Empresa",
+        "en": "Intelligent Protection for Your Business"
+    },
+    "detail2_p1": {
+        "es": "Soluciones de seguridad electrónica para prevenir riesgos y controlar el acceso a sus instalaciones.",
+        "en": "Electronic security solutions to prevent risks and control access to your facilities."
+    },
+    "detail2_item1": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Cámaras de vigilancia IP de alta resolución (CCTV).",
+        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>High-resolution IP surveillance cameras (CCTV)."
+    },
+    "detail2_item2": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Sistemas de alarma y detección de intrusos.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Alarm and intrusion detection systems."
+    },
+    "detail2_item3": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Lectores biométricos y control de acceso.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Biometric readers and access control."
+    },
+    "detail3_title": {
+        "es": "Infraestructura de Red Robusta",
+        "en": "Robust Network Infrastructure"
+    },
+    "detail3_p1": {
+        "es": "Implementación de redes cableadas e inalámbricas optimizadas para el tráfico de datos, voz y video.",
+        "en": "Implementation of wired and wireless networks optimized for data, voice and video traffic."
+    },
+    "detail3_item1": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Switches gestionables y no gestionables.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Managed and unmanaged switches."
+    },
+    "detail3_item2": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Routers empresariales y firewalls.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Enterprise routers and firewalls."
+    },
+    "detail3_item3": {
+        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Cableado estructurado UTP y fibra óptica.",
+        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Structured UTP cabling and fiber optics."
+    },
+    "detail4_title": {
+        "es": "Complementos Esenciales",
+        "en": "Essential Complements"
+    },
+    "detail4_p1": {
+        "es": "Artículos complementarios que aseguran la continuidad de su operación y optimizan la colaboración.",
+        "en": "Complementary items that ensure business continuity and optimize collaboration."
+    },
+    "detail4_p_ups": {
+        "es": "Soluciones monofásicas y trifásicas para garantizar energía limpia e ininterrumpida.",
+        "en": "Single-phase and three-phase solutions to guarantee clean and uninterrupted power."
+    },
+    "detail4_p_acc": {
+        "es": "Diademas ergonómicas y dispositivos de entrada para call centers y oficinas.",
+        "en": "Ergonomic headsets and input devices for call centers and offices."
+    },
+    "detail4_p_vid": {
+        "es": "Equipos para salas de juntas, desde cámaras PTZ hasta barras de colaboración.",
+        "en": "Equipment for meeting rooms, from PTZ cameras to collaboration bars."
     }
 };

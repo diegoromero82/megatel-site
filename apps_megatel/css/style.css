@@ -1,9 +1,142 @@
-/* ========================================
-   MEGATEL SAS - ESTILOS PRINCIPALES
-   Optimizado para todas las páginas
-   ======================================== */
+/* ================================================================================
+   MEGATEL SAS - SISTEMA DE ESTILOS
+   Archivo CSS organizado por secciones globales y específicas por página
+   Última actualización: Diciembre 2024
+   ================================================================================ */
 
-/* ===== RESET Y CONFIGURACIÓN GENERAL ===== */
+/* ================================================================================
+   TABLA DE CONTENIDOS
+   ================================================================================
+   
+   1. ESTILOS GLOBALES (Líneas 20-400)
+      1.1 Reset y Configuración Base
+      1.2 Navbar (Header)
+      1.3 Botones Flotantes (WhatsApp, Back to Top)
+      1.4 Footer
+      1.5 Tipografía
+      1.6 Botones Globales
+      1.7 Cards Generales
+      1.8 Backgrounds y Overlays
+      1.9 Animaciones
+      1.10 Scroll Bar Personalizada
+      1.11 Utilidades
+      1.12 Accesibilidad
+      1.13 Media Queries Globales
+   
+   2. INDEX.HTML - Página Principal (Líneas 400-600)
+      2.1 Contenedor Full-Screen
+      2.2 Secciones con Scroll Snap
+      2.3 Hero Section
+      2.4 Confidence Section
+      2.5 Products Section
+      2.6 Services Section
+      2.7 Contact Section
+   
+   3. PRODUCTOS.HTML - Catálogo de Productos (Líneas 600-750)
+      3.1 Hero de Productos
+      3.2 Tarjetas de Productos
+      3.3 Sistema de Tabs
+      3.4 Botón Scroll Down
+      3.5 Contact CTA
+   
+   4. SERVICIOS.HTML - Catálogo de Servicios (Líneas 750-900)
+      4.1 Hero de Servicios
+      4.2 Tarjetas de Servicios
+      4.3 Iconos de Servicios
+      4.4 Sección de Beneficios
+   
+   5. CONTACTO.HTML - Formulario de Contacto (Líneas 900-1050)
+      5.1 Hero de Contacto
+      5.2 Tarjetas de Información
+      5.3 Formulario de Contacto
+      5.4 Validación de Formulario
+   
+   6. QUIENES-SOMOS.HTML - Página Institucional (Líneas 1050-1300)
+      6.1 Secciones de Contenido
+      6.2 Aliados Estratégicos ⭐ ACTUALIZADO
+      6.3 Timeline
+   
+   7. RESPONSIVE DESIGN (Líneas 1300-1500)
+      7.1 Desktop (>= 1200px)
+      7.2 Tablet (768px - 1199px)
+      7.3 Mobile (< 768px)
+   
+   8. PRINT STYLES (Líneas 1500-1550)
+   
+   ================================================================================ */
+/* ================================================================================
+   MEGATEL SAS - SISTEMA DE ESTILOS
+   Archivo CSS organizado por secciones globales y específicas por página
+   Última actualización: Diciembre 2024
+   ================================================================================ */
+
+/* ================================================================================
+   TABLA DE CONTENIDOS
+   ================================================================================
+   
+   1. ESTILOS GLOBALES (Líneas 20-400)
+      1.1 Reset y Configuración Base
+      1.2 Navbar (Header)
+      1.3 Botones Flotantes (WhatsApp, Back to Top)
+      1.4 Footer
+      1.5 Tipografía
+      1.6 Botones Globales
+      1.7 Cards Generales
+      1.8 Backgrounds y Overlays
+      1.9 Animaciones
+      1.10 Scroll Bar Personalizada
+      1.11 Utilidades
+      1.12 Accesibilidad
+      1.13 Media Queries Globales
+   
+   2. INDEX.HTML - Página Principal (Líneas 400-600)
+      2.1 Contenedor Full-Screen
+      2.2 Secciones con Scroll Snap
+      2.3 Hero Section
+      2.4 Confidence Section
+      2.5 Products Section
+      2.6 Services Section
+      2.7 Contact Section
+   
+   3. PRODUCTOS.HTML - Catálogo de Productos (Líneas 600-750)
+      3.1 Hero de Productos
+      3.2 Tarjetas de Productos
+      3.3 Sistema de Tabs
+      3.4 Botón Scroll Down
+      3.5 Contact CTA
+   
+   4. SERVICIOS.HTML - Catálogo de Servicios (Líneas 750-900)
+      4.1 Hero de Servicios
+      4.2 Tarjetas de Servicios
+      4.3 Iconos de Servicios
+      4.4 Sección de Beneficios
+   
+   5. CONTACTO.HTML - Formulario de Contacto (Líneas 900-1050)
+      5.1 Hero de Contacto
+      5.2 Tarjetas de Información
+      5.3 Formulario de Contacto
+      5.4 Validación de Formulario
+   
+   6. QUIENES-SOMOS.HTML - Página Institucional (Líneas 1050-1200)
+      6.1 Secciones de Contenido
+      6.2 Aliados Estratégicos
+      6.3 Timeline
+   
+   7. RESPONSIVE DESIGN (Líneas 1200-1400)
+      7.1 Desktop (>= 1200px)
+      7.2 Tablet (768px - 1199px)
+      7.3 Mobile (< 768px)
+   
+   8. PRINT STYLES (Líneas 1400-1450)
+   
+   ================================================================================ */
+
+
+/* ================================================================================
+   1. ESTILOS GLOBALES
+   ================================================================================ */
+
+/* ===== 1.1 RESET Y CONFIGURACIÓN BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +148,7 @@ html {
     overflow-x: hidden;
 }
 
-/* SCROLL SNAP SOLO PARA INDEX.HTML */
+/* Scroll snap SOLO para index.html */
 html.index-page {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -25,12 +158,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 56px; /* Altura del navbar fijo */
+    padding-top: 56px; /* Compensar navbar fijo */
+    color: #333;
+    background-color: #fff;
 }
 
-/* ===== NAVBAR - COLOR CORPORATIVO MEGATEL ===== */
+/* ===== 1.2 NAVBAR (HEADER) ===== */
 .navbar-dark.bg-dark {
-    background-color: #0274be !important; 
+    background-color: #0274be !important; /* Azul corporativo Megatel */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -41,16 +176,29 @@ body {
     font-size: 1.5rem;
 }
 
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
 .navbar-nav .nav-link {
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffc107 !important;
+    color: #ffc107 !important; /* Amarillo en hover */
 }
 
-/* Estilo para los iconos de bandera en el botón de idioma */
+.navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+    font-weight: 600;
+}
+
+/* Botón de idioma */
 .flag-icon {
     margin-right: 5px; 
     font-size: 1.1em;
@@ -62,7 +210,7 @@ body {
     gap: 0.5rem;
 }
 
-/* ===== BOTONES FLOTANTES ===== */
+/* ===== 1.3 BOTONES FLOTANTES ===== */
 .floating-btn {
     position: fixed;
     width: 60px;
@@ -75,10 +223,12 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .floating-btn:hover {
     transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
 .floating-btn i {
@@ -110,7 +260,281 @@ body {
     visibility: visible;
 }
 
-/* ===== CONTENEDOR PRINCIPAL PARA INDEX.HTML ===== */
+/* ===== 1.4 FOOTER ===== */
+footer {
+    background-color: #0274be;
+    color: white;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* ===== 1.5 TIPOGRAFÍA ===== */
+h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #D12F17;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #0274be;
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #0274be;
+}*/
+
+.display-1, .display-2, .display-3, .display-4 {
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+/* ===== 1.6 BOTONES GLOBALES ===== */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: #0274be;
+    border-color: #0274be;
+}
+
+.btn-primary:hover {
+    background-color: #025a9a;
+    border-color: #025a9a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(2, 116, 190, 0.3);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-2px);
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+/* ===== 1.7 CARDS GENERALES ===== */
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* ===== 1.8 BACKGROUNDS Y OVERLAYS ===== */
+.bg-primary {
+    background-color: #0274be !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-gradient-gray {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Overlay general para imágenes de fondo */
+.section-with-overlay {
+    position: relative;
+}
+
+.section-with-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.section-with-overlay > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== 1.9 ANIMACIONES ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+/* ===== 1.10 SCROLL BAR PERSONALIZADA ===== */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0274be;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #025a9a;
+}
+
+/* ===== 1.11 UTILIDADES ===== */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.shadow-custom {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.rounded-custom {
+    border-radius: 0.75rem;
+}
+
+/* ===== 1.12 ACCESIBILIDAD ===== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0274be;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* Focus visible para navegación por teclado */
+*:focus-visible {
+    outline: 2px solid #0274be;
+    outline-offset: 2px;
+}
+
+
+/* ================================================================================
+   2. INDEX.HTML - PÁGINA PRINCIPAL
+   ================================================================================ */
+
+/* ===== 2.1 CONTENEDOR FULL-SCREEN ===== */
 .page-container {
     width: 100%;
     height: 100vh;
@@ -120,14 +544,13 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-/* ===== SECCIONES FULL SCREEN (MEJORADAS) ===== */
+/* ===== 2.2 SECCIONES CON SCROLL SNAP ===== */
 .full-screen-section {
     width: 100%;
-    /* Altura exacta = 100vh - altura del navbar */
     height: calc(100vh - 56px);
     min-height: calc(100vh - 56px);
     
-    /* Scroll snap para alineación perfecta */
+    /* Scroll snap */
     scroll-snap-align: start;
     scroll-snap-stop: always;
     
@@ -142,12 +565,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     
-    /* Para evitar desbordamiento */
     overflow: hidden;
     position: relative;
 }
 
-/* Capa de overlay para mejorar legibilidad */
+/* Overlay para mejorar legibilidad */
 .full-screen-section::before {
     content: '';
     position: absolute;
@@ -164,9 +586,7 @@ body {
     z-index: 2;
 }
 
-/* ===== FONDOS PARA INDEX.HTML ===== */
-
-/* 1. Hero - Página Principal */
+/* ===== 2.3 HERO SECTION ===== */
 .section-hero {
     background-image: url('../images/innovation-megatel.png');
     background-position: center right;
@@ -176,7 +596,7 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
 }
 
-/* 2. Confidence - Quiénes Somos */
+/* ===== 2.4 CONFIDENCE SECTION ===== */
 .section-confidence {
     background-image: url('../images/teamwork-megatel.png');
 }
@@ -185,7 +605,7 @@ body {
     background: rgba(0, 0, 0, 0.4);
 }
 
-/* 3. Products - Productos */
+/* ===== 2.5 PRODUCTS SECTION ===== */
 .section-products {
     background-image: url('../images/service-megatel.png');
 }
@@ -194,166 +614,326 @@ body {
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* 4. Services - Servicios */
+/* ===== 2.6 SERVICES SECTION ===== */
 .section-services {
     background-image: url('../images/desarrollador-megatel.png');
 }
 
 .section-services::before {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
 }
 
-/* 5. Closing - Contacto */
+/* ===== 2.7 CONTACT SECTION ===== */
 .section-closing {
     background-image: url('../images/contacto-megatel.png');
 }
 
-.section-closing::before {
-    background: rgba(0, 0, 0, 0.6);
+.section-contact::before {
+    background: rgba(0, 0, 0, 0.5);
 }
 
-/* ===== ESTILOS DE CONTENIDO ===== */
-.full-screen-section h1,
-.full-screen-section h2 {
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+
+/* ================================================================================
+   3. PRODUCTOS.HTML - CATÁLOGO DE PRODUCTOS
+   ================================================================================ */
+
+/* ===== 3.1 HERO DE PRODUCTOS ===== */
+#products-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.full-screen-section p {
-    font-size: 1.1rem;
+#products-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#products-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== 3.2 TARJETAS DE PRODUCTOS ===== */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15) !important;
+}
+
+.product-card:focus {
+    outline: 2px solid #0274be;
+    outline-offset: 2px;
+}
+
+.product-icon {
+    font-size: 3rem;
+    color: #0274be;
     margin-bottom: 1rem;
 }
 
-/* Cajas de contenido con fondos semitransparentes */
-.bg-opacity-75 {
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+/* ===== 3.3 SISTEMA DE TABS ===== */
+.nav-pills .nav-link {
+    border-radius: 0.5rem;
+    margin: 0 0.25rem;
+    transition: all 0.3s ease;
+    color: #0274be;
+    background-color: transparent;
+    border: 2px solid #0274be;
 }
 
-/* ===== BOTONES GLOBALES ===== */
-.btn {
-    padding: 12px 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-radius: 5px;
+.nav-pills .nav-link:hover {
+    background-color: rgba(2, 116, 190, 0.1);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0274be;
+    color: white;
+    border-color: #0274be;
+}
+
+/* ===== 3.4 BOTÓN SCROLL DOWN ===== */
+.scroll-down-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    transform: translateY(5px);
+}
+
+/* ===== 3.5 CONTACT CTA ===== */
+#contact-cta {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contact-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#contact-cta > .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ================================================================================
+   4. SERVICIOS.HTML - CATÁLOGO DE SERVICIOS
+   ================================================================================ */
+
+/* ===== 4.1 HERO DE SERVICIOS ===== */
+#services-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ===== 4.2 TARJETAS DE SERVICIOS ===== */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .15) !important;
+}
+
+/* ===== 4.3 ICONOS DE SERVICIOS ===== */
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.service-card-dev .service-icon {
+    color: #dc3545; /* Rojo */
+}
+
+.service-card-web .service-icon {
+    color: #ffc107; /* Amarillo */
+}
+
+.service-card-support .service-icon {
+    color: #0274be; /* Azul */
+}
+
+.service-card-repair .service-icon {
+    color: #28a745; /* Verde */
+}
+
+/* Botones de las tarjetas */
+.service-card .btn {
     transition: all 0.3s ease;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.service-card .btn:hover {
+    transform: translateX(5px);
 }
 
-.btn-primary {
-    background-color: #0274be;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #025a96;
-}
-
-.btn-secondary {
-    background-color: #6c757d;
-    border: none;
-}
-
-.btn-secondary:hover {
-    background-color: #545b62;
-}
-
-.btn-warning {
-    background-color: #ffc107;
-    border: none;
-    color: #212529;
-}
-
-.btn-warning:hover {
-    background-color: #e0a800;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background-color: #0274be !important;
-    padding: 1rem 0;
-    position: relative;
-    z-index: 10;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* ========================================
-   ESTILOS ESPECÍFICOS PARA LANDING PAGES
-   ======================================== */
-
-/* ===== TELEFONÍA IP ===== */
-.section-ip-hero {
-    background-image: url('../images/telefonia-megatel.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: calc(100vh - 56px);
-    display: flex;
-    align-items: center;
-}
-
-.solution-card {
-    border: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 0.75rem;
-}
-
-.solution-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.solution-card-cloud {
-    border-bottom: 5px solid #F90101; 
-}
-
-.solution-card-onpremise {
-    border-bottom: 5px solid #28a745; 
-}
-
-.device-icon {
-    font-size: 2.5rem;
-    color: #0274be;
-}
-
-.bg-gradient-blue {
-    background: linear-gradient(90deg, #0274be 0%, #025a96 100%);
-}
-
-/* ===== VIDEOCONFERENCIA ===== */
-.section-videoconf-hero {
-    background-image: url('../images/videoconference-megatel.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: calc(100vh - 56px);
-    display: flex;
-    align-items: center;
-}
-
-.feature-icon {
-    font-size: 3rem;
-    color: #0274be;
-}
-
-.cta-form-section {
+/* ===== 4.4 SECCIÓN DE BENEFICIOS ===== */
+.benefits-section {
     background-color: #f8f9fa;
 }
 
-.form-card {
-    border: none;
-    border-top: 5px solid #dc3545;
+.benefit-item {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
-/* ===== SERVICIOS ===== */
+.benefit-item:hover {
+    transform: translateX(10px);
+}
+
+
+/* ================================================================================
+   5. CONTACTO.HTML - FORMULARIO DE CONTACTO
+   ================================================================================ */
+
+/* ===== 5.1 HERO DE CONTACTO ===== */
+#contact-hero {
+    position: relative;
+    background-image: url('../images/contacto-megatel.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Overlay oscuro para mejorar legibilidad (igual que productos y servicios) */
+#contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Contenido sobre el overlay */
+#contact-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== 5.2 TARJETAS DE INFORMACIÓN DE CONTACTO ===== */
+.contact-info-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 0.75rem;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, .15) !important;
+}
+
+/* Iconos de contacto */
+.contact-icon-bg {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ===== 5.3 FORMULARIO DE CONTACTO ===== */
+.form-section {
+    background: white;
+    border-radius: 1rem;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0274be;
+    box-shadow: 0 0 0 0.2rem rgba(2, 116, 190, 0.25);
+}
+
+/* Labels del formulario */
+.form-label {
+    color: #495057;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* ===== 5.4 VALIDACIÓN DE FORMULARIO ===== */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+    border-color: #28a745;
+}
+
+/* Botón de envío */
+#main-contact-form button[type="submit"] {
+    transition: all 0.3s ease;
+}
+
+#main-contact-form button[type="submit"]:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(2, 116, 190, 0.3);
+}
+
+#main-contact-form button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ================================================================================
+   6. QUIENES-SOMOS.HTML - PÁGINA INSTITUCIONAL
+   ================================================================================ */
+
+/* ===== 6.1 SECCIONES DE CONTENIDO ===== */
 .section-services-hero {
     background-image: url('../images/desarrollador-megatel.png');
     background-size: cover;
@@ -364,126 +944,170 @@ footer p {
     align-items: center;
 }
 
-.service-card {
-    border: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 0.75rem;
-    padding: 20px;
-    text-align: center;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.service-icon {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-}
-
-.service-card-dev .service-icon { 
-    color: #dc3545; /* Rojo */
-}
-
-.service-card-web .service-icon { 
-    color: #ffc107; /* Amarillo */
-}
-
-.service-card-support .service-icon { 
-    color: #0274be; /* Azul Megatel */
-}
-
-.service-card-repair .service-icon { 
-    color: #20c997; /* Turquesa */
-}
-
-.bg-gradient-gray {
-    background: #f8f9fa;
-}
-
-/* ===== CONTACTO ===== */
 .section-contact-hero {
     background-image: url('../images/contacto-megatel.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     min-height: calc(100vh - 56px);
     display: flex;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
 }
 
-.contact-info-card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 0.75rem;
-    height: 100%;
-}
 
-.contact-info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-icon-bg {
-    font-size: 2rem;
-    padding: 15px;
-    border-radius: 50%;
-    background-color: #0274be;
-    color: white;
-}
-
-.form-section {
+/* ===== 6.2 ALIADOS ESTRATÉGICOS - ⭐ ACTUALIZADO ===== */
+.partners-section {
     background-color: #f8f9fa;
-    border-radius: 0.75rem;
+    padding: 4rem 0;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* Contenedor de imagen del partner - CON RESTRICCIONES */
+.partner-logo-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    overflow: hidden; /* CRÍTICO: Evita que la imagen se salga */
+    margin-bottom: 1rem;
+}
 
-/* Tablets y pantallas medianas */
-@media (max-width: 992px) {
+/* Logo del partner - RESTRICCIONES DE TAMAÑO */
+.partner-logo {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Mantiene proporción */
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(20%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Tarjeta de partner */
+.partner-card {
+    height: 100%;
+    border: none;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* CRÍTICO: Evita desbordamiento */
+    background-color: #fff;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Efecto hover en imagen */
+.partner-card:hover .partner-logo {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* Cuerpo de la tarjeta */
+.partner-card .card-body {
+    padding: 1rem;
+}
+
+/* Título del partner */
+.partner-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+/* Descripción del partner */
+.partner-card .card-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* ===== 6.3 TIMELINE (SI EXISTE) ===== */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #0274be;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+
+/* ================================================================================
+   7. RESPONSIVE DESIGN
+   ================================================================================ */
+
+/* ===== 7.1 DESKTOP (>= 1200px) ===== */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    h1, .display-4 {
+        font-size: 3rem;
+    }
+}
+
+/* ===== 7.2 TABLET (768px - 1199px) ===== */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    h1, .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .product-card,
+    .service-card,
+    .contact-info-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ===== 7.3 MOBILE (< 768px) ===== */
+@media (max-width: 767px) {
     body {
         padding-top: 56px;
     }
     
-    .full-screen-section {
-        min-height: calc(100vh - 56px);
-        height: auto;
+    .navbar-brand {
+        font-size: 1.1rem;
     }
     
-    .floating-btn {
-        width: 55px;
-        height: 55px;
+    .navbar-brand img {
+        height: 32px !important;
     }
     
-    .floating-btn i {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 768px) {
-    .full-screen-section {
-        min-height: calc(100vh - 56px);
-        height: auto;
-    }
-    
-    .full-screen-section h1 {
+    h1, .display-4 {
         font-size: 2rem;
     }
     
-    .full-screen-section h2 {
-        font-size: 1.75rem;
-    }
-    
-    .full-screen-section p {
+    .lead {
         font-size: 1rem;
     }
     
     .btn {
-        padding: 10px 20px;
+        padding: 0.5rem 1.5rem;
         font-size: 0.9rem;
     }
     
+    /* Botones flotantes en móvil */
     .floating-btn {
         width: 50px;
         height: 50px;
@@ -503,18 +1127,29 @@ footer p {
         right: 20px;
     }
     
-    /* Ajustar padding en contenedores */
-    .bg-opacity-75 {
-        padding: 2rem !important;
+    /* Full screen sections en móvil */
+    .full-screen-section {
+        min-height: auto;
+        padding: 3rem 0;
     }
     
-    /* Landing pages también se adaptan */
-    .section-ip-hero,
-    .section-videoconf-hero,
     .section-services-hero,
     .section-contact-hero {
         padding-top: 80px;
         padding-bottom: 40px;
+    }
+    
+    /* Tarjetas en móvil */
+    .product-card,
+    .service-card,
+    .contact-info-card,
+    .partner-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Formulario en móvil */
+    .form-section {
+        padding: 2rem 1rem;
     }
 }
 
@@ -524,196 +1159,87 @@ footer p {
         font-size: 1.75rem;
     }
     
-    .full-screen-section h2 {
-        font-size: 1.5rem;
-    }
-    
     .full-screen-section p {
         font-size: 0.95rem;
     }
-    
-    .btn-lg {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-    
-    .floating-btn {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .floating-btn i {
-        font-size: 18px;
-    }
-    
-    .bg-opacity-75 {
-        padding: 1.5rem !important;
-    }
-    
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-    
-    /* Iconos más pequeños en móvil */
-    .service-icon,
-    .feature-icon {
-        font-size: 2.5rem;
-    }
-    
-    .device-icon {
-        font-size: 2rem;
-    }
 }
 
-/* ===== ANIMACIONES ===== */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.full-screen-section .container > .row {
-    animation: fadeIn 0.8s ease-out;
-}
+/* ================================================================================
+   8. PRINT STYLES
+   ================================================================================ */
 
-/* Animación para cards al hacer hover */
-@keyframes cardPulse {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
-/* ===== MEJORAS DE ACCESIBILIDAD ===== */
-.btn:focus,
-.floating-btn:focus {
-    outline: 3px solid #ffc107;
-    outline-offset: 2px;
-}
-
-a:focus {
-    outline: 2px solid #0274be;
-    outline-offset: 2px;
-}
-
-/* ===== SCROLL BAR PERSONALIZADA ===== */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #0274be;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #025a96;
-}
-
-/* ===== UTILIDADES ADICIONALES ===== */
-
-/* Sombras personalizadas */
-.shadow-megatel {
-    box-shadow: 0 4px 6px rgba(2, 116, 190, 0.1);
-}
-
-.shadow-megatel-lg {
-    box-shadow: 0 10px 20px rgba(2, 116, 190, 0.15);
-}
-
-/* Gradientes corporativos */
-.bg-gradient-megatel {
-    background: linear-gradient(135deg, #0274be 0%, #025a96 100%);
-}
-
-/* Texto con color corporativo */
-.text-megatel {
-    color: #0274be;
-}
-
-/* Border con color corporativo */
-.border-megatel {
-    border-color: #0274be !important;
-}
-
-/* ===== PRINT STYLES ===== */
 @media print {
+    /* Ocultar elementos no necesarios en impresión */
     .navbar,
     .floating-btn,
+    .btn,
     footer {
-        display: none;
+        display: none !important;
     }
     
+    /* Ajustar body */
     body {
         padding-top: 0;
     }
     
-    .full-screen-section {
-        height: auto;
+    /* Evitar saltos de página en elementos */
+    .card,
+    .product-card,
+    .service-card,
+    .partner-card {
         page-break-inside: avoid;
     }
+    
+    /* Asegurar que los links muestren la URL */
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
 }
 
-/* ===== SOPORTE PARA MODO OSCURO (OPCIONAL) ===== */
-@media (prefers-color-scheme: dark) {
-    /* Si en el futuro quieres agregar soporte para modo oscuro,
-       puedes descomentar y personalizar estas reglas */
-    /*
-    body {
-        background-color: #1a1a1a;
-        color: #f0f0f0;
+
+/* ================================================================================
+   FIN DEL ARCHIVO CSS
+   ================================================================================ */
+/* ===== RESPONSIVE ADICIONAL PARA PARTNERS ===== */
+@media (max-width: 992px) {
+    .partner-logo-container {
+        height: 80px;
+        padding: 10px;
     }
     
-    .navbar-dark.bg-dark {
-        background-color: #000 !important;
+    .partner-logo {
+        max-height: 60px;
     }
-    */
-}
-/* ===== ESTILOS ADICIONALES PARA QUIÉNES SOMOS ===== */
-
-/* Efecto hover para cards */
-.hover-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+    
+    .partner-card .card-title {
+        font-size: 1rem;
+    }
+    
+    .partner-card .card-text {
+        font-size: 0.8rem;
+    }
 }
 
-/* Animación suave para iconos */
-.hover-card i {
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.hover-card:hover i {
-    transform: scale(1.1);
-}
-
-/* Mejora de legibilidad en listas de valores */
-.hover-card ul li {
-    font-size: 1.05rem;
-    line-height: 2;
-}
-
-/* Estilo para imágenes de aliados */
-.hover-card img {
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: grayscale(30%);
-}
-
-.hover-card:hover img {
-    transform: scale(1.05);
-    filter: grayscale(0%);
+@media (max-width: 576px) {
+    .partner-logo-container {
+        height: 70px;
+        padding: 8px;
+    }
+    
+    .partner-logo {
+        max-height: 50px;
+    }
+    
+    .partner-card .card-body {
+        padding: 0.75rem;
+    }
+    
+    .partner-card .card-title {
+        font-size: 0.95rem;
+    }
+    
+    .partner-card .card-text {
+        font-size: 0.75rem;
+    }
 }

@@ -80,18 +80,18 @@ const PAGE_META = {
     },
     'servicios.html': {
         es: {
-            title: 'Servicios | Megatel SAS - Desarrollo y Consultoría TI',
-            description: 'Servicios profesionales de desarrollo de software, aplicaciones empresariales, sitios web, metodologías ágiles y soporte técnico especializado.',
-            keywords: 'desarrollo software Colombia, aplicaciones empresariales, desarrollo web, metodologías ágiles, consultoría TI, soporte técnico',
+            title: 'Servicios Tecnológicos Empresariales | Desarrollo, Soporte y Mantenimiento - Megatel SAS',
+            description: 'Servicios tecnológicos integrales: desarrollo de aplicaciones empresariales, diseño web y e-commerce, contratos de soporte preventivo/correctivo, reparación y mantenimiento de equipos. Soluciones 360° en Bogotá.',
+            keywords: 'desarrollo software empresarial, diseño web Bogotá, soporte técnico empresas, mantenimiento equipos, ERP, CRM, e-commerce, reparación computadores, soporte IT, servicios tecnológicos Colombia',
             ogType: 'website',
-            ogImage: '/images/og-home-es.png'
+            ogImage: '/images/og-services-megatel.jpg'
         },
         en: {
-            title: 'Services | Megatel SAS - IT Development & Consulting',
-            description: 'Professional software development services, enterprise applications, websites, agile methodologies and specialized technical support.',
-            keywords: 'software development Colombia, enterprise applications, web development, agile methodologies, IT consulting, technical support',
+            title: 'Enterprise Technology Services | Development, Support and Maintenance - Megatel SAS',
+            description: 'Comprehensive technology services: enterprise application development, web design and e-commerce, preventive/corrective support contracts, equipment repair and maintenance. 360° solutions in Bogota.',
+            keywords: 'enterprise software development, web design Bogota, business technical support, equipment maintenance, ERP, CRM, e-commerce, computer repair, IT support, technology services Colombia',
             ogType: 'website',
-            ogImage: '/images/og-home-es.png'
+            ogImage: '/images/og-services-megatel.jpg'
         }
     },
     'contacto.html': {
@@ -298,7 +298,7 @@ function updateSchemaOrg(page, lang, meta) {
                 }
             ]
         };
-    } else if (page === 'productos.html' || page === 'servicios.html') {
+    } else if (page === 'productos.html') {
         schema = {
             "@context": "https://schema.org",
             "@graph": [
@@ -310,6 +310,65 @@ function updateSchemaOrg(page, lang, meta) {
                     "provider": {
                         "@type": "Organization",
                         "name": SITE_CONFIG.companyName
+                    }
+                }
+            ]
+        };
+    } else if (page === 'servicios.html') {
+        schema = {
+            "@context": "https://schema.org",
+            "@graph": [
+                organizationSchema,
+                {
+                    "@type": "Service",
+                    "serviceType": "Servicios Tecnológicos Empresariales",
+                    "name": meta.title,
+                    "description": meta.description,
+                    "provider": {
+                        "@type": "Organization",
+                        "name": SITE_CONFIG.companyName
+                    },
+                    "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "name": "Portafolio de Servicios Tecnológicos",
+                        "itemListElement": [
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Desarrollo de Aplicaciones Empresariales",
+                                    "description": "Desarrollo de software a la medida: ERP, CRM, Intranets"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Diseño de Páginas Web y E-commerce",
+                                    "description": "Diseño web responsive y optimizado para SEO"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Contrato de Soporte Preventivo y Correctivo",
+                                    "description": "Asistencia técnica remota y en sitio"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Reparación y Mantenimiento de Equipos",
+                                    "description": "Diagnóstico y reparación profesional de equipos"
+                                }
+                            }
+                        ]
+                    },
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Colombia"
                     }
                 }
             ]

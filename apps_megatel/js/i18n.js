@@ -60,7 +60,7 @@ function setLanguage(lang) {
                     element.value = translations[key][lang];
                 }
             } else {
-                element.textContent = translations[key][lang];
+                element.innerHTML = translations[key][lang];
             }
         } else {
             // Log de warning si falta una traducción
