@@ -875,58 +875,54 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-/* ===== 5.3 FORMULARIO DE CONTACTO ===== */
-.form-section {
-    background: white;
-    border-radius: 1rem;
-}
+/* ===== 5.3 FORMULARIO DE CONTACTO - ORACLE APEX ===== */
+    
+        .apex-iframe-container {
+            width: 100%;
+            min-height: 750px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.form-control,
-.form-select {
-    border-radius: 0.5rem;
-    border: 1px solid #dee2e6;
-    padding: 0.75rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+        .apex-iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
+            display: block;
+        }
 
-.form-control:focus,
-.form-select:focus {
-    border-color: #0274be;
-    box-shadow: 0 0 0 0.2rem rgba(2, 116, 190, 0.25);
-}
+        /* Ajuste responsivo del iframe */
+        @media (max-width: 768px) {
+            .apex-iframe-container {
+                min-height: 900px;
+            }
 
-/* Labels del formulario */
-.form-label {
-    color: #495057;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
+            .apex-iframe {
+                height: 900px;
+            }
+        }
 
-/* ===== 5.4 VALIDACIÓN DE FORMULARIO ===== */
-.was-validated .form-control:invalid,
-.was-validated .form-select:invalid {
-    border-color: #dc3545;
-}
+        /* Loader mientras carga el iframe */
+        .iframe-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
 
-.was-validated .form-control:valid,
-.was-validated .form-select:valid {
-    border-color: #28a745;
-}
+        .iframe-loader .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            color: #0274be;
+        }
 
-/* Botón de envío */
-#main-contact-form button[type="submit"] {
-    transition: all 0.3s ease;
-}
-
-#main-contact-form button[type="submit"]:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 0.5rem 1rem rgba(2, 116, 190, 0.3);
-}
-
-#main-contact-form button[type="submit"]:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
+        .iframe-loaded .iframe-loader {
+            display: none;
+        }
 
 
 /* ================================================================================
