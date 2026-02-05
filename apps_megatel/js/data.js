@@ -775,5 +775,378 @@ const translations = {
     "detail4_p_vid": {
         "es": "Equipos para salas de juntas, desde cámaras PTZ hasta barras de colaboración.",
         "en": "Equipment for meeting rooms, from PTZ cameras to collaboration bars."
-    }
+    },
+
+    // ===== PÁGINA: TELEFONÍA IP - TRADUCCIONES COMPLETAS =====
+
+// Hero Section
+"ip_tag": {
+    "es": "COMUNICACIONES UNIFICADAS",
+    "en": "UNIFIED COMMUNICATIONS"
+},
+"ip_hero_title": {
+    "es": "Telefonía IP: El Futuro de la Comunicación Empresarial",
+    "en": "IP Telephony: The Future of Business Communication"
+},
+"ip_hero_subtitle": {
+    "es": "Reduzca costos, escale su operación y trabaje desde cualquier lugar con una central telefónica virtual o física de última generación.",
+    "en": "Reduce costs, scale your operation and work from anywhere with a next-generation virtual or physical telephone exchange."
+},
+"ip_hero_cta": {
+    "es": "Descubra Nuestras Soluciones",
+    "en": "Discover Our Solutions"
+},
+
+// Sección de Soluciones
+"ip_solutions_title": {
+    "es": "Dos Caminos, Múltiples Beneficios: Elija su Central",
+    "en": "Two Paths, Multiple Benefits: Choose Your Exchange"
+},
+
+// Solución Cloud - Net2Phone
+"ip_cloud_title": {
+    "es": "Net2Phone (Telefonía en la Nube)",
+    "en": "Net2Phone (Cloud Telephony)"
+},
+"ip_cloud_tagline": {
+    "es": "Ideal para empresas con crecimiento rápido o equipos remotos.",
+    "en": "Ideal for fast-growing companies or remote teams."
+},
+"ip_cloud_text": {
+    "es": "Disfrute de un servicio 100% hospedado que elimina la necesidad de hardware costoso. Pago por usuario, alta escalabilidad y acceso a la red de Net2Phone con troncales SIP integradas.",
+    "en": "Enjoy a 100% hosted service that eliminates the need for expensive hardware. Pay per user, high scalability and access to the Net2Phone network with integrated SIP trunks."
+},
+"ip_cloud_feat1": {
+    "es": "Cero Inversión Inicial en Central",
+    "en": "Zero Initial Investment in Exchange"
+},
+"ip_cloud_feat2": {
+    "es": "Movilidad Total (Apps Móviles/PC)",
+    "en": "Total Mobility (Mobile/PC Apps)"
+},
+"ip_cloud_feat3": {
+    "es": "Actualizaciones y Mantenimiento Incluidos",
+    "en": "Updates and Maintenance Included"
+},
+"ip_cloud_cta": {
+    "es": "Solicitar Cotización",
+    "en": "Request Quote"
+},
+
+// Solución On-Premise - Yeastar
+"ip_onpremise_title": {
+    "es": "Yeastar (Telefonía Local - On-Premise)",
+    "en": "Yeastar (Local Telephony - On-Premise)"
+},
+"ip_onpremise_tagline": {
+    "es": "Perfecto para control total y uso de infraestructura existente.",
+    "en": "Perfect for total control and use of existing infrastructure."
+},
+"ip_onpremise_text": {
+    "es": "Instalamos una central física de Yeastar en su oficina. Esto le brinda máxima seguridad, control total sobre las configuraciones y permite integrar líneas analógicas, E1 y líneas IP simultáneamente.",
+    "en": "We install a physical Yeastar exchange in your office. This provides maximum security, total control over configurations and allows integration of analog lines, E1 and IP lines simultaneously."
+},
+"ip_onpremise_feat1": {
+    "es": "Propiedad del Hardware, Sin Rentas Mensuales",
+    "en": "Hardware Ownership, No Monthly Rentals"
+},
+"ip_onpremise_feat2": {
+    "es": "Integración con Infraestructura Híbrida",
+    "en": "Integration with Hybrid Infrastructure"
+},
+"ip_onpremise_feat3": {
+    "es": "Máximo Control de Seguridad Local",
+    "en": "Maximum Local Security Control"
+},
+"ip_onpremise_cta": {
+    "es": "Solicitar Cotización",
+    "en": "Request Quote"
+},
+
+// Sección de Teléfonos Yealink
+"ip_phones_title": {
+    "es": "Terminales IP Yealink: El Dispositivo Perfecto para Cada Rol",
+    "en": "Yealink IP Terminals: The Perfect Device for Every Role"
+},
+"ip_phones_subtitle": {
+    "es": "Desde el escritorio de recepción hasta la oficina ejecutiva, Yealink ofrece calidad, durabilidad y un rendimiento superior.",
+    "en": "From the reception desk to the executive office, Yealink offers quality, durability and superior performance."
+},
+
+// Teléfono 1: Gama Ejecutiva
+"ip_phone1_title": {
+    "es": "Gama Ejecutiva y Gerencial",
+    "en": "Executive and Management Range"
+},
+"ip_phone1_subtitle": {
+    "es": "T4x / T5x Series - Potencia y Lujo",
+    "en": "T4x / T5x Series - Power and Luxury"
+},
+"ip_phone1_text": {
+    "es": "Teléfonos con pantalla táctil HD, puertos GigaEthernet y WiFi, ideales para usuarios de alto tráfico que necesitan características avanzadas y diseño premium.",
+    "en": "Phones with HD touch screen, GigaEthernet ports and WiFi, ideal for high-traffic users who need advanced features and premium design."
+},
+
+// Teléfono 2: Gama Estándar
+"ip_phone2_title": {
+    "es": "Gama Estándar de Escritorio",
+    "en": "Standard Desktop Range"
+},
+"ip_phone2_subtitle": {
+    "es": "T3x / T40G Series - Confiabilidad Diaria",
+    "en": "T3x / T40G Series - Daily Reliability"
+},
+"ip_phone2_text": {
+    "es": "Equipos robustos y económicos que ofrecen audio HD, PoE (Power over Ethernet) y la funcionalidad necesaria para puestos de trabajo operativos y de alto volumen.",
+    "en": "Robust and economical equipment offering HD audio, PoE (Power over Ethernet) and the necessary functionality for operational and high-volume workstations."
+},
+
+// Teléfono 3: Movilidad
+"ip_phone3_title": {
+    "es": "Movilidad (DECT y WiFi)",
+    "en": "Mobility (DECT and WiFi)"
+},
+"ip_phone3_subtitle": {
+    "es": "Serie W / T5xW - Trabaje sin ataduras",
+    "en": "W / T5xW Series - Work Untethered"
+},
+"ip_phone3_text": {
+    "es": "Teléfonos DECT para almacenes y oficinas grandes, y teléfonos de escritorio con WiFi integrado, perfectos para entornos que requieren flexibilidad y desplazamiento constante.",
+    "en": "DECT phones for warehouses and large offices, and desktop phones with integrated WiFi, perfect for environments requiring flexibility and constant mobility."
+},
+
+// Sección de Beneficios
+"ip_benefits_title": {
+    "es": "¿Por qué Elegir Telefonía IP con Megatel?",
+    "en": "Why Choose IP Telephony with Megatel?"
+},
+"ip_benefits_intro": {
+    "es": "La telefonía IP moderna transforma la manera en que su empresa se comunica, reduciendo costos y aumentando la productividad.",
+    "en": "Modern IP telephony transforms the way your company communicates, reducing costs and increasing productivity."
+},
+"ip_benefits_feat1": {
+    "es": "<strong>Reducción de Costos:</strong> Ahorre hasta 60% en llamadas nacionales e internacionales.",
+    "en": "<strong>Cost Reduction:</strong> Save up to 60% on national and international calls."
+},
+"ip_benefits_feat2": {
+    "es": "<strong>Escalabilidad Total:</strong> Agregue o retire extensiones según su necesidad.",
+    "en": "<strong>Total Scalability:</strong> Add or remove extensions according to your needs."
+},
+"ip_benefits_feat3": {
+    "es": "<strong>Trabajo Remoto:</strong> Sus empleados pueden trabajar desde cualquier ubicación.",
+    "en": "<strong>Remote Work:</strong> Your employees can work from any location."
+},
+"ip_benefits_feat4": {
+    "es": "<strong>Funciones Avanzadas:</strong> IVR, grabación de llamadas, reportes y analíticas.",
+    "en": "<strong>Advanced Features:</strong> IVR, call recording, reports and analytics."
+},
+
+// Tarjeta de beneficios
+"ip_benefits_card_title": {
+    "es": "¿Listo para Modernizar su Comunicación?",
+    "en": "Ready to Modernize Your Communication?"
+},
+"ip_benefits_card_text": {
+    "es": "Nuestros expertos están listos para asesorarlo y diseñar la solución perfecta para su empresa.",
+    "en": "Our experts are ready to advise you and design the perfect solution for your company."
+},
+"ip_benefits_card_cta": {
+    "es": "Solicitar Asesoría Gratuita",
+    "en": "Request Free Consultation"
+},
+
+// Sección de Cierre
+"ip_closing_title": {
+    "es": "Transforme su Comunicación Empresarial Hoy",
+    "en": "Transform Your Business Communication Today"
+},
+"ip_closing_subtitle": {
+    "es": "Déjenos ayudarle a elegir la mejor solución de telefonía IP para su negocio.",
+    "en": "Let us help you choose the best IP telephony solution for your business."
+},
+"ip_closing_cta": {
+    "es": "Hablar con un Especialista",
+    "en": "Talk to a Specialist"
+},
+
+// ===== PÁGINA: VIDEOCONFERENCIA - TRADUCCIONES COMPLETAS =====
+
+// Hero Section
+"vc_tag": {
+    "es": "PRODUCTO DESTACADO",
+    "en": "FEATURED PRODUCT"
+},
+"vc_hero_title": {
+    "es": "Colaboración Sin Fronteras: Soluciones de Video Conferencia",
+    "en": "Collaboration Without Borders: Video Conferencing Solutions"
+},
+"vc_hero_subtitle": {
+    "es": "Transforme sus salas de reuniones en centros de colaboración inteligentes con equipos de alta fidelidad, fáciles de usar e instalar.",
+    "en": "Transform your meeting rooms into intelligent collaboration centers with high-fidelity equipment, easy to use and install."
+},
+"vc_hero_cta": {
+    "es": "Solicitar una Demostración Gratis",
+    "en": "Request a Free Demo"
+},
+
+// Sección de Beneficios
+"vc_benefits_title": {
+    "es": "Beneficios de Equipos de Megatel",
+    "en": "Benefits of Megatel Equipment"
+},
+
+// Beneficio 1
+"vc_ben1_title": {
+    "es": "Audio Cristalino",
+    "en": "Crystal Clear Audio"
+},
+"vc_ben1_text": {
+    "es": "Micrófonos con cancelación de ruido y altavoces potentes para que cada palabra sea escuchada.",
+    "en": "Noise-canceling microphones and powerful speakers so every word is heard."
+},
+
+// Beneficio 2
+"vc_ben2_title": {
+    "es": "Video 4K Inteligente",
+    "en": "Intelligent 4K Video"
+},
+"vc_ben2_text": {
+    "es": "Cámaras con encuadre automático que siguen al orador, optimizando la experiencia visual.",
+    "en": "Cameras with automatic framing that follow the speaker, optimizing the visual experience."
+},
+
+// Beneficio 3
+"vc_ben3_title": {
+    "es": "Fácil Instalación (Plug & Play)",
+    "en": "Easy Installation (Plug & Play)"
+},
+"vc_ben3_text": {
+    "es": "Conecte y comience a colaborar en minutos. Compatibilidad universal con todas las plataformas.",
+    "en": "Connect and start collaborating in minutes. Universal compatibility with all platforms."
+},
+
+// Sección de Soluciones
+"vc_solutions_title": {
+    "es": "Encontramos la Solución Perfecta para su Espacio",
+    "en": "We Find the Perfect Solution for Your Space"
+},
+
+// Solución 1: Salas Pequeñas
+"vc_sol1_title": {
+    "es": "Salas Pequeñas (1-4 personas)",
+    "en": "Small Rooms (1-4 people)"
+},
+"vc_sol1_text": {
+    "es": "Barras de colaboración compactas con cámara y audio integrados. Ideales para espacios reducidos.",
+    "en": "Compact collaboration bars with integrated camera and audio. Ideal for small spaces."
+},
+"vc_sol1_feat1": {
+    "es": "Solución \"Todo en Uno\"",
+    "en": "All-in-One Solution"
+},
+"vc_sol1_feat2": {
+    "es": "Campo de visión amplio",
+    "en": "Wide field of view"
+},
+"vc_sol1_feat3": {
+    "es": "Instalación rápida",
+    "en": "Quick installation"
+},
+
+// Solución 2: Salas Medianas
+"vc_sol2_title": {
+    "es": "Salas Medianas (5-10 personas)",
+    "en": "Medium Rooms (5-10 people)"
+},
+"vc_sol2_text": {
+    "es": "Sistemas modulares con cámara PTZ (Pan-Tilt-Zoom) y micrófonos satelitales para cobertura total.",
+    "en": "Modular systems with PTZ (Pan-Tilt-Zoom) camera and satellite microphones for total coverage."
+},
+"vc_sol2_feat1": {
+    "es": "Micrófonos de extensión",
+    "en": "Extension microphones"
+},
+"vc_sol2_feat2": {
+    "es": "Zoom óptico de alta definición",
+    "en": "High-definition optical zoom"
+},
+"vc_sol2_feat3": {
+    "es": "Control remoto avanzado",
+    "en": "Advanced remote control"
+},
+
+// Solución 3: Salas Grandes
+"vc_sol3_title": {
+    "es": "Salas Grandes (10+ personas)",
+    "en": "Large Rooms (10+ people)"
+},
+"vc_sol3_text": {
+    "es": "Equipos profesionales con doble pantalla, seguimiento del orador e integración de sistemas de control.",
+    "en": "Professional equipment with dual display, speaker tracking and control systems integration."
+},
+"vc_sol3_feat1": {
+    "es": "Múltiples fuentes de video",
+    "en": "Multiple video sources"
+},
+"vc_sol3_feat2": {
+    "es": "Audio de matriz de haces",
+    "en": "Beamforming array audio"
+},
+"vc_sol3_feat3": {
+    "es": "Sistema de gestión centralizado",
+    "en": "Centralized management system"
+},
+
+// CTA común para soluciones
+"vc_sol_cta": {
+    "es": "Solicitar Cotización",
+    "en": "Request Quote"
+},
+
+// Formulario CTA
+"vc_cta_form_title": {
+    "es": "Solicite su Demostración o Asesoría",
+    "en": "Request Your Demo or Consultation"
+},
+"vc_cta_form_subtitle": {
+    "es": "Llene el formulario y un especialista de Megatel se comunicará con usted en menos de 24 horas.",
+    "en": "Fill out the form and a Megatel specialist will contact you within 24 hours."
+},
+"vc_cta_form_submit": {
+    "es": "Enviar Solicitud de Demo",
+    "en": "Submit Demo Request"
+},
+
+// Sección de Plataformas
+"vc_platforms_title": {
+    "es": "Compatible con sus Plataformas Favoritas",
+    "en": "Compatible with Your Favorite Platforms"
+},
+"vc_platforms_text": {
+    "es": "Nuestros equipos se integran perfectamente con los ecosistemas de colaboración más utilizados.",
+    "en": "Our equipment integrates seamlessly with the most widely used collaboration ecosystems."
+},
+
+// Labels de formulario (compartidos con otras páginas)
+"form_label_name": {
+    "es": "Nombre Completo *",
+    "en": "Full Name *"
+},
+"form_label_company": {
+    "es": "Empresa *",
+    "en": "Company *"
+},
+"form_label_email": {
+    "es": "Correo Electrónico *",
+    "en": "Email Address *"
+},
+"form_label_phone": {
+    "es": "Teléfono de Contacto",
+    "en": "Contact Phone"
+},
+"form_label_message": {
+    "es": "Comentarios (Opcional)",
+    "en": "Comments (Optional)"
+}
+
 };

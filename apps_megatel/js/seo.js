@@ -14,7 +14,7 @@ const SITE_CONFIG = {
     email: 'info@megatelco.com',
     phone: '+57 310 763 0363',
     address: {
-        street: 'CAlle 128C # 45A - 41',
+        street: 'Calle 128C # 45A - 41',
         city: 'Bogotá',
         region: 'Bogotá D.C.',
         country: 'Colombia',

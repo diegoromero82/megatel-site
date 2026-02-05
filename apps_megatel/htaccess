@@ -21,26 +21,76 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
-# Forzar HTTPS (descomentar cuando tengas SSL)
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# ============================================
+# 1. FORZAR HTTPS (ACTIVADO)
+# ============================================
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Forzar www (o sin www, elige uno)
-# RewriteCond %{HTTP_HOST} !^www\. [NC]
-# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+# ============================================
+# 2. FORZAR WWW (ACTIVADO)
+# ============================================
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redireccionar index.html a / (evitar contenido duplicado)
+# ============================================
+# 3. REDIRECCIONAR index.html a / 
+# ============================================
 RewriteCond %{THE_REQUEST} ^.*/index\.html
 RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
 
-# URLs limpias - remover .html (opcional)
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^([^\.]+)$ $1.html [NC,L]
+# ============================================
+# 4. EVITAR ACCESO DIRECTO A .html (DESACTIVADO)
+# ============================================
+# Redireccionar /productos.html a /productos
+#RewriteCond %{THE_REQUEST} ^GET\ /[^?\s]+\.html
+#RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
-# Redirecciones permanentes para páginas antiguas (ejemplos)
-# Redirect 301 /old-page.html /new-page.html
-# Redirect 301 /productos-viejos.html /productos.html
+# Permitir que /productos cargue productos.html internamente
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.html -f
+#RewriteRule ^(.+)$ $1.html [L]
+
+# ============================================
+# 5. REDIRECCIONES PERMANENTES ESPECÍFICAS
+# ============================================
+RedirectMatch 301 ^/author/.* https://www.megatelsas.com/
+RedirectMatch 301 ^/comments/.* https://www.megatelsas.com/
+RedirectMatch 301 ^/feed/.* https://www.megatelsas.com/
+
+# ============================================
+# REDIRECCIONES DE URLS ANTIGUAS (WORDPRESS)
+# ============================================
+Redirect 301 /net2phone-central-virtual-en-la-nube/ https://www.megatelsas.com/telefonia.html
+Redirect 301 /industria-hotelera/ https://www.megatelsas.com/
+
+# Artículo genérico → Home
+Redirect 301 /morbi-ut-felis-ornare-vel/ https://www.megatelsas.com/
+
+# Bloquear y redirigir formularios de WordPress
+RedirectMatch 301 ^/sg_form/.* https://www.megatelsas.com/contacto.html
+
+# Bloquear feeds RSS
+RedirectMatch 301 ^/feed/.* https://www.megatelsas.com/
+
+# Bloquear búsquedas internas de WordPress
+RewriteCond %{QUERY_STRING} ^s=
+RewriteRule .* https://www.megatelsas.com/? [R=301,L]
+
+# Redirigir /contacto/ a /contacto.html
+Redirect 301 /contacto/ https://www.megatelsas.com/contacto.html
+
+# Redirigir cualquier página sin .html a su versión con .html (si existe)
+# Ejemplo: /productos/ → /productos.html
+RewriteCond %{REQUEST_URI} ^/([a-z0-9-]+)/$
+RewriteCond %{DOCUMENT_ROOT}/%1.html -f
+RewriteRule ^([a-z0-9-]+)/$ /$1.html [R=301,L]
+
+# ============================================
+# PÁGINA 404 PERSONALIZADA
+# ============================================
+ErrorDocument 404 /404.html
 
 # ============================================
 # COMPRESIÓN GZIP
@@ -215,13 +265,3 @@ AddCharset UTF-8 .html .css .js .xml .json .rss .atom
 # RewriteCond %{HTTP_REFERER} !^$
 # RewriteCond %{HTTP_REFERER} !^https://(www\.)?megatel\.com\.co [NC]
 # RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [F,L]
-
-# ============================================
-# NOTAS IMPORTANTES
-# ============================================
-
-# 1. Reemplazar 'megatel.com.co' con tu dominio real
-# 2. Activar SSL (HTTPS) lo antes posible
-# 3. Probar cambios en staging primero
-# 4. Hacer backup antes de aplicar
-# 5. Verificar en Google Search Console después de aplicar

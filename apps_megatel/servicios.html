@@ -7,10 +7,8 @@
 
     <!-- SEO Meta Tags -->
     <title>Servicios Tecnológicos Empresariales | Desarrollo, Soporte y Mantenimiento - Megatel SAS</title>
-    <meta name="description"
-        content="Servicios tecnológicos integrales: desarrollo de aplicaciones empresariales, diseño web y e-commerce, contratos de soporte preventivo/correctivo, reparación y mantenimiento de equipos. Soluciones 360° en Bogotá.">
-    <meta name="keywords"
-        content="desarrollo software empresarial, diseño web Bogotá, soporte técnico empresas, mantenimiento equipos, ERP, CRM, e-commerce, reparación computadores, soporte IT, servicios tecnológicos Colombia">
+    <meta name="description" content="Servicios tecnológicos integrales: desarrollo de aplicaciones empresariales, diseño web y e-commerce, contratos de soporte preventivo/correctivo, reparación y mantenimiento de equipos. Soluciones 360° en Bogotá.">
+    <meta name="keywords" content="desarrollo software empresarial, diseño web Bogotá, soporte técnico empresas, mantenimiento equipos, ERP, CRM, e-commerce, reparación computadores, soporte IT, servicios tecnológicos Colombia">
     <meta name="author" content="Megatel SAS">
     <meta name="robots" content="index, follow">
 
@@ -46,8 +44,8 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/Megatel_Navidad_3_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/Megatel_Navidad_3_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/Megatel_Perfil_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/Megatel_Perfil_16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Theme Color -->
@@ -68,12 +66,12 @@
 </head>
 
 <body>
-    <!-- La barra de navegación se mantiene fija -->
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar" role="navigation"
         aria-label="Navegación principal">
         <div class="container">
             <a class="navbar-brand" href="index.html" aria-label="Megatel SAS - Inicio">
-                <img src="images/Megatel_Navidad_2.png" alt="Logo de Megatel SAS" class="d-inline-block align-text-top"
+                <img src="images/Megatel_LogoBlanco.png" alt="Logo de Megatel SAS" class="d-inline-block align-text-top"
                     height="40">
             </a>
 
@@ -266,7 +264,7 @@
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0 text-center">
                         <!-- Placeholder de imagen representativa de soluciones integrales -->
-                        <img src="https://placehold.co/500x350/004085/FFFFFF?text=Soluciones+Integrales"
+                        <img src="images/telefonia-megatel.png"
                             class="img-fluid rounded-3 shadow-lg" alt="Diagrama de Soluciones Integrales Megatel"
                             loading="lazy">
                     </div>
@@ -274,25 +272,23 @@
             </div>
         </section>
 
-        <!-- 4. BLOQUE FINAL DE CONTACTO (Llamada a la Acción) - Sin full-screen -->
-        <section id="contact-cta" class="section-closing py-5" aria-label="Contacto"
-            style="min-height: 50vh;">
-
-            <div class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
-                <div class="row">
+        <!-- 4. BLOQUE FINAL DE CONTACTO (Llamada a la Acción) -->
+        <section id="contact-cta" class="full-screen-section section-closing" aria-label="Contacto">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100">
                     <div class="col-lg-8 col-md-10 col-12 mx-auto text-center text-white">
                         <div class="bg-dark bg-opacity-75 p-4 p-md-5 rounded-3 shadow-lg">
                             <h2 class="display-5 fw-bold mb-4" data-i18n="closing_title">
-                                Transforme su Operación Hoy Mismo
+                                ¿Listo para Convertir su Visión en Realidad?
                             </h2>
                             <p class="lead mb-4" data-i18n="closing_text">
-                                Contáctenos para una evaluación gratuita de sus necesidades tecnológicas.
-                            </p>
-
-                            <!-- Botón de Redirección -->
-                            <a href="contacto.html" class="btn btn-light btn-lg mt-3" data-i18n="closing_cta"
-                                aria-label="Contactar para hablar de su proyecto">
-                                Hablemos de su Proyecto
+                                Hable con nuestros expertos y solicite una consultoría sin compromiso.
+                            </p>                            
+                            <a href="contacto.html" 
+                               class="btn btn-light btn-lg mt-3" 
+                               data-i18n="closing_cta"
+                               aria-label="Solicitar consultoría gratuita">
+                                Solicite una Consultoría Gratuita
                             </a>
                         </div>
                     </div>
@@ -323,21 +319,21 @@
         <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
-    <!-- JS - ORDEN IMPORTANTE PARA SEO E I18N -->
+    <!-- BLOQUE JS -->
     <!-- 1. Bootstrap (framework) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 
-    <!-- 2. Data (traducciones) - DEBE CARGAR PRIMERO -->
+    <!-- 2. Data (traducciones) -->
     <script src="js/data.js"></script>
 
-    <!-- 3. i18n (sistema de idiomas) - DEBE CARGAR DESPUÉS DE DATA -->
+    <!-- 3. i18n (sistema de idiomas) -->
     <script src="js/i18n.js"></script>
 
-    <!-- 4. SEO (sistema de meta tags dinámicos) - DESPUÉS DE I18N -->
+    <!-- 4. SEO (sistema de meta tags dinámicos) -->
     <script src="js/seo.js"></script>
 
-    <!-- 5. Script principal - DEBE CARGAR AL FINAL -->
+    <!-- 5. Script principal -->
     <script src="js/script.js"></script>
 
 </body>

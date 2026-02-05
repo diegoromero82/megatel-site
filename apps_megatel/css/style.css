@@ -875,58 +875,54 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-/* ===== 5.3 FORMULARIO DE CONTACTO ===== */
-.form-section {
-    background: white;
-    border-radius: 1rem;
-}
+/* ===== 5.3 FORMULARIO DE CONTACTO - ORACLE APEX ===== */
+    
+        .apex-iframe-container {
+            width: 100%;
+            min-height: 750px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.form-control,
-.form-select {
-    border-radius: 0.5rem;
-    border: 1px solid #dee2e6;
-    padding: 0.75rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+        .apex-iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
+            display: block;
+        }
 
-.form-control:focus,
-.form-select:focus {
-    border-color: #0274be;
-    box-shadow: 0 0 0 0.2rem rgba(2, 116, 190, 0.25);
-}
+        /* Ajuste responsivo del iframe */
+        @media (max-width: 768px) {
+            .apex-iframe-container {
+                min-height: 900px;
+            }
 
-/* Labels del formulario */
-.form-label {
-    color: #495057;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
+            .apex-iframe {
+                height: 900px;
+            }
+        }
 
-/* ===== 5.4 VALIDACIÓN DE FORMULARIO ===== */
-.was-validated .form-control:invalid,
-.was-validated .form-select:invalid {
-    border-color: #dc3545;
-}
+        /* Loader mientras carga el iframe */
+        .iframe-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
 
-.was-validated .form-control:valid,
-.was-validated .form-select:valid {
-    border-color: #28a745;
-}
+        .iframe-loader .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            color: #0274be;
+        }
 
-/* Botón de envío */
-#main-contact-form button[type="submit"] {
-    transition: all 0.3s ease;
-}
-
-#main-contact-form button[type="submit"]:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 0.5rem 1rem rgba(2, 116, 190, 0.3);
-}
-
-#main-contact-form button[type="submit"]:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
+        .iframe-loaded .iframe-loader {
+            display: none;
+        }
 
 
 /* ================================================================================
@@ -1196,6 +1192,379 @@ h1, h2, h3, h4, h5, h6 {
         content: " (" attr(href) ")";
     }
 }
+
+/* ================================================================================
+   9. TELEFONÍA.HTML - PÁGINA DE TELEFONÍA IP
+   ================================================================================ */
+
+/* ===== 9.1 HERO DE TELEFONÍA ===== */
+#telephony-hero {
+    position: relative;
+    background-image: url('../images/telefonia-megatel.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#telephony-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(2, 116, 190, 0.8), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+}
+
+#telephony-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== 9.2 SECCIÓN DE SOLUCIONES IP ===== */
+#soluciones-ip .service-card {
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#soluciones-ip .service-card-dev {
+    border-left-color: #dc3545;
+}
+
+#soluciones-ip .service-card-dev:hover {
+    border-left-color: #c82333;
+    box-shadow: 0 10px 30px rgba(220, 53, 69, 0.2) !important;
+}
+
+#soluciones-ip .service-card-repair {
+    border-left-color: #28a745;
+}
+
+#soluciones-ip .service-card-repair:hover {
+    border-left-color: #218838;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2) !important;
+}
+
+/* ===== 9.3 ICONOS DE SOLUCIONES ===== */
+.service-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+/* ===== 9.4 TERMINALES YEALINK ===== */
+#terminales-yealink .product-card {
+    border-top: 3px solid #0274be;
+    transition: all 0.3s ease;
+}
+
+#terminales-yealink .product-card:hover {
+    border-top-color: #025a9a;
+    transform: translateY(-10px);
+}
+
+#terminales-yealink .product-icon {
+    font-size: 3rem;
+    color: #0274be;
+    transition: transform 0.3s ease;
+}
+
+#terminales-yealink .product-card:hover .product-icon {
+    transform: scale(1.1);
+    color: #025a9a;
+}
+
+/* ===== 9.5 SECCIÓN DE BENEFICIOS IP ===== */
+#beneficios-ip ul li {
+    padding-left: 0;
+    transition: transform 0.3s ease;
+}
+
+#beneficios-ip ul li:hover {
+    transform: translateX(10px);
+}
+
+#beneficios-ip .card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: none;
+}
+
+#beneficios-ip .card:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+/* ===== 9.6 CTA DE CONTACTO IP ===== */
+#contact-cta-ip {
+    position: relative;
+    background-image: url('../images/contacto-megatel.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contact-cta-ip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(2, 116, 190, 0.7), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+#contact-cta-ip > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== 9.7 BADGES Y ETIQUETAS ===== */
+.badge.bg-primary {
+    background-color: #0274be !important;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+}
+
+/* ===== 9.8 RESPONSIVE PARA TELEFONÍA ===== */
+@media (max-width: 992px) {
+    #telephony-hero h1 {
+        font-size: 2rem;
+    }
+    
+    #soluciones-ip .service-card {
+        margin-bottom: 2rem;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #telephony-hero {
+        min-height: auto !important;
+        padding: 3rem 0;
+    }
+    
+    #telephony-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    #soluciones-ip .card-body {
+        padding: 2rem !important;
+    }
+    
+    .service-icon,
+    .product-icon {
+        font-size: 2rem;
+    }
+}
+
+/* ===== 9.9 ANIMACIONES ESPECÍFICAS ===== */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+#telephony-hero .badge {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ================================================================================
+   FIN DE ESTILOS DE TELEFONÍA
+   ================================================================================ */
+
+   /* ================================================================================
+   10. VIDEOCONFERENCIA.HTML - PÁGINA DE VIDEOCONFERENCIA
+   ================================================================================ */
+ 
+   
+        :root {
+            --primary-color: #0274be;
+            --secondary-color: #6c757d;
+            --danger-color: #dc3545;
+            --success-color: #28a745;
+            --warning-color: #ffc107;
+            --dark-color: #212529;
+            --light-gray: #f8f9fa;
+        }
+
+        /* Hero Section Videoconferencia */
+        #videoconf-hero {
+            position: relative;
+            background-image: url('../images/videoconference-megatel.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 60vh;
+        }
+
+        #videoconf-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;     
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(2, 116, 190, 0.8), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #videoconf-hero > .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Sección de Beneficios */
+        #beneficios .feature-icon {
+            font-size: 3.5rem;
+            color: var(--danger-color);
+            transition: transform 0.3s ease;
+        }
+
+        #beneficios .col-md-4:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Cards de Soluciones */
+        #soluciones .card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        #soluciones .card.border-primary {
+            border-left-color: var(--primary-color);
+        }
+
+        #soluciones .card.border-warning {
+            border-left-color: var(--warning-color);
+        }
+
+        #soluciones .card.border-danger {
+            border-left-color: var(--danger-color);
+        }
+
+        #soluciones .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        /* Formulario CTA */
+        .cta-form-section {
+            background: linear-gradient(135deg, #0274be 0%, #025a9a 100%);
+            position: relative;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-card:hover {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sección de Plataformas */
+        #plataformas {
+            background-color: var(--dark-color);
+        }
+
+        #plataformas i {
+            transition: all 0.3s ease;
+            opacity: 0.8;
+        }
+
+        #plataformas .col-3:hover i {
+            transform: scale(1.2);
+            opacity: 1;
+            color: var(--warning-color);
+        }
+
+        /* Animación suave en scroll */
+        .scroll-down-btn {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            #videoconf-hero h1 {
+                font-size: 2rem;
+            }
+
+            #beneficios .feature-icon {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #videoconf-hero {
+                min-height: auto !important;
+                padding: 3rem 0;
+            }
+
+            #videoconf-hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .feature-icon {
+                font-size: 2rem;
+            }
+
+            #soluciones .card {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* ===== ESTILOS ADICIONALES PARA VIDEOCONFERENCIA ===== */
+
+/* Hover effect para tarjetas de tipos de sala */
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+}
+
+/* Efecto para logos de partners (si usas imágenes reales más adelante) */
+.grayscale-hover img {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.grayscale-hover img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Ajuste responsive para la línea conectora del proceso */
+@media (max-width: 991px) {
+    .vc-process-line {
+        display: none;
+    }
+}
+    
 
 
 /* ================================================================================

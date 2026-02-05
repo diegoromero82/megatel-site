@@ -5,10 +5,9 @@
     <!-- Página Principal / Home -->
     <url>
         <loc>https://www.megatelsas.com/</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <!-- Versiones en diferentes idiomas -->
         <xhtml:link rel="alternate" hreflang="es" href="https://www.megatelsas.com/?lang=es"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.megatelsas.com/?lang=en"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://www.megatelsas.com/"/>
@@ -17,7 +16,7 @@
     <!-- Quiénes Somos / About Us -->
     <url>
         <loc>https://www.megatelsas.com/quienes-somos.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.megatelsas.com/quienes-somos.html?lang=es"/>
@@ -28,7 +27,7 @@
     <!-- Productos / Products -->
     <url>
         <loc>https://www.megatelsas.com/productos.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.megatelsas.com/productos.html?lang=es"/>
@@ -39,27 +38,29 @@
     <!-- Telefonía IP -->
     <url>
         <loc>https://www.megatelsas.com/telefonia.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.megatelsas.com/telefonia.html?lang=es"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.megatelsas.com/telefonia.html?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.megatelsas.com/telefonia.html"/>
     </url>
     
     <!-- Videoconferencia -->
     <url>
         <loc>https://www.megatelsas.com/videoconferencia.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.megatelsas.com/videoconferencia.html?lang=es"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.megatelsas.com/videoconferencia.html?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.megatelsas.com/videoconferencia.html"/>
     </url>
     
     <!-- Servicios / Services -->
     <url>
         <loc>https://www.megatelsas.com/servicios.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.megatelsas.com/servicios.html?lang=es"/>
@@ -70,7 +71,7 @@
     <!-- Contacto / Contact -->
     <url>
         <loc>https://www.megatelsas.com/contacto.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.megatelsas.com/contacto.html?lang=es"/>
