@@ -11,11 +11,26 @@ Disallow: /tmp/
 Disallow: /private/
 Disallow: /_old/
 Disallow: /backup/
+Disallow: /author/
+Disallow: /comments/
+Disallow: /feed/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/
+Disallow: /wp-json/
+Disallow: /*?s=
+Disallow: /sg_form/
+Disallow: /?s=
 
 # Bloquear archivos sensibles
 Disallow: *.log$
 Disallow: *.sql$
 Disallow: *.bak$
+
+# ============================================
+# BLOQUEAR PARÁMETROS DE BÚSQUEDA
+# ============================================
+Disallow: /*?*s=*
 
 # Permitir acceso a recursos CSS y JS (importante para Google)
 Allow: /css/
