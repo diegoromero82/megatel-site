@@ -62,6 +62,18 @@
       7.3 Mobile (< 768px)
    
    8. PRINT STYLES (Líneas 1500-1550)
+
+   11. DESARROLLO.HTML - Página de Desarrollo de Software
+      11.1 Variables CSS de Desarrollo
+      11.2 Hero de Desarrollo
+      11.3 Tarjetas de Categorías (dev-category-card)
+      11.4 Tarjetas de Stack Tecnológico (tech-badge-card)
+      11.5 Sección de Proceso (process-step)
+      11.6 Sección de Beneficios (beneficios-dev)
+      11.7 CTA de Contacto Desarrollo (contact-cta-dev)
+      11.8 Cards con Acento Lateral (service-card-accent)
+      11.9 Tab Pills de Categorías (dev-tab-pills)
+      11.10 Responsive para Desarrollo
    
    ================================================================================ */
 /* ================================================================================
@@ -128,6 +140,18 @@
       7.3 Mobile (< 768px)
    
    8. PRINT STYLES (Líneas 1400-1450)
+
+   11. DESARROLLO.HTML - Página de Desarrollo de Software
+      11.1 Variables CSS de Desarrollo
+      11.2 Hero de Desarrollo
+      11.3 Tarjetas de Categorías (dev-category-card)
+      11.4 Tarjetas de Stack Tecnológico (tech-badge-card)
+      11.5 Sección de Proceso (process-step)
+      11.6 Sección de Beneficios (beneficios-dev)
+      11.7 CTA de Contacto Desarrollo (contact-cta-dev)
+      11.8 Cards con Acento Lateral (service-card-accent)
+      11.9 Tab Pills de Categorías (dev-tab-pills)
+      11.10 Responsive para Desarrollo
    
    ================================================================================ */
 
@@ -1612,3 +1636,257 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.75rem;
     }
 }
+
+/* ================================================================================
+   11. DESARROLLO.HTML - PÁGINA DE DESARROLLO DE SOFTWARE
+   ================================================================================ */
+
+/* ===== 11.1 VARIABLES CSS DE DESARROLLO ===== */
+:root {
+    --dev-primary: #0274be;
+    --dev-accent: #D12F17;
+    --dev-success: #28a745;
+    --dev-warning: #ffc107;
+    --dev-dark: #212529;
+    --dev-light: #f8f9fa;
+}
+
+/* ===== 11.2 HERO DE DESARROLLO ===== */
+#desarrollo-hero {
+    position: relative;
+    background-image: url('../images/desarrollador-megatel.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 60vh;
+}
+
+#desarrollo-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(2, 116, 190, 0.82), rgba(0, 0, 0, 0.60));
+    z-index: 1;
+}
+
+#desarrollo-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Badge animado del hero */
+#desarrollo-hero .badge {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ===== 11.3 TARJETAS DE CATEGORÍAS (dev-category-card) ===== */
+.dev-category-card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.dev-category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.dev-category-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.dev-category-card:hover .dev-category-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* ===== 11.4 TARJETAS DE STACK TECNOLÓGICO (tech-badge-card) ===== */
+.tech-badge-card {
+    border-radius: 0.75rem;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.tech-badge-card:hover {
+    border-color: var(--dev-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(2, 116, 190, 0.18);
+}
+
+.tech-badge-card i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.tech-badge-card .tech-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ===== 11.5 SECCIÓN DE PROCESO (process-step) ===== */
+.process-step {
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.process-step-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--dev-primary), #025a9a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.75rem;
+    box-shadow: 0 4px 15px rgba(2, 116, 190, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover .process-step-icon {
+    transform: scale(1.1);
+}
+
+.process-connector {
+    position: absolute;
+    top: 50px;
+    right: -30px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, var(--dev-primary), transparent);
+    z-index: 0;
+}
+
+/* ===== 11.6 SECCIÓN DE BENEFICIOS (beneficios-dev) ===== */
+#beneficios-dev ul li {
+    padding-left: 0;
+    transition: transform 0.3s ease;
+}
+
+#beneficios-dev ul li:hover {
+    transform: translateX(10px);
+}
+
+#beneficios-dev .card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: none;
+}
+
+#beneficios-dev .card:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+/* ===== 11.7 CTA DE CONTACTO DESARROLLO (contact-cta-dev) ===== */
+#contact-cta-dev {
+    position: relative;
+    background-image: url('../images/contacto-megatel.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 50vh;
+}
+
+#contact-cta-dev::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(2, 116, 190, 0.75), rgba(0, 0, 0, 0.55));
+    z-index: 1;
+}
+
+#contact-cta-dev > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== 11.8 CARDS CON ACENTO LATERAL (service-card-accent) ===== */
+.service-card-accent {
+    border-left: 5px solid var(--dev-primary) !important;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.service-card-accent:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-card-accent.accent-red {
+    border-left-color: var(--dev-accent) !important;
+}
+
+.service-card-accent.accent-green {
+    border-left-color: var(--dev-success) !important;
+}
+
+.service-card-accent.accent-warning {
+    border-left-color: var(--dev-warning) !important;
+}
+
+/* ===== 11.9 TAB PILLS DE CATEGORÍAS (dev-tab-pills) ===== */
+.dev-tab-pills .nav-link {
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    color: var(--dev-primary);
+    border: 2px solid var(--dev-primary);
+    margin: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.dev-tab-pills .nav-link:hover,
+.dev-tab-pills .nav-link.active {
+    background-color: var(--dev-primary);
+    color: #fff;
+}
+
+/* ===== 11.10 RESPONSIVE PARA DESARROLLO ===== */
+@media (max-width: 992px) {
+    #desarrollo-hero h1 {
+        font-size: 2rem;
+    }
+
+    .dev-category-icon {
+        font-size: 2.5rem;
+    }
+
+    .process-connector {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #desarrollo-hero {
+        min-height: auto !important;
+        padding: 3rem 0;
+    }
+
+    #desarrollo-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .tech-badge-card i {
+        font-size: 2rem;
+    }
+}
+
+/* ================================================================================
+   FIN DE ESTILOS DE DESARROLLO DE SOFTWARE
+   ================================================================================ */

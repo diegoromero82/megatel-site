@@ -1147,6 +1147,558 @@ const translations = {
 "form_label_message": {
     "es": "Comentarios (Opcional)",
     "en": "Comments (Optional)"
+},
+
+// ===== PÁGINA: DESARROLLO DE SOFTWARE - TRADUCCIONES COMPLETAS =====
+
+// Hero Section
+"dev_tag": {
+    "es": "TRANSFORMACIÓN DIGITAL",
+    "en": "DIGITAL TRANSFORMATION"
+},
+"dev_hero_title": {
+    "es": "Desarrollo de Software a la Medida de su Empresa",
+    "en": "Software Development Tailored to Your Business"
+},
+"dev_hero_subtitle": {
+    "es": "Construimos soluciones tecnológicas escalables: desde software empresarial con Java, .Net y Angular, hasta sitios web, tiendas online y aplicaciones móviles que impulsan su negocio.",
+    "en": "We build scalable technology solutions: from enterprise software with Java, .Net and Angular, to websites, online stores and mobile applications that drive your business."
+},
+"dev_hero_cta": {
+    "es": "Explorar Soluciones",
+    "en": "Explore Solutions"
+},
+"dev_hero_cta2": {
+    "es": "Solicitar Asesoría",
+    "en": "Request Consultation"
+},
+
+// Categorías principales
+"dev_categories_title": {
+    "es": "Nuestras Áreas de Desarrollo",
+    "en": "Our Development Areas"
+},
+"dev_categories_subtitle": {
+    "es": "Cuatro pilares tecnológicos para transformar y escalar su negocio digital",
+    "en": "Four technology pillars to transform and scale your digital business"
+},
+"dev_cat1_title": {
+    "es": "Desarrollo de Software",
+    "en": "Software Development"
+},
+"dev_cat1_text": {
+    "es": "Aplicaciones empresariales a medida con Java, .Net, Angular y Oracle Apex.",
+    "en": "Custom enterprise applications with Java, .Net, Angular and Oracle Apex."
+},
+"dev_cat2_title": {
+    "es": "Sitios Web",
+    "en": "Websites"
+},
+"dev_cat2_text": {
+    "es": "Diseño y desarrollo web moderno con HTML, Bootstrap, Next.js y WordPress.",
+    "en": "Modern web design and development with HTML, Bootstrap, Next.js and WordPress."
+},
+"dev_cat3_title": {
+    "es": "Tiendas Online",
+    "en": "Online Stores"
+},
+"dev_cat3_text": {
+    "es": "E-Commerce profesional con WooCommerce: integración de pagos y logística.",
+    "en": "Professional E-Commerce with WooCommerce: payment and logistics integration."
+},
+"dev_cat4_title": {
+    "es": "Aplicaciones Móviles",
+    "en": "Mobile Applications"
+},
+"dev_cat4_text": {
+    "es": "Apps nativas e híbridas para iOS y Android adaptadas a su negocio.",
+    "en": "Native and hybrid apps for iOS and Android tailored to your business."
+},
+
+// Software Empresarial
+"dev_sw_tag": {
+    "es": "SOFTWARE EMPRESARIAL",
+    "en": "ENTERPRISE SOFTWARE"
+},
+"dev_sw_title": {
+    "es": "Desarrollo de Software Personalizado",
+    "en": "Custom Software Development"
+},
+"dev_sw_subtitle": {
+    "es": "Diseñamos e implementamos sistemas empresariales robustos con las tecnologías líderes del mercado, adaptados a los procesos únicos de su organización.",
+    "en": "We design and implement robust enterprise systems with leading market technologies, adapted to the unique processes of your organization."
+},
+
+// Java
+"dev_java_title": {
+    "es": "Desarrollo Java",
+    "en": "Java Development"
+},
+"dev_java_tagline": {
+    "es": "Robusto, escalable y seguro",
+    "en": "Robust, scalable and secure"
+},
+"dev_java_text": {
+    "es": "Desarrollamos aplicaciones empresariales de alta disponibilidad con Java EE/Spring Boot. Ideal para sistemas bancarios, ERP, CRM y plataformas de alto tráfico que requieren máxima estabilidad y rendimiento.",
+    "en": "We develop high-availability enterprise applications with Java EE/Spring Boot. Ideal for banking systems, ERP, CRM and high-traffic platforms requiring maximum stability and performance."
+},
+"dev_java_feat1": {
+    "es": "Microservicios con Spring Boot",
+    "en": "Microservices with Spring Boot"
+},
+"dev_java_feat2": {
+    "es": "Integración con bases de datos Oracle, PostgreSQL, MySQL",
+    "en": "Integration with Oracle, PostgreSQL, MySQL databases"
+},
+"dev_java_feat3": {
+    "es": "APIs RESTful y servicios web SOAP",
+    "en": "RESTful APIs and SOAP web services"
+},
+
+// .Net
+"dev_net_title": {
+    "es": "Desarrollo .Net / C#",
+    "en": ".Net / C# Development"
+},
+"dev_net_tagline": {
+    "es": "Ecosistema Microsoft de confianza",
+    "en": "Trusted Microsoft ecosystem"
+},
+"dev_net_text": {
+    "es": "Construimos soluciones sobre la plataforma .NET de Microsoft con C# y ASP.NET Core. Perfecta para empresas que trabajan con el ecosistema Microsoft: Azure, SQL Server y Active Directory.",
+    "en": "We build solutions on Microsoft's .NET platform with C# and ASP.NET Core. Perfect for companies working with the Microsoft ecosystem: Azure, SQL Server and Active Directory."
+},
+"dev_net_feat1": {
+    "es": "ASP.NET Core MVC y Web API",
+    "en": "ASP.NET Core MVC and Web API"
+},
+"dev_net_feat2": {
+    "es": "Integración con Azure y SQL Server",
+    "en": "Azure and SQL Server integration"
+},
+"dev_net_feat3": {
+    "es": "Aplicaciones de escritorio y web corporativas",
+    "en": "Corporate desktop and web applications"
+},
+
+// Angular
+"dev_angular_title": {
+    "es": "Desarrollo Angular",
+    "en": "Angular Development"
+},
+"dev_angular_tagline": {
+    "es": "Interfaces de usuario empresariales",
+    "en": "Enterprise user interfaces"
+},
+"dev_angular_text": {
+    "es": "Creamos aplicaciones web de una sola página (SPA) modernas y reactivas con Angular. Perfectas como frontend de sistemas empresariales, dashboards y portales corporativos de alto rendimiento.",
+    "en": "We create modern and reactive single-page applications (SPA) with Angular. Perfect as the frontend for enterprise systems, dashboards and high-performance corporate portals."
+},
+"dev_angular_feat1": {
+    "es": "Single Page Applications (SPA)",
+    "en": "Single Page Applications (SPA)"
+},
+"dev_angular_feat2": {
+    "es": "Dashboards y paneles administrativos",
+    "en": "Dashboards and administrative panels"
+},
+"dev_angular_feat3": {
+    "es": "Integración con backends Java, .Net y REST",
+    "en": "Integration with Java, .Net and REST backends"
+},
+
+// Oracle Apex
+"dev_apex_title": {
+    "es": "Oracle APEX",
+    "en": "Oracle APEX"
+},
+"dev_apex_tagline": {
+    "es": "Low-code de alto rendimiento empresarial",
+    "en": "High-performance enterprise low-code"
+},
+"dev_apex_text": {
+    "es": "Desarrollamos aplicaciones web avanzadas directamente sobre Oracle Database con Oracle APEX. La plataforma low-code líder para construir reportes, formularios y sistemas transaccionales con velocidad inigualable.",
+    "en": "We develop advanced web applications directly on Oracle Database with Oracle APEX. The leading low-code platform for building reports, forms and transactional systems with unmatched speed."
+},
+"dev_apex_feat1": {
+    "es": "Reportes y dashboards sobre Oracle DB",
+    "en": "Reports and dashboards on Oracle DB"
+},
+"dev_apex_feat2": {
+    "es": "Formularios transaccionales y workflows",
+    "en": "Transactional forms and workflows"
+},
+"dev_apex_feat3": {
+    "es": "Migración y modernización de aplicaciones legacy",
+    "en": "Migration and modernization of legacy applications"
+},
+
+// Sitios Web
+"dev_web_tag": {
+    "es": "SITIOS WEB PROFESIONALES",
+    "en": "PROFESSIONAL WEBSITES"
+},
+"dev_web_title": {
+    "es": "Diseño y Desarrollo Web Moderno",
+    "en": "Modern Web Design and Development"
+},
+"dev_web_subtitle": {
+    "es": "Creamos presencias digitales que generan impacto: rápidas, responsivas, optimizadas para SEO y con diseño orientado a resultados.",
+    "en": "We create digital presences that generate impact: fast, responsive, SEO-optimized and with results-driven design."
+},
+
+// HTML / CSS / Bootstrap
+"dev_html_title": {
+    "es": "HTML · CSS · Bootstrap",
+    "en": "HTML · CSS · Bootstrap"
+},
+"dev_html_tagline": {
+    "es": "La base del desarrollo web moderno",
+    "en": "The foundation of modern web development"
+},
+"dev_html_text": {
+    "es": "Desarrollamos sitios web corporativos y landing pages con código limpio, semántico y responsivo. Bootstrap garantiza una experiencia consistente en todos los dispositivos.",
+    "en": "We develop corporate websites and landing pages with clean, semantic and responsive code. Bootstrap ensures a consistent experience across all devices."
+},
+
+// Next.js
+"dev_next_title": {
+    "es": "Next.js (React Framework)",
+    "en": "Next.js (React Framework)"
+},
+"dev_next_tagline": {
+    "es": "Rendimiento y SEO al siguiente nivel",
+    "en": "Performance and SEO to the next level"
+},
+"dev_next_text": {
+    "es": "Construimos aplicaciones web de alto rendimiento con Next.js. Server Side Rendering (SSR), generación de sitios estáticos y rutas optimizadas para una experiencia de usuario excepcional.",
+    "en": "We build high-performance web applications with Next.js. Server Side Rendering (SSR), static site generation and optimized routes for an exceptional user experience."
+},
+
+// WordPress
+"dev_wp_title": {
+    "es": "WordPress",
+    "en": "WordPress"
+},
+"dev_wp_tagline": {
+    "es": "El CMS más poderoso del mundo",
+    "en": "The world's most powerful CMS"
+},
+"dev_wp_text": {
+    "es": "Implementamos sitios corporativos, blogs y portales con WordPress. Temas a medida, plugins especializados y optimización SEO para que su empresa tenga la presencia digital que merece.",
+    "en": "We implement corporate sites, blogs and portals with WordPress. Custom themes, specialized plugins and SEO optimization so your company has the digital presence it deserves."
+},
+
+// Stack
+"dev_stack_title": {
+    "es": "Nuestro Stack Tecnológico Web",
+    "en": "Our Web Technology Stack"
+},
+
+// E-Commerce / WooCommerce
+"dev_ecom_tag": {
+    "es": "E-COMMERCE PROFESIONAL",
+    "en": "PROFESSIONAL E-COMMERCE"
+},
+"dev_ecom_title": {
+    "es": "Tiendas Online con WooCommerce",
+    "en": "Online Stores with WooCommerce"
+},
+"dev_ecom_text": {
+    "es": "Transformamos su idea de negocio en una tienda online de alto rendimiento. WooCommerce, la plataforma e-commerce más utilizada del mundo, le da el control total sobre su catálogo, inventario y pagos.",
+    "en": "We transform your business idea into a high-performance online store. WooCommerce, the world's most popular e-commerce platform, gives you complete control over your catalog, inventory and payments."
+},
+"dev_ecom_feat1_title": {
+    "es": "Pagos Integrados:",
+    "en": "Integrated Payments:"
+},
+"dev_ecom_feat1_text": {
+    "es": " PayU, PayPal, Stripe, PSE y tarjetas de crédito.",
+    "en": " PayU, PayPal, Stripe, PSE and credit cards."
+},
+"dev_ecom_feat2_title": {
+    "es": "Gestión de Inventario:",
+    "en": "Inventory Management:"
+},
+"dev_ecom_feat2_text": {
+    "es": " Control de stock, variantes de productos y alertas automáticas.",
+    "en": " Stock control, product variants and automatic alerts."
+},
+"dev_ecom_feat3_title": {
+    "es": "Logística y Envíos:",
+    "en": "Logistics and Shipping:"
+},
+"dev_ecom_feat3_text": {
+    "es": " Integración con operadores logísticos y cálculo automático de envíos.",
+    "en": " Integration with logistics operators and automatic shipping calculation."
+},
+"dev_ecom_feat4_title": {
+    "es": "Analítica de Ventas:",
+    "en": "Sales Analytics:"
+},
+"dev_ecom_feat4_text": {
+    "es": " Reportes detallados de rendimiento, productos más vendidos y conversiones.",
+    "en": " Detailed performance reports, best-selling products and conversions."
+},
+"dev_ecom_feat5_title": {
+    "es": "SEO y Marketing:",
+    "en": "SEO and Marketing:"
+},
+"dev_ecom_feat5_text": {
+    "es": " Optimización para buscadores y herramientas de email marketing integradas.",
+    "en": " Search engine optimization and integrated email marketing tools."
+},
+"dev_ecom_cta": {
+    "es": "Crear mi Tienda Online",
+    "en": "Create My Online Store"
+},
+"dev_ecom_card_title": {
+    "es": "¿Por qué WooCommerce?",
+    "en": "Why WooCommerce?"
+},
+"dev_ecom_why1": {
+    "es": "28% del e-commerce mundial",
+    "en": "28% of global e-commerce"
+},
+"dev_ecom_why2": {
+    "es": "Open Source y sin licencias",
+    "en": "Open Source and license-free"
+},
+"dev_ecom_why3": {
+    "es": "Miles de extensiones",
+    "en": "Thousands of extensions"
+},
+"dev_ecom_why4": {
+    "es": "Escalable a su crecimiento",
+    "en": "Scalable to your growth"
+},
+"dev_ecom_why5": {
+    "es": "Panel intuitivo y fácil de usar",
+    "en": "Intuitive and easy-to-use panel"
+},
+"dev_ecom_why6": {
+    "es": "Pagos locales Colombia",
+    "en": "Local Colombian payments"
+},
+"dev_ecom_cta_card_text": {
+    "es": "Solicite una demo personalizada de su futura tienda",
+    "en": "Request a personalized demo of your future store"
+},
+"dev_ecom_demo_cta": {
+    "es": "Ver Demo",
+    "en": "View Demo"
+},
+
+// Apps Móviles
+"dev_app_tag": {
+    "es": "APLICACIONES MÓVILES",
+    "en": "MOBILE APPLICATIONS"
+},
+"dev_app_title": {
+    "es": "Apps Móviles para iOS y Android",
+    "en": "Mobile Apps for iOS and Android"
+},
+"dev_app_subtitle": {
+    "es": "Llevamos su negocio al bolsillo de sus clientes y colaboradores. Desarrollamos aplicaciones nativas e híbridas con experiencias de usuario excepcionales.",
+    "en": "We bring your business to the pocket of your customers and collaborators. We develop native and hybrid applications with exceptional user experiences."
+},
+"dev_app1_title": {
+    "es": "Apps Nativas iOS",
+    "en": "Native iOS Apps"
+},
+"dev_app1_tagline": {
+    "es": "Swift / Objective-C",
+    "en": "Swift / Objective-C"
+},
+"dev_app1_text": {
+    "es": "Aplicaciones nativas para iPhone y iPad desarrolladas con Swift. Máximo rendimiento, acceso completo al hardware del dispositivo y cumplimiento con las directrices de la App Store.",
+    "en": "Native applications for iPhone and iPad developed with Swift. Maximum performance, full access to device hardware and compliance with App Store guidelines."
+},
+"dev_app2_title": {
+    "es": "Apps Nativas Android",
+    "en": "Native Android Apps"
+},
+"dev_app2_tagline": {
+    "es": "Kotlin / Java",
+    "en": "Kotlin / Java"
+},
+"dev_app2_text": {
+    "es": "Aplicaciones Android desarrolladas con Kotlin para aprovechar al máximo el ecosistema Google. Publicación en Play Store, integración con servicios Google y optimización para los principales fabricantes.",
+    "en": "Android applications developed with Kotlin to make the most of the Google ecosystem. Play Store publication, Google services integration and optimization for major manufacturers."
+},
+"dev_app3_title": {
+    "es": "Apps Híbridas",
+    "en": "Hybrid Apps"
+},
+"dev_app3_tagline": {
+    "es": "React Native / Ionic",
+    "en": "React Native / Ionic"
+},
+"dev_app3_text": {
+    "es": "Una sola base de código para iOS y Android. Con React Native o Ionic desarrollamos apps con look & feel nativo, reduciendo costos y tiempo de entrega sin sacrificar experiencia de usuario.",
+    "en": "A single codebase for iOS and Android. With React Native or Ionic we develop apps with native look & feel, reducing costs and delivery time without sacrificing user experience."
+},
+"dev_app_types_title": {
+    "es": "Tipos de Aplicaciones que Desarrollamos",
+    "en": "Types of Applications We Develop"
+},
+"dev_apptype1": {
+    "es": "Apps de Ventas y E-Commerce",
+    "en": "Sales and E-Commerce Apps"
+},
+"dev_apptype2": {
+    "es": "CRM y Gestión de Clientes",
+    "en": "CRM and Customer Management"
+},
+"dev_apptype3": {
+    "es": "Geolocalización y Logística",
+    "en": "Geolocation and Logistics"
+},
+"dev_apptype4": {
+    "es": "Dashboards y Reportes",
+    "en": "Dashboards and Reports"
+},
+"dev_apptype5": {
+    "es": "Salud y Telemedicina",
+    "en": "Health and Telemedicine"
+},
+"dev_apptype6": {
+    "es": "E-Learning y Capacitación",
+    "en": "E-Learning and Training"
+},
+
+// Proceso de desarrollo
+"dev_process_title": {
+    "es": "Nuestra Metodología de Desarrollo",
+    "en": "Our Development Methodology"
+},
+"dev_process_subtitle": {
+    "es": "Un proceso probado que garantiza calidad, transparencia y entrega a tiempo",
+    "en": "A proven process that guarantees quality, transparency and on-time delivery"
+},
+"dev_step1_title": {
+    "es": "1. Análisis",
+    "en": "1. Analysis"
+},
+"dev_step1_text": {
+    "es": "Entendemos sus requerimientos y definimos el alcance del proyecto.",
+    "en": "We understand your requirements and define the project scope."
+},
+"dev_step2_title": {
+    "es": "2. Diseño",
+    "en": "2. Design"
+},
+"dev_step2_text": {
+    "es": "Prototipado de interfaces y arquitectura técnica de la solución.",
+    "en": "Interface prototyping and technical architecture of the solution."
+},
+"dev_step3_title": {
+    "es": "3. Desarrollo",
+    "en": "3. Development"
+},
+"dev_step3_text": {
+    "es": "Construcción iterativa con revisiones periódicas y demos del avance.",
+    "en": "Iterative construction with periodic reviews and progress demos."
+},
+"dev_step4_title": {
+    "es": "4. Pruebas",
+    "en": "4. Testing"
+},
+"dev_step4_text": {
+    "es": "Testing exhaustivo: funcional, de rendimiento y de seguridad.",
+    "en": "Exhaustive testing: functional, performance and security."
+},
+"dev_step5_title": {
+    "es": "5. Despliegue",
+    "en": "5. Deployment"
+},
+"dev_step5_text": {
+    "es": "Lanzamiento en producción, capacitación al equipo y soporte post-entrega.",
+    "en": "Production launch, team training and post-delivery support."
+},
+
+// Beneficios
+"dev_benefits_title": {
+    "es": "¿Por qué Desarrollar con Megatel?",
+    "en": "Why Develop with Megatel?"
+},
+"dev_benefits_intro": {
+    "es": "Con más de 30 años de experiencia en tecnología, en Megatel entendemos que cada negocio es único. Nuestro equipo certificado diseña soluciones que crecen con su empresa.",
+    "en": "With over 30 years of technology experience, at Megatel we understand that every business is unique. Our certified team designs solutions that grow with your company."
+},
+"dev_ben1_title": {
+    "es": "Equipo Especializado:",
+    "en": "Specialized Team:"
+},
+"dev_ben1_text": {
+    "es": " Desarrolladores certificados en cada tecnología con experiencia en proyectos empresariales reales.",
+    "en": " Developers certified in each technology with experience in real enterprise projects."
+},
+"dev_ben2_title": {
+    "es": "Código de Calidad:",
+    "en": "Quality Code:"
+},
+"dev_ben2_text": {
+    "es": " Buenas prácticas, documentación completa y código mantenible a largo plazo.",
+    "en": " Best practices, complete documentation and long-term maintainable code."
+},
+"dev_ben3_title": {
+    "es": "Entrega Puntual:",
+    "en": "On-Time Delivery:"
+},
+"dev_ben3_text": {
+    "es": " Metodología ágil con hitos claros y comunicación transparente en cada etapa.",
+    "en": " Agile methodology with clear milestones and transparent communication at every stage."
+},
+"dev_ben4_title": {
+    "es": "Soporte Post-Entrega:",
+    "en": "Post-Delivery Support:"
+},
+"dev_ben4_text": {
+    "es": " Acompañamiento técnico después del lanzamiento para garantizar la continuidad de su negocio.",
+    "en": " Technical support after launch to ensure the continuity of your business."
+},
+"dev_ben5_title": {
+    "es": "Soluciones Escalables:",
+    "en": "Scalable Solutions:"
+},
+"dev_ben5_text": {
+    "es": " Arquitecturas diseñadas para crecer junto con su empresa sin necesidad de reescribir desde cero.",
+    "en": " Architectures designed to grow with your company without needing to rewrite from scratch."
+},
+"dev_benefits_card_title": {
+    "es": "¿Tiene un Proyecto en Mente?",
+    "en": "Have a Project in Mind?"
+},
+"dev_benefits_card_text": {
+    "es": "Cuéntenos su idea y nuestro equipo de desarrollo le presentará la solución tecnológica más adecuada para su negocio.",
+    "en": "Tell us your idea and our development team will present the most suitable technology solution for your business."
+},
+"dev_benefits_cta1": {
+    "es": "Solicitar Asesoría Gratuita",
+    "en": "Request Free Consultation"
+},
+"dev_benefits_cta2": {
+    "es": "Chatear por WhatsApp",
+    "en": "Chat on WhatsApp"
+},
+
+// Sección de cierre
+"dev_closing_title": {
+    "es": "Construyamos Juntos su Próxima Solución Digital",
+    "en": "Let's Build Your Next Digital Solution Together"
+},
+"dev_closing_subtitle": {
+    "es": "Del concepto al código: llevamos su proyecto de software, sitio web, tienda online o app móvil a la realidad con los más altos estándares de calidad.",
+    "en": "From concept to code: we bring your software project, website, online store or mobile app to life with the highest quality standards."
+},
+"dev_closing_cta1": {
+    "es": "Hablar con un Especialista",
+    "en": "Talk to a Specialist"
+},
+"dev_closing_cta2": {
+    "es": "Ver Todos los Servicios",
+    "en": "View All Services"
 }
 
 };
