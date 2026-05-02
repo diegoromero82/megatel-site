@@ -214,7 +214,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffc107 !important; /* Amarillo en hover */
+    color: #ffc107 !important;
 }
 
 .navbar-nav .nav-link.active {
@@ -233,6 +233,94 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
+/* Contenedor relativo para el grupo */
+.custom-dropdown {
+    position: relative;
+}
+
+/* Icono de flecha que rota al hacer hover */
+.nav-icon-sm {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+.custom-dropdown:hover .nav-icon-sm {
+    transform: rotate(180deg);
+}
+
+/* Menú oculto por defecto con animación de entrada */
+.custom-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 240px;
+    background-color: #1e293b; /* Slate-800 para modo oscuro */
+    border: 1px solid #334155;
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 0.5rem 0;
+    margin-top: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); /* shadow-xl */
+    z-index: 50;
+    transition: all 0.2s ease;
+    transform: translateY(10px); /* slide-in-from-top-1 */
+}
+
+/* El "Puente" invisible: evita que el menú se cierre al mover el mouse hacia abajo */
+.custom-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+
+/* Estado Hover */
+.custom-dropdown:hover .custom-dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Items del menú */
+.custom-dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1.2rem;
+    color: #cbd5e1; /* slate-300 */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.custom-dropdown-item:hover {
+    background-color: #334155; /* slate-700 */
+    color: #0274be; /* Color primario Megatel */
+    padding-left: 1.5rem; /* Efecto de desplazamiento al hover */
+}
+
+.dropdown-divider-custom {
+    height: 1px;
+    margin: 0.5rem 0;
+    background-color: #334155;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 991px) {
+    .custom-dropdown-menu {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+}
+
 
 /* ===== 1.3 BOTONES FLOTANTES ===== */
 .floating-btn {
@@ -1763,11 +1851,6 @@ footer .border-secondary {
     }
 }
     
-
-
-/* ================================================================================
-   FIN DEL ARCHIVO CSS
-   ================================================================================ */
 /* ===== RESPONSIVE ADICIONAL PARA PARTNERS ===== */
 @media (max-width: 992px) {
     .partner-logo-container {

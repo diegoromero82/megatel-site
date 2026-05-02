@@ -7,8 +7,10 @@
 
     <!-- SEO Meta Tags -->
     <title>Servicios Tecnológicos Empresariales | Desarrollo, Soporte y Mantenimiento - Megatel SAS</title>
-    <meta name="description" content="Servicios tecnológicos integrales: desarrollo de aplicaciones empresariales, diseño web y e-commerce, contratos de soporte preventivo/correctivo, reparación y mantenimiento de equipos. Soluciones 360° en Bogotá.">
-    <meta name="keywords" content="desarrollo software empresarial, diseño web Bogotá, soporte técnico empresas, mantenimiento equipos, ERP, CRM, e-commerce, reparación computadores, soporte IT, servicios tecnológicos Colombia">
+    <meta name="description"
+        content="Servicios tecnológicos integrales: desarrollo de aplicaciones empresariales, diseño web y e-commerce, contratos de soporte preventivo/correctivo, reparación y mantenimiento de equipos. Soluciones 360° en Bogotá.">
+    <meta name="keywords"
+        content="desarrollo software empresarial, diseño web Bogotá, soporte técnico empresas, mantenimiento equipos, ERP, CRM, e-commerce, reparación computadores, soporte IT, servicios tecnológicos Colombia">
     <meta name="author" content="Megatel SAS">
     <meta name="robots" content="index, follow">
 
@@ -70,7 +72,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar" role="navigation"
         aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="index.html" aria-label="Megatel SAS - Inicio">
+            <a class="navbar-brand" href="/" aria-label="Megatel SAS - Inicio">
                 <img src="images/Megatel_LogoBlanco.png" alt="Logo de Megatel SAS" class="d-inline-block align-text-top"
                     height="40">
             </a>
@@ -82,17 +84,64 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" data-i18n="nav_home">Inicio</a>
+                        <a class="nav-link" href="/" data-i18n="nav_home">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html" data-i18n="nav_products">Productos</a>
+                    <li class="nav-item custom-dropdown">
+                        <a class="nav-link d-flex align-items-center gap-1" href="productos.html"
+                            data-i18n="nav_products">
+                            Productos
+                            <i class="fas fa-chevron-down nav-icon-sm"></i>
+                        </a>
+                        <ul class="custom-dropdown-menu">
+                            <li><a href="productos.html#telefonia-ip" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_tel">Telefonía IP</a></li>
+                            <li><a href="productos.html#conectividad" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_con">Conectividad</a></li>
+                            <li><a href="productos.html#seguridad-electronica" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_seg">Seguridad Electrónica</a></li>
+                            <li><a href="productos.html#proteccion" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_prot">Protección Eléctrica</a></li>
+                            <li><a href="productos.html#videoconferencia" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_video">Videoconferencia</a></li>
+                            <li><a href="productos.html#accesorios" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_acc">Accesorios Tecnológicos</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="servicios.html"
-                            data-i18n="nav_services">Servicios</a>
+                    <li class="nav-item custom-dropdown">                        
+                        <a class="nav-link active d-flex align-items-center gap-1" href="servicios.html"
+                            data-i18n="nav_services">
+                            Servicios
+                            <i class="fas fa-chevron-down nav-icon-sm"></i>
+                        </a>                        
+                        <ul class="custom-dropdown-menu">
+                            <li>
+                                <a href="servicios.html#desarrollo-app" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_dev">
+                                    Desarrollo de Aplicaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="servicios.html#diseno-web" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_web">
+                                    Diseño Web y E-commerce
+                                </a>
+                            </li>
+                            <li>
+                                <a href="servicios.html#soporte-it" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_sup">
+                                    Soporte Técnico
+                                </a>
+                            </li>
+                            <li>
+                                <a href="servicios.html#reparacion-equipos" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_rep">
+                                    Reparación de Hardware
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html" data-i18n="nav_contact">Contacto</a>
@@ -114,27 +163,19 @@
     <!-- ========== CONTENIDO PRINCIPAL: SERVICIOS (SCROLL NORMAL) ========== -->
     <main role="main">
 
-        <!-- 1. HERO DE SERVICIOS - Con altura automática, sin full-screen -->
-        <section id="services-hero" class="full-screen-section section-confidence" aria-label="Sección de bienvenida a servicios"
-            style="min-height: 60vh;">
-
+        <!-- 1. HERO DE SERVICIOS -->
+        <section id="services-hero" class="full-screen-section section-confidence" style="min-height: 60vh;">
             <div class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
                 <div class="row">
-                    <div class="col-lg-10 col-md-11 col-12 mx-auto text-center text-white">
+                    <div class="col-lg-8 col-md-10 col-12 mx-auto text-center text-white">
                         <div class="bg-dark bg-opacity-75 p-4 p-md-5 rounded-3 shadow-lg">
-                            <span class="badge bg-danger mb-3 fw-bold" data-i18n="services_tag">SOLUCIONES 360°</span>
-                            <h1 class="display-4 fw-bold mb-4" data-i18n="services_hero_title">
-                                Portafolio Integral de Servicios Tecnológicos
-                            </h1>
-                            <p class="lead mb-4" data-i18n="services_hero_subtitle">
-                                Potencie su infraestructura y operaciones con nuestro equipo experto, cubriendo desde el
-                                desarrollo de software hasta el mantenimiento de hardware.
-                            </p>
-
-                            <!-- CTA principal a la sección de servicios -->
-                            <a href="#servicios-detalle" class="btn btn-warning btn-lg mt-3 scroll-down-btn fw-bold"
-                                data-i18n="services_hero_cta" aria-label="Ver nuestros servicios">
-                                Conozca Nuestros Servicios <i class="fas fa-arrow-down ms-2" aria-hidden="true"></i>
+                            <h1 class="display-5 fw-bold mb-4" data-i18n="services_page_title">Servicios Tecnológicos
+                                360°</h1>
+                            <p class="lead mb-4" data-i18n="services_page_subtitle">Soluciones integrales de software y
+                                hardware diseñadas para escalar su negocio.</p>
+                            <a href="#desarrollo-app" class="btn btn-warning btn-lg mt-3 scroll-down-btn"
+                                data-i18n="services_page_cta">
+                                Ver Servicios <i class="fas fa-arrow-down ms-2"></i>
                             </a>
                         </div>
                     </div>
@@ -142,89 +183,660 @@
             </div>
         </section>
 
-        <!-- 2. BLOQUE DE DETALLE DE SERVICIOS (4 PILARES) -->
-        <section id="servicios-detalle" class="py-5 bg-gradient-gray" aria-label="Detalle de servicios">
-            <div class="container my-5">
-                <h2 class="text-center mb-5 text-dark" data-i18n="services_detail_title">Nuestra Oferta de Valor</h2>
+        <!-- SECCIÓN A: DESARROLLO DE APLICACIONES (Fondo Blanco) -->
+        <section id="desarrollo-app" class="bg-white py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 border-start border-primary border-5 ps-4 py-2">
+                        <h2 class="display-4 fw-bold text-dark mb-0" data-i18n="ser_dev_title">Desarrollo de
+                            Aplicaciones</h2>
+                        <p class="h5 text-muted text-uppercase fw-light mt-2" style="letter-spacing: 4px;"
+                            data-i18n="ser_dev_subtitle">Software a la medida con estándares globales</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="images/desarrollador-megatel.png" class="img-fluid rounded-4 shadow-sm"
+                            alt="Desarrollo de Software">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h2 mb-4 text-primary" data-i18n="ser_dev_benefits_title">Ingeniería de Software</h3>
+                        <p class="lead text-muted" data-i18n="ser_dev_benefits_desc">Construimos soluciones escalables
+                            utilizando metodologías ágiles y las últimas tecnologías del mercado para optimizar sus
+                            procesos internos.</p>
+                        <div class="text-left py-5 border-top">
+                            <a href="desarrollo.html" class="btn btn-megatel-red btn-sm px-5 shadow-sm"
+                                data-i18n="common_learn_more">
+                                Conocer más
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="row g-4">
+                </div>
+                <!-- Fila de Tarjetas de Desarrollo (8 unidades) -->
+                <div class="row g-4 mb-5">
 
-                    <!-- Servicio 1: Desarrollo de Aplicaciones Empresariales -->
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="card h-100 shadow service-card service-card-dev">
-                            <div class="card-body">
-                                <i class="fas fa-cogs service-icon" aria-hidden="true"></i>
-                                <h3 class="card-title h4 fw-bold text-danger" data-i18n="service1_title">
-                                    Desarrollo de Aplicaciones Empresariales
-                                </h3>
-                                <p class="card-text" data-i18n="service1_text">
-                                    Creamos software a la medida (ERP, CRM, Intranets) para optimizar procesos internos,
-                                    automatizar tareas y generar ventajas competitivas.
-                                </p>
-                                <a href="contacto.html?service=app_dev" class="btn btn-sm btn-outline-danger mt-3"
-                                    data-i18n="service_cta" aria-label="Solicitar cotización para desarrollo de aplicaciones">
-                                    Solicitar Cotización <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                                </a>
+                    <!-- Tarjeta 1: Clean Architecture -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-layer-group fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card1_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card1_desc"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Servicio 2: Diseño de Páginas Web y E-commerce -->
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="card h-100 shadow service-card service-card-web">
-                            <div class="card-body">
-                                <i class="fas fa-laptop-code service-icon" aria-hidden="true"></i>
-                                <h3 class="card-title h4 fw-bold text-warning" data-i18n="service2_title">
-                                    Diseño de Páginas Web y E-commerce
-                                </h3>
-                                <p class="card-text" data-i18n="service2_text">
-                                    Diseño responsive y optimizado para SEO, desde sitios informativos hasta plataformas
-                                    de comercio electrónico robustas con pasarelas de pago.
-                                </p>
-                                <a href="contacto.html?service=web_design" class="btn btn-sm btn-outline-warning mt-3"
-                                    data-i18n="service_cta" aria-label="Solicitar cotización para diseño web">
-                                    Solicitar Cotización <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                                </a>
+                    <!-- Tarjeta 2: Frontend -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-code fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card2_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card2_desc"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Servicio 3: Contrato de Soporte Preventivo y Correctivo -->
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="card h-100 shadow service-card service-card-support">
-                            <div class="card-body">
-                                <i class="fas fa-hands-helping service-icon" aria-hidden="true"></i>
-                                <h3 class="card-title h4 fw-bold text-primary" data-i18n="service3_title">
-                                    Contrato de Soporte Preventivo y Correctivo
-                                </h3>
-                                <p class="card-text" data-i18n="service3_text">
-                                    Asegure la continuidad de su negocio con asistencia técnica remota y en sitio.
-                                    Mantenimiento proactivo de redes, servidores y estaciones de trabajo.
-                                </p>
-                                <a href="contacto.html?service=support" class="btn btn-sm btn-outline-primary mt-3"
-                                    data-i18n="service_cta" aria-label="Solicitar contrato de soporte">
-                                    Solicitar Contrato <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                                </a>
+                    <!-- Tarjeta 3: Backend -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-terminal fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card3_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card3_desc"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Servicio 4: Reparación y Mantenimiento de Equipos -->
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="card h-100 shadow service-card service-card-repair">
-                            <div class="card-body">
-                                <i class="fas fa-wrench service-icon" aria-hidden="true"></i>
-                                <h3 class="card-title h4 fw-bold text-success" data-i18n="service4_title">
-                                    Reparación de Equipos y Hardware
-                                </h3>
-                                <p class="card-text" data-i18n="service4_text">
-                                    Diagnóstico y reparación profesional de computadores, laptops, impresoras y hardware
-                                    de red. Recuperación de datos y reemplazo de componentes.
-                                </p>
-                                <a href="contacto.html?service=repair" class="btn btn-sm btn-outline-success mt-3"
-                                    data-i18n="service_cta" aria-label="Consultar reparación de equipos">
-                                    Consultar Reparación <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                                </a>
+                    <!-- Tarjeta 4: Bases de Datos -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-database fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card4_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card4_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 5: Microservicios -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-cloud fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card5_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card5_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 6: Integraciones/APIs -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-link fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card6_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card6_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 7: Metodologías Ágiles -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-sync fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card7_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card7_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 8: QA y Seguridad -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-user-shield fa-3x text-primary mb-3" aria-hidden="true"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_dev_card8_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_dev_card8_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN B: DISEÑO WEB Y E-COMMERCE (Fondo Slate 100) -->
+        <section id="diseno-web" class="bg-slate-100 py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 border-start border-primary border-5 ps-4 py-2">
+                        <h2 class="display-4 fw-bold text-dark mb-0" data-i18n="ser_web_title">Diseño Web y E-commerce
+                        </h2>
+                        <p class="h5 text-muted text-uppercase fw-light mt-2" style="letter-spacing: 4px;"
+                            data-i18n="ser_web_subtitle">Su tienda abierta al mundo 24/7</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                        <img src="images/woocommerce.png" class="img-fluid rounded-4 shadow-sm" alt="E-commerce">
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <h3 class="h2 mb-4 text-primary" data-i18n="ser_web_benefits_title">Su negocio online</h3>
+                        <p class="lead text-muted" data-i18n="ser_web_benefits_desc">Creamos sitios web rápidos, seguros
+                            y optimizados para SEO que convierten visitantes en clientes fieles.</p>
+                        <div class="text-left py-5 border-top">
+                            <a href="desarrollo.html" class="btn btn-megatel-red btn-sm px-5 shadow-sm"
+                                data-i18n="common_learn_more">
+                                Conocer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 mb-5">
+                    <!-- T1: HTML5 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fab fa-html5 fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card1_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card1_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T2: JS -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fab fa-js fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card2_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card2_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T3: Next JS -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fab fa-react fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card3_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card3_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T4: WordPress -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fab fa-wordpress fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card4_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card4_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T5: WooCommerce -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card5_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card5_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T6: Elementor -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-paint-brush fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card6_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card6_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T7: Responsive -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card7_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card7_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T8: SEO -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-search-location fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_web_card8_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_web_card8_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN C: SOPORTE PREVENTIVO Y CORRECTIVO (Fondo Blanco) -->
+        <section id="soporte-it" class="bg-white py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 border-start border-primary border-5 ps-4 py-2">
+                        <h2 class="display-4 fw-bold text-dark mb-0" data-i18n="ser_sup_title">Soporte Técnico
+                            Especializado</h2>
+                        <p class="h5 text-muted text-uppercase fw-light mt-2" style="letter-spacing: 4px;"
+                            data-i18n="ser_sup_subtitle">Aseguramos la continuidad de su operación</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="images/teamwork-megatel.png" class="img-fluid rounded-4 shadow-sm" alt="Soporte IT">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h2 mb-4 text-primary" data-i18n="ser_sup_benefits_title">Contratos de Mantenimiento
+                        </h3>
+                        <p class="lead text-muted" data-i18n="ser_sup_benefits_desc">Asistencia técnica remota y
+                            presencial para que su infraestructura tecnológica nunca se detenga.</p>
+                        <div class="text-left py-5 border-top">
+                            <a href="contacto.html" class="btn btn-megatel-red btn-sm px-5 shadow-sm"
+                                data-i18n="common_learn_more">
+                                Conocer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila de Tarjetas (8 unidades) -->
+                <div class="row g-4 mb-5">
+                    <!-- T1: Soporte Remoto -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card1_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card1_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T2: Asistencia Sitio -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-truck-pickup fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card2_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card2_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T3: Preventivo -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-clipboard-check fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card3_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card3_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T4: Servidores -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card4_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card4_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T5: Redes -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-network-wired fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card5_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card5_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T6: Seguridad -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-user-shield fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card6_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card6_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T7: Backup -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-copy fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card7_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card7_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T8: Consultoría -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-light shadow-sm">
+                                    <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_sup_card8_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_sup_card8_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN D: REPARACIÓN DE EQUIPOS (Fondo Slate 100) -->
+        <section id="reparacion-equipos" class="bg-slate-100 py-5">
+            <div class="container">
+
+                <!-- Encabezado de Sección -->
+                <div class="row mb-5">
+                    <div class="col-12 border-start border-primary border-5 ps-4 py-2">
+                        <h2 class="display-4 fw-bold text-dark mb-0" data-i18n="ser_rep_title">
+                            Reparación de Hardware
+                        </h2>
+                        <p class="h5 text-muted text-uppercase fw-light mt-2" style="letter-spacing: 4px;"
+                            data-i18n="ser_rep_subtitle">
+                            Diagnóstico profesional y repuestos originales
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloque de Imagen y Beneficios -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <!-- Imagen representativa del equipo técnico -->
+                        <img src="images/teamwork-megatel.png" class="img-fluid rounded-4 shadow-sm"
+                            alt="Laboratorio Técnico Megatel">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h2 mb-4 text-primary" data-i18n="ser_rep_benefits_title">
+                            Restauración de Activos Críticos
+                        </h3>
+                        <p class="lead text-muted" data-i18n="ser_rep_benefits_desc">
+                            Prolongamos la vida útil de su infraestructura tecnológica mediante intervenciones de alta
+                            precisión.</p>
+                        <div class="text-left py-5 border-top">
+                            <a href="contacto.html" class="btn btn-megatel-red btn-sm px-5 shadow-sm"
+                                data-i18n="common_learn_more">
+                                Conocer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila de Tarjetas (8 unidades) -->
+                <div class="row g-4 mb-5">
+                    <!-- T1: Computo -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-laptop-medical fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card1_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card1_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T2: Servidores -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card2_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card2_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T3: Telefonía -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-phone-slash fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card3_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card3_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T4: CCTV -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-camera-retro fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card4_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card4_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T5: Datos -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-save fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card5_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card5_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T6: Electrónica -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-microchip fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card6_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card6_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T7: Mantenimiento -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card7_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card7_desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T8: Repuestos -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-white shadow-sm">
+                                    <i class="fas fa-check-double fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold" data-i18n="ser_rep_card8_title"></h5>
+                                </div>
+                                <div
+                                    class="flip-card-back bg-primary text-white p-3 text-center d-flex align-items-center">
+                                    <p class="small mb-0" data-i18n="ser_rep_card8_desc"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -232,42 +844,38 @@
             </div>
         </section>
 
-        <!-- 3. BLOQUE ADICIONAL (Beneficios de Trabajar con Megatel) -->
-        <section id="beneficios" class="py-5 bg-white" aria-label="Beneficios">
-            <div class="container my-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h2 class="fw-bold mb-4 text-primary" data-i18n="benefits_title">
-                            ¿Por qué Elegir Megatel para sus Servicios?
-                        </h2>
-                        <p data-i18n="benefits_intro">
-                            Nos dedicamos a ser el socio tecnológico integral que su empresa necesita. Nuestra
-                            experiencia garantiza soluciones eficientes y resultados medibles.
-                        </p>
-                        <ul class="list-unstyled">
-                            <li class="mb-2" data-i18n="benefits_feat1">
-                                <i class="fas fa-shield-alt me-2 text-primary" aria-hidden="true"></i>
-                                <strong>Seguridad y Garantía:</strong> Servicios respaldados por profesionales
-                                certificados.
-                            </li>
-                            <li class="mb-2" data-i18n="benefits_feat2">
-                                <i class="fas fa-clock me-2 text-primary" aria-hidden="true"></i>
-                                <strong>Tiempo de Respuesta:</strong> Compromiso con SLAs para soporte rápido y
-                                efectivo.
-                            </li>
-                            <li class="mb-2" data-i18n="benefits_feat3">
-                                <i class="fas fa-dollar-sign me-2 text-primary" aria-hidden="true"></i>
-                                <strong>Optimización de Costos:</strong> Soluciones que reducen gastos operativos a
-                                largo plazo.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 mt-4 mt-lg-0 text-center">
-                        <!-- Placeholder de imagen representativa de soluciones integrales -->
-                        <img src="images/telefonia-megatel.png"
-                            class="img-fluid rounded-3 shadow-lg" alt="Diagrama de Soluciones Integrales Megatel"
-                            loading="lazy">
-                    </div>
+        <section id="aliados" class="py-5 bg-white border-top">
+            <div class="container mb-4">
+                <div class="text-center">
+                    <h3 class="fw-bold text-dark" data-i18n="brands_title">Aliados Estratégicos</h3>
+                    <hr class="mx-auto"
+                        style="width: 50px; height: 3px; background-color: var(--bs-primary); opacity: 1;">
+                </div>
+            </div>
+
+            <div class="brands-slider">
+                <div class="brands-track">
+                    <div class="brand-logo"><img src="images/partners/yeastar-logo.png" alt="Yeastar"></div>
+                    <div class="brand-logo"><img src="images/partners/Ubiquiti_Logo.png" alt="Ubiquiti"></div>
+                    <div class="brand-logo"><img src="images/partners/ruijie-logo.png" alt="Ruijie"></div>
+                    <div class="brand-logo"><img src="images/partners/Dahua-LOGO_.png" alt="Dahua"></div>
+                    <div class="brand-logo"><img src="images/partners/felitron-logo.png" alt="Felitron"></div>
+                    <div class="brand-logo"><img src="images/partners/Vertiv_logo.png" alt="Vertiv"></div>
+                    <div class="brand-logo"><img src="images/partners/Yealink_logo.png" alt="Yealink"></div>
+                    <div class="brand-logo"><img src="images/partners/Poly_Inc_Logo.png" alt="Poly"></div>
+                    <div class="brand-logo"><img src="images/partners/Sophos_logo.png" alt="Sophos"></div>
+                    <div class="brand-logo"><img src="images/partners/MikroTik_Logo.png" alt="Mikrotik"></div>
+
+                    <div class="brand-logo"><img src="images/partners/yeastar-logo.png" alt="Yeastar"></div>
+                    <div class="brand-logo"><img src="images/partners/Ubiquiti_Logo.png" alt="Ubiquiti"></div>
+                    <div class="brand-logo"><img src="images/partners/ruijie-logo.png" alt="Ruijie"></div>
+                    <div class="brand-logo"><img src="images/partners/Dahua-LOGO_.png" alt="Dahua"></div>
+                    <div class="brand-logo"><img src="images/partners/felitron-logo.png" alt="Felitron"></div>
+                    <div class="brand-logo"><img src="images/partners/Vertiv_logo.png" alt="Vertiv"></div>
+                    <div class="brand-logo"><img src="images/partners/Yealink_logo.png" alt="Yealink"></div>
+                    <div class="brand-logo"><img src="images/partners/Poly_Inc_Logo.png" alt="Poly"></div>
+                    <div class="brand-logo"><img src="images/partners/Sophos_logo.png" alt="Sophos"></div>
+                    <div class="brand-logo"><img src="images/partners/MikroTik_Logo.png" alt="Mikrotik"></div>
                 </div>
             </div>
         </section>
@@ -283,11 +891,9 @@
                             </h2>
                             <p class="lead mb-4" data-i18n="closing_text">
                                 Hable con nuestros expertos y solicite una consultoría sin compromiso.
-                            </p>                            
-                            <a href="contacto.html" 
-                               class="btn btn-light btn-lg mt-3" 
-                               data-i18n="closing_cta"
-                               aria-label="Solicitar consultoría gratuita">
+                            </p>
+                            <a href="contacto.html" class="btn btn-light btn-lg mt-3" data-i18n="closing_cta"
+                                aria-label="Solicitar consultoría gratuita">
                                 Solicite una Consultoría Gratuita
                             </a>
                         </div>
@@ -299,11 +905,106 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-3" role="contentinfo">
+    <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
-            <p class="mb-0" data-i18n="footer_text">
-                © 2025 Megatel SAS. Todos los derechos reservados.
-            </p>
+            <div class="row gy-4 mb-4">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <!-- Enlace al inicio envolviendo el logo -->
+                        <a href="/" aria-label="Volver al inicio">
+                            <img src="images/Megatel_LogoBlanco.png" alt="Megatel SAS" height="50">
+                        </a>
+                    </div>
+                    <p class="text-white-50 text-sm pe-lg-5 leading-relaxed" data-i18n="footer_desc">
+                        Llevamos más de 20 años transformando las comunicaciones empresariales a través de soluciones
+                        robustas en Telefonía IP, conectividad y seguridad electrónica.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="fw-bold h5 mb-4 text-primary" data-i18n="footer_links_title">Enlaces</h4>
+                    <ul class="list-unstyled space-y-2 text-sm">
+                        <li class="mb-2">
+                            <a href="/" data-i18n="nav_home"
+                                class="text-white-50 text-decoration-none hover-white">Inicio</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="quienes-somos.html" data-i18n="nav_about"
+                                class="text-white-50 text-decoration-none hover-white">Quiénes Somos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="productos.html" data-i18n="nav_products"
+                                class="text-white-50 text-decoration-none hover-white">Productos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="servicios.html" data-i18n="nav_services"
+                                class="text-white-50 text-decoration-none hover-white">Servicios</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contacto.html" data-i18n="nav_contact"
+                                class="text-white-50 text-decoration-none hover-white">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="fw-bold h5 mb-4 text-primary" data-i18n="footer_contact_title">Contacto</h4>
+                    <ul class="list-unstyled space-y-3 text-sm text-white-50">
+                        <li class="d-flex align-items-center gap-2 mb-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <a href="mailto:ventas@megatelco.com"
+                                class="text-white-50 text-decoration-none hover-white">
+                                ventas@megatelco.com
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-3">
+                            <i class="fab fa-whatsapp text-primary"></i>
+                            <a href="https://wa.me/573107630363" target="_blank"
+                                class="text-white-50 text-decoration-none hover-white">
+                                +57 310 763 0363
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-4">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span data-i18n="footer_location">Bogotá D.C., Colombia</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-4 pt-2">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/company/megatelsas" target="_blank"
+                                rel="noopener noreferrer" class="text-white-50 hover-primary fs-5"
+                                title="Visítanos en LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/megatelsas" target="_blank" rel="noopener noreferrer"
+                                class="text-white-50 hover-primary fs-5" title="Síguenos en Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/megatelsas/" target="_blank" rel="noopener noreferrer"
+                                class="text-white-50 hover-primary fs-5" title="Síguenos en Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-4 border-top border-secondary text-center text-md-start text-white-50 fs-small">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <p class="mb-0" data-i18n="footer_rights">
+                            &copy; 2026 Megatel SAS. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <span data-i18n="footer_dev_by">Desarrollado por</span>
+                        <a href="www.megatelsas.com" class="fw-bold text-white text-decoration-none">Megatel SAS</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 

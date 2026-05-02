@@ -66,7 +66,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar" role="navigation"
         aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="index.html" aria-label="Megatel SAS - Inicio">
+            <a class="navbar-brand" href="/" aria-label="Megatel SAS - Inicio">
                 <img src="images/Megatel_LogoBlanco.png" alt="Logo de Megatel SAS" class="d-inline-block align-text-top"
                     height="40">
             </a>
@@ -78,16 +78,48 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" data-i18n="nav_home">Inicio</a>
+                        <a class="nav-link" href="/" data-i18n="nav_home">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html" data-i18n="nav_products">Productos</a>
+                    <li class="nav-item custom-dropdown">
+                        <a class="nav-link d-flex align-items-center gap-1" href="productos.html"
+                            data-i18n="nav_products">
+                            Productos
+                            <i class="fas fa-chevron-down nav-icon-sm"></i>
+                        </a>
+                        <ul class="custom-dropdown-menu">
+                            <li><a href="productos.html#telefonia-ip" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_tel">Telefonía IP</a></li>
+                            <li><a href="productos.html#conectividad" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_con">Conectividad</a></li>
+                            <li><a href="productos.html#seguridad-electronica" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_seg">Seguridad Electrónica</a></li>
+                            <li><a href="productos.html#proteccion" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_prot">Protección Eléctrica</a></li>
+                            <li><a href="productos.html#videoconferencia" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_video">Videoconferencia</a></li>
+                            <li><a href="productos.html#accesorios" class="custom-dropdown-item"
+                                    data-i18n="nav_prod_acc">Accesorios Tecnológicos</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicios.html" data-i18n="nav_services">Servicios</a>
+                    <li class="nav-item custom-dropdown">
+                        <a class="nav-link d-flex align-items-center gap-1" href="servicios.html"
+                            data-i18n="nav_services">
+                            Servicios
+                            <i class="fas fa-chevron-down nav-icon-sm"></i>
+                        </a>
+                        <ul class="custom-dropdown-menu">
+                            <li><a href="servicios.html#desarrollo-app" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_dev">Desarrollo de Aplicaciones</a></li>
+                            <li><a href="servicios.html#diseno-web" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_web">Diseño Web y E-commerce</a></li>
+                            <li><a href="servicios.html#soporte-it" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_sup">Soporte Técnico</a></li>
+                            <li><a href="servicios.html#reparacion-equipos" class="custom-dropdown-item"
+                                    data-i18n="nav_ser_rep">Reparación de Hardware</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html" data-i18n="nav_contact">Contacto</a>
@@ -362,11 +394,107 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-3" role="contentinfo">
+   <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
-            <p class="mb-0" data-i18n="footer_text">
-                © 2025 Megatel SAS. Todos los derechos reservados.
-            </p>
+            <div class="row gy-4 mb-4">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <!-- Enlace al inicio envolviendo el logo -->
+                        <a href="/" aria-label="Volver al inicio">
+                            <img src="images/Megatel_LogoBlanco.png" alt="Megatel SAS" height="50">
+                        </a>
+                    </div>
+                    <p class="text-white-50 text-sm pe-lg-5 leading-relaxed" data-i18n="footer_desc">
+                        Llevamos más de 20 años transformando las comunicaciones empresariales a través de soluciones
+                        robustas en Telefonía IP, conectividad y seguridad electrónica.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="fw-bold h5 mb-4 text-primary" data-i18n="footer_links_title">Enlaces</h4>
+                    <ul class="list-unstyled space-y-2 text-sm">
+                        <li class="mb-2">
+                            <a href="/" data-i18n="nav_home"
+                                class="text-white-50 text-decoration-none hover-white">Inicio</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="quienes-somos.html" data-i18n="nav_about"
+                                class="text-white-50 text-decoration-none hover-white">Quiénes Somos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="productos.html" data-i18n="nav_products"
+                                class="text-white-50 text-decoration-none hover-white">Productos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="servicios.html" data-i18n="nav_services"
+                                class="text-white-50 text-decoration-none hover-white">Servicios</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contacto.html" data-i18n="nav_contact"
+                                class="text-white-50 text-decoration-none hover-white">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="fw-bold h5 mb-4 text-primary" data-i18n="footer_contact_title">Contacto</h4>
+                    <ul class="list-unstyled space-y-3 text-sm text-white-50">
+                        <li class="d-flex align-items-center gap-2 mb-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <a href="mailto:ventas@megatelco.com"
+                                class="text-white-50 text-decoration-none hover-white">
+                                ventas@megatelco.com
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-3">
+                            <i class="fab fa-whatsapp text-primary"></i>
+                            <a href="https://wa.me/573107630363" target="_blank"
+                                class="text-white-50 text-decoration-none hover-white">
+                                +57 310 763 0363
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-4">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span data-i18n="footer_location">Bogotá D.C., Colombia</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-4 pt-2">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/company/megatelsas" target="_blank"
+                                rel="noopener noreferrer" class="text-white-50 hover-primary fs-5"
+                                title="Visítanos en LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/megatelsas" target="_blank" rel="noopener noreferrer"
+                                class="text-white-50 hover-primary fs-5" title="Síguenos en Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/megatelsas/" target="_blank" rel="noopener noreferrer"
+                                class="text-white-50 hover-primary fs-5" title="Síguenos en Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-4 border-top border-secondary text-center text-md-start text-white-50 fs-small">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <p class="mb-0" data-i18n="footer_rights">
+                            &copy; 2026 Megatel SAS. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <span data-i18n="footer_dev_by">Desarrollado por</span>
+                        <a href="www.megatelsas.com" class="fw-bold text-white text-decoration-none">Megatel SAS</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 

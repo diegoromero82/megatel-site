@@ -31,8 +31,21 @@ const translations = {
         "es": "EN",        
         "en": "ES"
     },
+    // ===== SUBMENÚ DE PRODUCTOS =====
+    "nav_prod_tel": { "es": "Telefonía IP", "en": "IP Telephony" },
+    "nav_prod_con": { "es": "Conectividad", "en": "Connectivity" },
+    "nav_prod_seg": { "es": "Seguridad Electrónica", "en": "Electronic Security" },
+    "nav_prod_prot": { "es": "Protección Eléctrica", "en": "Power Protection" },
+    "nav_prod_video": { "es": "Videoconferencia", "en": "Videoconferencing" },
+    "nav_prod_acc": { "es": "Accesorios Tecnológicos", "en": "Tech Accessories" },
 
-    // Footer
+    // ===== SUBMENÚ DE SERVICIOS =====
+    "nav_ser_dev": { "es": "Desarrollo de Aplicaciones", "en": "App Development" },
+    "nav_ser_web": { "es": "Diseño Web y E-commerce", "en": "Web Design & E-commerce" },
+    "nav_ser_sup": { "es": "Soporte Técnico", "en": "Technical Support" },
+    "nav_ser_rep": { "es": "Reparación de Hardware", "en": "Hardware Repair" },
+
+    // === FOOTER =====
     "footer_desc": {
         "es": "Llevamos más de 20 años transformando las comunicaciones empresariales a través de soluciones robustas en Telefonía IP, conectividad y seguridad electrónica.",
         "en": "We have been transforming business communications for over 20 years through robust solutions in IP Telephony, connectivity, and electronic security."
@@ -56,9 +69,21 @@ const translations = {
     "footer_dev_by": {
         "es": "Desarrollado por",
         "en": "Developed by"
+    },   
+
+    // ===== BOTONES FLOTANTES =====
+    "whatsapp_contact_title": {
+        "es": "Contactar por WhatsApp",
+        "en": "Contact via WhatsApp"
+    },
+    "back_to_top_title": {
+        "es": "Volver arriba",
+        "en": "Back to top"
     },
 
-    // ===== SECCIÓN 1: HERO / INICIO (#hero) =====
+    //PÁGINA: INICIO (index.html)
+
+    // ===== SECCIÓN HERO / INICIO (#hero) =====
     "index_home_title": {
         "es": "Bienvenidos a Megatel",
         "en": "Welcome to Megatel"
@@ -72,7 +97,7 @@ const translations = {
         "en": "Learn More"
     },
 
-    // ===== SECCIÓN 2: CONFIANZA / QUIÉNES SOMOS (#confidence) =====
+    // ===== SECCIÓN CONFIANZA / QUIÉNES SOMOS (#confidence) =====
     "index_about_title": {
         "es": "Nuestro Compromiso con la Excelencia",
         "en": "Our Commitment to Excellence"
@@ -86,7 +111,7 @@ const translations = {
         "en": "Discover Our History"
     },
 
-    // ===== SECCIÓN 3: PRODUCTOS (#products) =====
+    // ===== SECCIÓN PRODUCTOS (#products) =====
     "index_products_title": {
         "es": "Descubra Nuestro Portafolio de Productos",
         "en": "Discover Our Product Portfolio"
@@ -100,7 +125,7 @@ const translations = {
         "en": "View Product Portfolio"
     },
 
-    // ===== SECCIÓN 4: SERVICIOS (#services) =====
+    // ===== SECCIÓN SERVICIOS (#services) =====
     "index_service_title": {
         "es": "Servicios Profesionales y Consultoría",
         "en": "Professional Services and Consulting"
@@ -113,37 +138,7 @@ const translations = {
         "es": "Explora Nuestros Servicios",
         "en": "Explore Our Services"
     },
-
-    // ===== SECCIÓN 5: CONTACTO / CIERRE (#closing) =====
-    "index_contact_title": {
-        "es": "¿Listo para Convertir su Visión en Realidad?",
-        "en": "Ready to Turn Your Vision into Reality?"
-    },
-    "index_contact_subtitle": {
-        "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
-        "en": "Talk to our experts and request a no-obligation consultation."
-    },
-    "closing_cta": {
-        "es": "Solicite una Consultoría Gratuita",
-        "en": "Request a Free Consultation"
-    },
-
-    // ===== PIE DE PÁGINA (FOOTER) =====
-    "footer_text": {
-        "es": "© 2025 Megatel SAS. Todos los derechos reservados.",
-        "en": "© 2025 Megatel SAS. All rights reserved."
-    },
-
-    // ===== BOTONES FLOTANTES =====
-    "whatsapp_contact_title": {
-        "es": "Contactar por WhatsApp",
-        "en": "Contact via WhatsApp"
-    },
-    "back_to_top_title": {
-        "es": "Volver arriba",
-        "en": "Back to top"
-    },
-
+    
     // ===== PÁGINA: QUIÉNES SOMOS - CONTENIDO PRINCIPAL =====
     "about_main_title": {
         "es": "Megatel SAS: 30 Años de Trayectoria Tecnológica",
@@ -302,7 +297,7 @@ const translations = {
     "closing_text": {
         "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
         "en": "Talk to our experts and request a no-obligation consultation."
-    },
+    },    
 
     // ===== PÁGINA: PRODUCTOS =====
     "products_hero_title": {
@@ -416,7 +411,19 @@ const translations = {
         "es": "Conocer más",
         "en": "Learn more"
     },
-    // ===== PÁGINA: PRODUCTOS - SECCIÓN CONECTIVIDAD =====
+    // ===== PÁGINA: PRODUCTOS - SECCIÓN CONECTIVIDAD =====    
+     "products_page_title": {
+        "es": "Portafolio de Productos Tecnológicos",
+        "en": "Technology Product Portfolio"
+    },
+    "products_page_subtitle": {
+        "es": "Ofrecemos soluciones de hardware y software de fabricantes líderes para potenciar la infraestructura y las comunicaciones de su empresa.",
+        "en": "We offer hardware and software solutions from leading manufacturers to enhance your company's infrastructure and communications."
+    },
+    "products_page_cta": {
+        "es": "Explorar Categorías <i class=\"fas fa-arrow-down ms-2\"></i>",
+        "en": "Explore Categories <i class=\"fas fa-arrow-down ms-2\"></i>"
+    },
     "con_hero_title": {
         "es": "Conectividad",
         "en": "Connectivity"
@@ -618,29 +625,21 @@ const translations = {
         "es": "¿Desea conocer más sobre nuestros Accesorios Tecnológicos?",
         "en": "Want to learn more about our Technological Accessories?"
     },
+    "brands_title": {
+        "es": "Aliados Estratégicos",
+        "en": "Strategic Allies"
+    },
+
     "acc_cta_btn": {
         "es": "Conocer más",
         "en": "Learn more"
     },
 
-    // ===== PÁGINA: SERVICIOS - LANDING PAGE COMPLETA =====
+    // ===== PÁGINA: SERVICIOS =====
     // Hero Section
-    "services_tag": {
-        "es": "SOLUCIONES 360°",
-        "en": "360° SOLUTIONS"
-    },
-    "services_hero_title": {
-        "es": "Portafolio Integral de Servicios Tecnológicos",
-        "en": "Comprehensive Technology Services Portfolio"
-    },
-    "services_hero_subtitle": {
-        "es": "Potencie su infraestructura y operaciones con nuestro equipo experto, cubriendo desde el desarrollo de software hasta el mantenimiento de hardware.",
-        "en": "Empower your infrastructure and operations with our expert team, covering everything from software development to hardware maintenance."
-    },
-    "services_hero_cta": {
-        "es": "Conozca Nuestros Servicios",
-        "en": "Discover Our Services"
-    },
+    "services_page_title": { "es": "Servicios Tecnológicos 360°", "en": "360° Technology Services" },
+    "services_page_subtitle": { "es": "Soluciones integrales diseñadas para escalar su negocio.", "en": "Comprehensive solutions designed to scale your business." },
+    "services_page_cta": { "es": "Ver Servicios", "en": "View Services" },
 
     // Sección de Detalle de Servicios
     "services_detail_title": {
@@ -648,73 +647,194 @@ const translations = {
         "en": "Our Value Proposition"
     },
 
-    // Servicio 1: Desarrollo de Aplicaciones Empresariales
-    "service1_title": {
-        "es": "Desarrollo de Aplicaciones Empresariales",
-        "en": "Enterprise Application Development"
-    },
-    "service1_text": {
-        "es": "Creamos software a la medida (ERP, CRM, Intranets) para optimizar procesos internos, automatizar tareas y generar ventajas competitivas.",
-        "en": "We create custom software (ERP, CRM, Intranets) to optimize internal processes, automate tasks and generate competitive advantages."
+    // --- SECCIÓN A: DESARROLLO DE APLICACIONES ---
+    "ser_dev_title": { "es": "Desarrollo de Aplicaciones", "en": "Application Development" },
+    "ser_dev_subtitle": { "es": "Software a la medida con estándares globales", "en": "Custom software with global standards" },
+    "ser_dev_benefits_title": { "es": "Ingeniería de Software", "en": "Software Engineering" },
+    "ser_dev_benefits_desc": { "es": "Construimos soluciones escalables utilizando metodologías ágiles y Clean Architecture.", "en": "We build scalable solutions using agile methodologies and Clean Architecture." },
+    
+    "ser_dev_card1_title": { "es": "Clean Architecture", "en": "Clean Architecture" },
+    "ser_dev_card1_desc": { "es": "Garantizamos software escalable y fácil de mantener separando la lógica del negocio.", "en": "We guarantee scalable and easy-to-maintain software by separating business logic." },
+    "ser_dev_card2_title": { "es": "Frontend Moderno", "en": "Modern Frontend" },
+    "ser_dev_card2_desc": { "es": "Interfaces con Angular, Blazor y Next JS para una UX fluida.", "en": "Interfaces with Angular, Blazor, and Next JS for a fluid UX." },
+    "ser_dev_card3_title": { "es": "Backend Robusto", "en": "Robust Backend" },
+    "ser_dev_card3_desc": { "es": "Motores potentes en C# (.NET) y Java para grandes volúmenes de datos.", "en": "Powerful engines in C# (.NET) and Java for large data volumes." },
+    "ser_dev_card4_title": { "es": "Bases de Datos", "en": "Data Management" },
+    "ser_dev_card4_desc": { "es": "Dominio experto en Oracle, MSSQL y MongoDB.", "en": "Expertise in Oracle, MSSQL, and MongoDB." },
+    "ser_dev_card5_title": { "es": "Microservicios & Cloud", "en": "Microservices & Cloud" },
+    "ser_dev_card5_desc": { "es": "Arquitecturas que permiten escalar partes específicas de su app de forma independiente.", "en": "Architectures that allow specific parts of your app to scale independently." },
+    "ser_dev_card6_title": { "es": "Integraciones & APIs", "en": "Integrations & APIs" },
+    "ser_dev_card6_desc": { "es": "Conectamos su software con herramientas de terceros (Pasarelas, ERP, CRM).", "en": "We connect your software with third-party tools (Gateways, ERP, CRM)." },
+    "ser_dev_card7_title": { "es": "Metodologías Ágiles", "en": "Agile Methodologies" },
+    "ser_dev_card7_desc": { "es": "Transparencia total con SCRUM y Kanban en cada fase del proyecto.", "en": "Total transparency with SCRUM and Kanban in each project phase." },
+    "ser_dev_card8_title": { "es": "Seguridad y Calidad", "en": "Security and Quality" },
+    "ser_dev_card8_desc": { "es": "Pruebas automatizadas (Unit Testing) para productos libres de errores.", "en": "Automated testing (Unit Testing) for bug-free products." },
+
+    // --- SECCIÓN B: WEB & E-COMMERCE ---
+    "ser_web_title": { "es": "Diseño Web y E-commerce", "en": "Web Design & E-commerce" },
+    "ser_web_subtitle": { "es": "Su tienda abierta al mundo 24/7", "en": "Your store open to the world 24/7" },
+    "ser_web_benefits_title": { "es": "Su negocio online", "en": "Your online business" },
+    "ser_web_benefits_desc": { "es": "Sitios rápidos, seguros y optimizados para SEO.", "en": "Fast, secure, and SEO-optimized sites." },
+    
+    "ser_web_card1_title": { "es": "Arquitectura Web Sólida", "en": "Solid Web Architecture" },
+    "ser_web_card1_desc": { "es": "Estructuras modernas en HTML5 y CSS3 para rastreo eficiente.", "en": "Modern HTML5 and CSS3 structures for efficient crawling." },
+    "ser_web_card2_title": { "es": "JavaScript Avanzado", "en": "Advanced JavaScript" },
+    "ser_web_card2_desc": { "es": "Interfaces dinámicas que retienen la atención del usuario.", "en": "Dynamic interfaces that retain user attention." },
+    "ser_web_card3_title": { "es": "Velocidad con Next JS", "en": "Speed with Next JS" },
+    "ser_web_card3_desc": { "es": "Sitios ultra rápidos con renderizado del lado del servidor (SSR).", "en": "Ultra-fast sites with Server-Side Rendering (SSR)." },
+    "ser_web_card4_title": { "es": "Gestión WordPress", "en": "WordPress Management" },
+    "ser_web_card4_desc": { "es": "Implementación del CMS más popular para gestión autónoma.", "en": "Implementation of the most popular CMS for autonomous management." },
+    "ser_web_card5_title": { "es": "WooCommerce", "en": "WooCommerce" },
+    "ser_web_card5_desc": { "es": "Tiendas online robustas con pasarelas de pago integradas.", "en": "Robust online stores with integrated payment gateways." },
+    "ser_web_card6_title": { "es": "Elementor Pro", "en": "Elementor Pro" },
+    "ser_web_card6_desc": { "es": "Diseño visual flexible para estética profesional.", "en": "Flexible visual design for professional aesthetics." },
+    "ser_web_card7_title": { "es": "Responsive Design", "en": "Responsive Design" },
+    "ser_web_card7_desc": { "es": "Navegación adaptada para móviles, tablets y PCs.", "en": "Navigation adapted for mobiles, tablets, and PCs." },
+    "ser_web_card8_title": { "es": "SEO & Analytics", "en": "SEO & Analytics" },
+    "ser_web_card8_desc": { "es": "Configuración para aparecer en los primeros resultados de búsqueda.", "en": "Configuration to appear in the top search results." },
+
+    // --- SECCIÓN C: SOPORTE PREVENTIVO Y CORRECTIVO ---
+    "ser_sup_title": { "es": "Soporte Técnico", "en": "Technical Support" },
+    "ser_sup_subtitle": { "es": "Continuidad Operativa", "en": "Operational Continuity" },
+    "ser_sup_benefits_title": { "es": "Contratos IT", "en": "IT Contracts" },
+    "ser_sup_benefits_desc": { "es": "Asistencia remota y presencial para su infraestructura.", "en": "Remote and on-site assistance for your infrastructure." },
+    
+    // Tarjeta 1: Soporte Remoto
+    "ser_sup_card1_title": { "es": "Soporte Remoto Inmediato", "en": "Immediate Remote Support" },
+    "ser_sup_card1_desc": { 
+        "es": "Resolución de incidencias de software y configuración en tiempo real mediante herramientas de acceso seguro, minimizando tiempos de espera.", 
+        "en": "Resolution of software and configuration issues in real-time through secure access tools, minimizing waiting times." 
     },
 
-    // Servicio 2: Diseño de Páginas Web y E-commerce
-    "service2_title": {
-        "es": "Diseño de Páginas Web y E-commerce",
-        "en": "Web Design and E-commerce"
-    },
-    "service2_text": {
-        "es": "Diseño responsive y optimizado para SEO, desde sitios informativos hasta plataformas de comercio electrónico robustas con pasarelas de pago.",
-        "en": "Responsive and SEO-optimized design, from informational sites to robust e-commerce platforms with payment gateways."
+    // Tarjeta 2: Asistencia en Sitio
+    "ser_sup_card2_title": { "es": "Asistencia Técnica en Sitio", "en": "On-site Technical Assistance" },
+    "ser_sup_card2_desc": { 
+        "es": "Desplazamiento de ingenieros calificados a sus instalaciones para resolver fallos de hardware o infraestructura que requieran intervención física.", 
+        "en": "Deployment of qualified engineers to your facilities to resolve hardware or infrastructure failures requiring physical intervention." 
     },
 
-    // Servicio 3: Contrato de Soporte Preventivo y Correctivo
-    "service3_title": {
-        "es": "Contrato de Soporte Preventivo y Correctivo",
-        "en": "Preventive and Corrective Support Contract"
-    },
-    "service3_text": {
-        "es": "Asegure la continuidad de su negocio con asistencia técnica remota y en sitio. Mantenimiento proactivo de redes, servidores y estaciones de trabajo.",
-        "en": "Ensure your business continuity with remote and on-site technical assistance. Proactive maintenance of networks, servers and workstations."
+    // Tarjeta 3: Mantenimiento Preventivo
+    "ser_sup_card3_title": { "es": "Mantenimiento Preventivo", "en": "Preventive Maintenance" },
+    "ser_sup_card3_desc": { 
+        "es": "Programación de limpiezas, actualizaciones y diagnósticos periódicos para detectar posibles fallos antes de que afecten su operación.", 
+        "en": "Scheduling of periodic cleanings, updates, and diagnostics to detect potential failures before they affect your operation." 
     },
 
-    // Servicio 4: Reparación y Mantenimiento de Equipos
-    "service4_title": {
-        "es": "Reparación de Equipos y Hardware",
-        "en": "Equipment and Hardware Repair"
+    // Tarjeta 4: Administración de Servidores
+    "ser_sup_card4_title": { "es": "Gestión de Servidores", "en": "Server Management" },
+    "ser_sup_card4_desc": { 
+        "es": "Monitoreo constante de la salud de sus servidores (Windows/Linux), gestión de usuarios, roles y optimización de recursos críticos.", 
+        "en": "Constant health monitoring of your servers (Windows/Linux), user and role management, and optimization of critical resources." 
     },
-    "service4_text": {
-        "es": "Diagnóstico y reparación profesional de computadores, laptops, impresoras y hardware de red. Recuperación de datos y reemplazo de componentes.",
-        "en": "Professional diagnosis and repair of computers, laptops, printers and network hardware. Data recovery and component replacement."
+
+    // Tarjeta 5: Redes y Conectividad
+    "ser_sup_card5_title": { "es": "Redes y Conectividad", "en": "Networking & Connectivity" },
+    "ser_sup_card5_desc": { 
+        "es": "Soporte especializado en switches, routers y Access Points. Garantizamos que su red interna y conexión a internet funcionen sin interrupciones.", 
+        "en": "Specialized support for switches, routers, and Access Points. We guarantee that your internal network and internet connection work without interruptions." 
     },
+
+    // Tarjeta 6: Seguridad y Antivirus
+    "ser_sup_card6_title": { "es": "Seguridad Perimetral", "en": "Perimeter Security" },
+    "ser_sup_card6_desc": { 
+        "es": "Administración de Firewalls, actualización de antivirus corporativos y cierre de brechas de seguridad para proteger su información.", 
+        "en": "Firewall administration, corporate antivirus updates, and closing security gaps to protect your information." 
+    },
+
+    // Tarjeta 7: Gestión de Backups
+    "ser_sup_card7_title": { "es": "Respaldo de Información", "en": "Information Backup" },
+    "ser_sup_card7_desc": { 
+        "es": "Configuración y supervisión de copias de seguridad automatizadas (locales y en nube) para garantizar la recuperación ante desastres.", 
+        "en": "Configuration and supervision of automated backups (local and cloud) to guarantee disaster recovery." 
+    },
+
+    // Tarjeta 8: Consultoría IT
+    "ser_sup_card8_title": { "es": "Consultoría y Auditoría", "en": "Consultancy & Audit" },
+    "ser_sup_card8_desc": { 
+        "es": "Asesoría estratégica para renovaciones tecnológicas y auditorías de inventario para mantener su parque informático al día.", 
+        "en": "Strategic advice for technological renewals and inventory audits to keep your IT fleet up to date." 
+    },
+    // ===== SECCIÓN D: REPARACIÓN DE EQUIPOS Y HARDWARE =====
+    "ser_rep_title": { "es": "Reparación de Hardware", "en": "Hardware Repair" },
+    "ser_rep_subtitle": { "es": "Diagnóstico y Repuestos", "en": "Diagnosis and Spare Parts" },
+    "ser_rep_benefits_title": { "es": "Restauración de Activos", "en": "Asset Restoration" },
+    "ser_rep_benefits_desc": { "es": "Prolongamos la vida útil de su infraestructura mediante intervenciones de precisión.", "en": "We extend your infrastructure's useful life through precision interventions." },
+
+    // Tarjeta 1: Computadores y Laptops
+    "ser_rep_card1_title": { "es": "Computadores y Laptops", "en": "Computers and Laptops" },
+    "ser_rep_card1_desc": { 
+        "es": "Reparación a nivel de componentes para equipos de escritorio y portátiles de todas las marcas. Solucionamos fallos de encendido, pantalla y rendimiento.", 
+        "en": "Component-level repair for desktops and laptops of all brands. We fix power, screen, and performance issues." 
+    },
+
+    // Tarjeta 2: Servidores y Workstations
+    "ser_rep_card2_title": { "es": "Servidores y Workstations", "en": "Servers and Workstations" },
+    "ser_rep_card2_desc": { 
+        "es": "Mantenimiento especializado para hardware crítico de alto rendimiento. Cambio de fuentes redundantes, discos enterprise y memorias con corrección de errores.", 
+        "en": "Specialized maintenance for critical high-performance hardware. Replacement of redundant power supplies, enterprise disks, and ECC memories." 
+    },
+
+    // Tarjeta 3: Telefonía IP (Hardware)
+    "ser_rep_card3_title": { "es": "Terminales de Telefonía IP", "en": "IP Telephony Terminals" },
+    "ser_rep_card3_desc": { 
+        "es": "Diagnóstico y reparación de teléfonos IP Yealink y centralitas Yeastar. Recuperación de firmware y cambio de componentes mecánicos o electrónicos.", 
+        "en": "Diagnosis and repair of Yealink IP phones and Yeastar PBXs. Firmware recovery and replacement of mechanical or electronic components." 
+    },
+
+    // Tarjeta 4: CCTV y Seguridad
+    "ser_rep_card4_title": { "es": "Equipos de CCTV", "en": "CCTV Equipment" },
+    "ser_rep_card4_desc": { 
+        "es": "Reparación de cámaras IP, domos PTZ y grabadores NVR/DVR. Ajuste de enfoque, limpieza de sensores y recuperación de canales de video.", 
+        "en": "Repair of IP cameras, PTZ domes, and NVR/DVR recorders. Focus adjustment, sensor cleaning, and video channel recovery." 
+    },
+
+    // Tarjeta 5: Recuperación de Datos
+    "ser_rep_card5_title": { "es": "Recuperación de Datos", "en": "Data Recovery" },
+    "ser_rep_card5_desc": { 
+        "es": "Rescate de información crítica de discos duros y unidades SSD con fallos lógicos o físicos. Garantizamos total confidencialidad en el manejo de su data.", 
+        "en": "Rescue of critical information from hard drives and SSDs with logical or physical failures. We guarantee total confidentiality in data handling." 
+    },
+
+    // Tarjeta 6: Diagnóstico Electrónico
+    "ser_rep_card6_title": { "es": "Diagnóstico Avanzado", "en": "Advanced Diagnosis" },
+    "ser_rep_card6_desc": { 
+        "es": "Uso de herramientas de medición electrónica para identificar fallos en placas base (mainboards), circuitos integrados y micro-soldadura.", 
+        "en": "Use of electronic measurement tools to identify failures in mainboards, integrated circuits, and micro-soldering." 
+    },
+
+    // Tarjeta 7: Limpieza y Optimización
+    "ser_rep_card7_title": { "es": "Mantenimiento Físico", "en": "Physical Maintenance" },
+    "ser_rep_card7_desc": { 
+        "es": "Limpieza profunda interna, cambio de pasta térmica de alto rendimiento y lubricación de sistemas de ventilación para prevenir sobrecalentamientos.", 
+        "en": "Deep internal cleaning, high-performance thermal paste replacement, and cooling system lubrication to prevent overheating." 
+    },
+
+    // Tarjeta 8: Repuestos Originales
+    "ser_rep_card8_title": { "es": "Repuestos Certificados", "en": "Certified Spare Parts" },
+    "ser_rep_card8_desc": { 
+        "es": "Utilizamos partes originales y repuestos homologados por fabricantes líderes para asegurar la durabilidad y garantía de cada reparación.", 
+        "en": "We use original parts and spare parts approved by leading manufacturers to ensure the durability and warranty of each repair." 
+    },
+
+    // ===== SECCIÓN 5: CONTACTO / CIERRE (#closing) =====
+    "index_contact_title": {
+        "es": "¿Listo para Convertir su Visión en Realidad?",
+        "en": "Ready to Turn Your Vision into Reality?"
+    },
+    "index_contact_subtitle": {
+        "es": "Hable con nuestros expertos y solicite una consultoría sin compromiso.",
+        "en": "Talk to our experts and request a no-obligation consultation."
+    },
+    "closing_cta": {
+        "es": "Solicite una Consultoría Gratuita",
+        "en": "Request a Free Consultation"
+    },   
 
     // CTA de servicios
     "service_cta": {
         "es": "Solicitar Cotización",
         "en": "Request Quote"
-    },
-
-    // Sección de Beneficios
-    "benefits_title": {
-        "es": "¿Por qué Elegir Megatel para sus Servicios?",
-        "en": "Why Choose Megatel for Your Services?"
-    },
-    "benefits_intro": {
-        "es": "Nos dedicamos a ser el socio tecnológico integral que su empresa necesita. Nuestra experiencia garantiza soluciones eficientes y resultados medibles.",
-        "en": "We are dedicated to being the comprehensive technology partner your company needs. Our experience guarantees efficient solutions and measurable results."
-    },
-    "benefits_feat1": {
-        "es": "<strong>Seguridad y Garantía:</strong> Servicios respaldados por profesionales certificados.",
-        "en": "<strong>Security and Warranty:</strong> Services backed by certified professionals."
-    },
-    "benefits_feat2": {
-        "es": "<strong>Tiempo de Respuesta:</strong> Compromiso con SLAs para soporte rápido y efectivo.",
-        "en": "<strong>Response Time:</strong> Commitment to SLAs for fast and effective support."
-    },
-    "benefits_feat3": {
-        "es": "<strong>Optimización de Costos:</strong> Soluciones que reducen gastos operativos a largo plazo.",
-        "en": "<strong>Cost Optimization:</strong> Solutions that reduce long-term operational expenses."
-    },
+    },   
 
     // Sección de Cierre
     "closing_title": {
@@ -731,64 +851,63 @@ const translations = {
     },
 
     // ===== PÁGINA: CONTACTO =====
-    "contact_title": {
-        "es": "Contáctenos",
-        "en": "Contact Us"
+    // ==========================================
+    // 7. PÁGINA: CONTACTO (contacto.html)
+    // ==========================================
+    
+    // --- HERO DE CONTACTO ---
+    "contact_hero_title": {
+        "es": "Estamos Listos para Escucharlo",
+        "en": "We Are Ready to Listen to You"
     },
-    "contact_subtitle": {
-        "es": "Estamos aquí para ayudarle",
-        "en": "We're here to help you"
-    },
-    "contact_form_name": {
-        "es": "Nombre completo",
-        "en": "Full name"
-    },
-    "contact_form_email": {
-        "es": "Correo electrónico",
-        "en": "Email address"
-    },
-    "contact_form_phone": {
-        "es": "Teléfono",
-        "en": "Phone"
-    },
-    "contact_form_company": {
-        "es": "Empresa",
-        "en": "Company"
-    },
-    "contact_form_message": {
-        "es": "Mensaje",
-        "en": "Message"
-    },
-    "contact_form_submit": {
-        "es": "Enviar Mensaje",
-        "en": "Send Message"
-    },
-    "contact_info_title": {
-        "es": "Información de Contacto",
-        "en": "Contact Information"
-    },
-    "contact_address_label": {
-        "es": "Dirección",
-        "en": "Address"
-    },
-    "contact_phone_label": {
-        "es": "Teléfono",
-        "en": "Phone"
-    },
-    "contact_email_label": {
-        "es": "Email",
-        "en": "Email"
-    },
-    "contact_hours_label": {
-        "es": "Horario",
-        "en": "Hours"
-    },
-    "contact_hours_value": {
-        "es": "Lunes a Viernes: 8:00 AM - 6:00 PM",
-        "en": "Monday to Friday: 8:00 AM - 6:00 PM"
+    "contact_hero_subtitle": {
+        "es": "Elija el canal de comunicación que mejor se adapte a sus necesidades. Nuestro equipo responderá a la brevedad.",
+        "en": "Choose the communication channel that best suits your needs. Our team will respond shortly."
     },
 
-    // ===== TELEFONÍA IP =====
+    // --- TARJETAS DE INFORMACIÓN ---
+    "contact_wa_title": { "es": "WhatsApp", "en": "WhatsApp" },
+    "contact_wa_text": {
+        "es": "Respuesta inmediata para consultas rápidas.",
+        "en": "Immediate response for quick inquiries."
+    },
+    "contact_wa_cta": { "es": "Chatear Ahora", "en": "Chat Now" },
+    "contact_wa_short": { "es": "WhatsApp", "en": "WhatsApp" },
+
+    "contact_phone_title": { "es": "Teléfono", "en": "Phone" },
+    "contact_phone_text": {
+        "es": "Llámenos en horario de oficina.",
+        "en": "Call us during office hours."
+    },
+    "contact_phone_cta": { "es": "Llamar Ahora", "en": "Call Now" },
+    "contact_phone_short": { "es": "Llamar", "en": "Call" },
+
+    "contact_email_title": { "es": "Email", "en": "Email" },
+    "contact_email_text": {
+        "es": "Para consultas detalladas por escrito.",
+        "en": "For detailed written inquiries."
+    },
+    "contact_email_cta": { "es": "Enviar Email", "en": "Send Email" },
+    "contact_email_short": { "es": "Email", "en": "Email" },
+
+    "contact_location_title": { "es": "Ubicación", "en": "Location" },
+    "contact_location_text": { "es": "Bogotá, Colombia", "en": "Bogota, Colombia" },
+    "contact_location_hours": {
+        "es": "Lunes a Viernes, 8:00 AM - 6:00 PM",
+        "en": "Monday to Friday, 8:00 AM - 6:00 PM"
+    },
+
+    "contact_info_title": { "es": "Información de Contacto", "en": "Contact Information" },
+    "contact_info_desc": { "es": "Completa el formulario y nuestro equipo te contactará.", "en": "Complete the form and our team will contact you." },
+    "contact_write_us": { "es": "Escríbanos", "en": "Write to us" },
+    "contact_follow_us": { "es": "Síguenos", "en": "Follow us" },
+    "form_name": { "es": "Nombre completo", "en": "Full Name" },
+    "form_entity": { "es": "Empresa / Entidad", "en": "Company / Entity" },
+    "opt_consulting": { "es": "Consultoría / Servicios", "en": "Consulting / Services" },
+    "captcha_label": { "es": "Validación de seguridad: ¿Cuánto es ", "en": "Security validation: How much is " },
+    "form_success": { "es": "¡Mensaje enviado con éxito!", "en": "Message sent successfully!" },
+
+    // ===== PÁGINA TELEFONÍA IP =====
     "telephony_hero_title": {
         "es": "Soluciones de Telefonía IP",
         "en": "IP Telephony Solutions"
@@ -814,7 +933,7 @@ const translations = {
         "en": "Benefits"
     },
 
-    // ===== VIDEOCONFERENCIA =====
+    // ===== PÁGINA VIDEOCONFERENCIA =====
     "video_hero_title": {
         "es": "Soluciones de Videoconferencia",
         "en": "Video Conferencing Solutions"
@@ -832,7 +951,7 @@ const translations = {
         "en": "Integration"
     },
 
-    // ===== APLICACIONES EMPRESARIALES =====
+    // ===== PÁGINA APLICACIONES EMPRESARIALES =====
     "apps_title": {
         "es": "Servicios de Aplicaciones Empresariales",
         "en": "Enterprise Application Services"
@@ -936,168 +1055,7 @@ const translations = {
         "en": "Request Quote"
     },
 
-    // ===== PÁGINA: PRODUCTOS - TRADUCCIONES ADICIONALES =====
-    "products_page_title": {
-        "es": "Portafolio de Productos Tecnológicos",
-        "en": "Technology Product Portfolio"
-    },
-    "products_page_subtitle": {
-        "es": "Ofrecemos soluciones de hardware y software de fabricantes líderes para potenciar la infraestructura y las comunicaciones de su empresa.",
-        "en": "We offer hardware and software solutions from leading manufacturers to enhance your company's infrastructure and communications."
-    },
-    "products_page_cta": {
-        "es": "Explorar Categorías <i class=\"fas fa-arrow-down ms-2\"></i>",
-        "en": "Explore Categories <i class=\"fas fa-arrow-down ms-2\"></i>"
-    },
-    "catalog_section_title": {
-        "es": "Nuestras Soluciones de Hardware y Software",
-        "en": "Our Hardware and Software Solutions"
-    },
-    "prod_cat1_title": {
-        "es": "Telefonía y VoIP",
-        "en": "Telephony and VoIP"
-    },
-    "prod_cat1_desc": {
-        "es": "Sistemas PBX, teléfonos IP y soluciones de comunicación unificada.",
-        "en": "PBX systems, IP phones and unified communication solutions."
-    },
-    "prod_cat2_title": {
-        "es": "Seguridad Electrónica",
-        "en": "Electronic Security"
-    },
-    "prod_cat2_desc": {
-        "es": "Cámaras IP, control de acceso y sistemas de videovigilancia avanzados.",
-        "en": "IP cameras, access control and advanced video surveillance systems."
-    },
-    "prod_cat3_title": {
-        "es": "Conectividad y Redes",
-        "en": "Connectivity and Networks"
-    },
-    "prod_cat3_desc": {
-        "es": "Switches, routers, fibra óptica y soluciones Wi-Fi de alto rendimiento.",
-        "en": "Switches, routers, fiber optics and high-performance Wi-Fi solutions."
-    },
-    "prod_cat4_title": {
-        "es": "Protección (UPS)",
-        "en": "Power Protection (UPS)"
-    },
-    "prod_cat4_desc": {
-        "es": "Sistemas de alimentación ininterrumpida para proteger su inversión.",
-        "en": "Uninterruptible power supply systems to protect your investment."
-    },
-    "prod_cat5_title": {
-        "es": "Accesorios y Periféricos",
-        "en": "Accessories and Peripherals"
-    },
-    "prod_cat5_desc": {
-        "es": "Diademas, micrófonos y accesorios para call centers y oficinas.",
-        "en": "Headsets, microphones and accessories for call centers and offices."
-    },
-    "prod_cat6_title": {
-        "es": "Videoconferencia",
-        "en": "Video Conferencing"
-    },
-    "prod_cat6_desc": {
-        "es": "Sistemas de colaboración visual para salas de juntas y oficinas.",
-        "en": "Visual collaboration systems for meeting rooms and offices."
-    },
-    "tab_telephony": {
-        "es": "Telefonía",
-        "en": "Telephony"
-    },
-    "tab_security": {
-        "es": "Seguridad",
-        "en": "Security"
-    },
-    "tab_connectivity": {
-        "es": "Conectividad",
-        "en": "Connectivity"
-    },
-    "tab_more_products": {
-        "es": "Más Productos",
-        "en": "More Products"
-    },
-    "detail1_title": {
-        "es": "Comunicaciones Unificadas Modernas",
-        "en": "Modern Unified Communications"
-    },
-    "detail1_p1": {
-        "es": "Sistemas de telefonía IP que ofrecen flexibilidad, reducción de costos y funciones avanzadas como IVR, grabación de llamadas y movilidad.",
-        "en": "IP telephony systems offering flexibility, cost reduction and advanced features such as IVR, call recording and mobility."
-    },
-    "detail1_item1": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Teléfonos IP de escritorio y DECT.",
-        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Desktop and DECT IP phones."
-    },
-    "detail1_item2": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Centralitas Virtuales y Hardware (PBX).",
-        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Virtual and Hardware Switchboards (PBX)."
-    },
-    "detail1_item3": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Gateways y troncales SIP.",
-        "en": "<i class=\"fas fa-check-circle me-2 text-primary\"></i>Gateways and SIP trunks."
-    },
-    "detail2_title": {
-        "es": "Protección Inteligente para su Empresa",
-        "en": "Intelligent Protection for Your Business"
-    },
-    "detail2_p1": {
-        "es": "Soluciones de seguridad electrónica para prevenir riesgos y controlar el acceso a sus instalaciones.",
-        "en": "Electronic security solutions to prevent risks and control access to your facilities."
-    },
-    "detail2_item1": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Cámaras de vigilancia IP de alta resolución (CCTV).",
-        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>High-resolution IP surveillance cameras (CCTV)."
-    },
-    "detail2_item2": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Sistemas de alarma y detección de intrusos.",
-        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Alarm and intrusion detection systems."
-    },
-    "detail2_item3": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Lectores biométricos y control de acceso.",
-        "en": "<i class=\"fas fa-check-circle me-2 text-danger\"></i>Biometric readers and access control."
-    },
-    "detail3_title": {
-        "es": "Infraestructura de Red Robusta",
-        "en": "Robust Network Infrastructure"
-    },
-    "detail3_p1": {
-        "es": "Implementación de redes cableadas e inalámbricas optimizadas para el tráfico de datos, voz y video.",
-        "en": "Implementation of wired and wireless networks optimized for data, voice and video traffic."
-    },
-    "detail3_item1": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Switches gestionables y no gestionables.",
-        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Managed and unmanaged switches."
-    },
-    "detail3_item2": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Routers empresariales y firewalls.",
-        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Enterprise routers and firewalls."
-    },
-    "detail3_item3": {
-        "es": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Cableado estructurado UTP y fibra óptica.",
-        "en": "<i class=\"fas fa-check-circle me-2 text-success\"></i>Structured UTP cabling and fiber optics."
-    },
-    "detail4_title": {
-        "es": "Complementos Esenciales",
-        "en": "Essential Complements"
-    },
-    "detail4_p1": {
-        "es": "Artículos complementarios que aseguran la continuidad de su operación y optimizan la colaboración.",
-        "en": "Complementary items that ensure business continuity and optimize collaboration."
-    },
-    "detail4_p_ups": {
-        "es": "Soluciones monofásicas y trifásicas para garantizar energía limpia e ininterrumpida.",
-        "en": "Single-phase and three-phase solutions to guarantee clean and uninterrupted power."
-    },
-    "detail4_p_acc": {
-        "es": "Diademas ergonómicas y dispositivos de entrada para call centers y oficinas.",
-        "en": "Ergonomic headsets and input devices for call centers and offices."
-    },
-    "detail4_p_vid": {
-        "es": "Equipos para salas de juntas, desde cámaras PTZ hasta barras de colaboración.",
-        "en": "Equipment for meeting rooms, from PTZ cameras to collaboration bars."
-    },
-
+    
     // ===== PÁGINA: TELEFONÍA IP - TRADUCCIONES COMPLETAS =====
 
     // Hero Section

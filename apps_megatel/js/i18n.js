@@ -12,16 +12,22 @@ const LANG_KEY = 'megatel_lang'; // Clave para guardar el idioma en localStorage
  * @returns {string} El código de idioma ('es' o 'en').
  */
 function getCurrentLanguage() {
-    // 1. Primero verificar localStorage
-    let lang = localStorage.getItem(LANG_KEY);
+    // 1. PRIORIDAD SEO: Verificar parámetros de la URL (?lang=en)
+    const urlParams = new URLSearchParams(window.location.search);
+    let lang = urlParams.get('lang');
     
-    // 2. Si no hay en localStorage, detectar del navegador
+    // 2. Si no hay en URL, verificar localStorage
+    if (!lang) {
+        lang = localStorage.getItem(LANG_KEY);
+    }
+    
+    // 3. Si no hay en localStorage, detectar del navegador
     if (!lang) {
         const browserLang = navigator.language || navigator.userLanguage;
         lang = browserLang.startsWith('en') ? 'en' : 'es';
     }
     
-    // 3. Validar que sea un idioma soportado
+    // 4. Validar que sea un idioma soportado
     if (lang !== 'es' && lang !== 'en') {
         lang = 'es';
     }

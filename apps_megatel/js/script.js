@@ -133,15 +133,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ===== EFECTOS DEL NAVBAR =====
+  // ===== EFECTOS DEL NAVBAR =====
     function initNavbarEffects() {
-        const navbar = document.querySelector('#mainNavbar');
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        const navbarCollapse = document.querySelector('#navbarNav');
+        const navbarCollapse = document.querySelector('#navbarNav'); //
         
-        // Cerrar menú al hacer clic en un enlace (móvil)
-        if (navbarCollapse) {
-            const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+        // 1. Cerrar menú al hacer clic en un enlace (móvil)
+        if (navbarCollapse) { //
+            const navLinks = navbarCollapse.querySelectorAll('.nav-link:not(.dropdown-toggle)');
             navLinks.forEach(link => {
                 link.addEventListener('click', function() {
                     if (window.innerWidth < 992) {
@@ -153,19 +151,44 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         }
+
+        // 2. Habilitar CLIC en el enlace principal de "Servicios" (Solo Desktop)
+        // Esto permite que el hover muestre el menú pero el clic abra la página
+        const servicesLink = document.querySelector('.custom-dropdown > .nav-link');
+        if (servicesLink) {
+            servicesLink.addEventListener('click', function(e) {
+                if (window.innerWidth >= 992) {
+                    window.location.href = this.getAttribute('href');
+                }
+            });
+        }
         
-        // Marcar enlace activo según la página actual
+        // 3. Marcar enlace activo según la página actual corregido
         markActiveNavLink();
     }
     
     function markActiveNavLink() {
-        const currentPath = window.location.pathname;
-        const navLinks = document.querySelectorAll('.nav-link');
+        const path = window.location.pathname;
+        // Obtenemos el nombre del archivo actual (ej: 'quienes-somos.html')
+        let filename = path.substring(path.lastIndexOf('/') + 1);
+        
+        // Normalizamos la raíz o index a 'index.html'
+        if (filename === '' || filename === '/') filename = 'index.html';
+
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
         
         navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href && currentPath.includes(href) && href !== '#') {
+            link.classList.remove('active'); // Limpieza preventiva
+            link.removeAttribute('aria-current');
+            
+            let href = link.getAttribute('href');
+            // Normalizamos el href del link para la comparación
+            if (href === '/' || href === '') href = 'index.html';
+
+            // Coincidencia exacta para evitar activaciones múltiples
+            if (href === filename && href !== '#') {
                 link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
             }
         });
     }
