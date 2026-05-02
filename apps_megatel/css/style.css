@@ -553,6 +553,141 @@ h1, h2, h3, h4, h5, h6 {
     outline-offset: 2px;
 }
 
+/* Ajuste para el acento del título de sección */
+.border-primary {
+    border-color: #0056b3 !important; /* Ajusta este color al azul exacto de tu logo */
+}
+
+/* Espaciado para evitar que el ID de la sección quede debajo del Navbar al hacer scroll */
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+/* Color Rojo Corporativo Megatel */
+.btn-megatel-red {
+    background-color: #e62e2d; /* Ajusta este código HEX al rojo exacto de tu logo */
+    border-color: #e62e2d;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-megatel-red:hover {
+    background-color: #c42625; /* Un tono más oscuro para el efecto de presión */
+    border-color: #c42625;
+    color: #ffffff;
+    transform: translateY(-2px); /* Pequeña elevación al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(230, 46, 45, 0.3);
+}
+
+/* Tono Slate 100 para fondos sutiles */
+.bg-slate-100 {
+    background-color: #f1f5f9 !important;
+}
+
+/* Opcional: Si quieres que las tarjetas resalten más sobre este fondo, 
+   podemos forzarlas a que sean blanco puro */
+.bg-slate-100 .flip-card-front {
+    background-color: #ffffff !important;
+}
+/* --- Estilos Carrusel Infinito --- */
+.brands-slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+    background: #ffffff;
+    position: relative;
+}
+
+/* Gradientes laterales para dar efecto de desvanecido */
+.brands-slider::before,
+.brands-slider::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.brands-slider::before {
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.brands-slider::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.brands-track {
+    display: flex;
+    width: calc(250px * 20); /* Ajustar según ancho del logo * cantidad total (incluyendo duplicados) */
+    animation: scrollInfinite 40s linear infinite;
+}
+
+.brand-logo {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.brand-logo img {
+    max-width: 150px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.brand-logo img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Animación de desplazamiento */
+@keyframes scrollInfinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 10)); /* Debe ser la mitad del ancho total del track */
+    }
+}
+
+/* Pausar al pasar el mouse (opcional) */
+.brands-slider:hover .brands-track {
+    animation-play-state: paused;
+}
+
+/* Efectos para el Footer */
+.hover-white:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.hover-primary:hover {
+    color: var(--bs-primary) !important;
+    transition: color 0.3s ease;
+}
+
+.fs-small {
+    font-size: 0.85rem;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+footer .border-secondary {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 
 /* ================================================================================
    2. INDEX.HTML - PÁGINA PRINCIPAL
@@ -707,6 +842,45 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3rem;
     color: #0274be;
     margin-bottom: 1rem;
+}
+
+/* --- Flip Cards Effect --- */
+.flip-card {
+    background-color: transparent;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
 }
 
 /* ===== 3.3 SISTEMA DE TABS ===== */
