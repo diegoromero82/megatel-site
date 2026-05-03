@@ -47,8 +47,8 @@ const translations = {
 
     // === FOOTER =====
     "footer_desc": {
-        "es": "Llevamos más de 20 años transformando las comunicaciones empresariales a través de soluciones robustas en Telefonía IP, conectividad y seguridad electrónica.",
-        "en": "We have been transforming business communications for over 20 years through robust solutions in IP Telephony, connectivity, and electronic security."
+        "es": "Llevamos más de 32 años transformando las comunicaciones empresariales a través de soluciones robustas en Telefonía IP, conectividad y seguridad electrónica.",
+        "en": "We have been transforming business communications for over 32 years through robust solutions in IP Telephony, connectivity, and electronic security."
     },
     "footer_links_title": {
         "es": "Enlaces Rápidos",
@@ -141,12 +141,12 @@ const translations = {
     
     // ===== PÁGINA: QUIÉNES SOMOS - CONTENIDO PRINCIPAL =====
     "about_main_title": {
-        "es": "Megatel SAS: 30 Años de Trayectoria Tecnológica",
-        "en": "Megatel SAS: 30 Years of Technological Track Record"
+        "es": "Megatel SAS: 32 Años de Trayectoria Tecnológica",
+        "en": "Megatel SAS: 32 Years of Technological Track Record"
     },
     "about_p1": {
-        "es": "Megatel SAS es una empresa colombiana con más de 30 años de experiencia en la venta consultiva y prestación de servicios profesionales en soluciones de telecomunicaciones, seguridad electrónica, conectividad, desarrollo de aplicaciones empresariales y sitios web.",
-        "en": "Megatel SAS is a Colombian company with over 30 years of experience in consultative sales and professional services in telecommunications solutions, electronic security, connectivity, enterprise application development and websites."
+        "es": "Megatel SAS es una empresa colombiana con más de 32 años de experiencia en la venta consultiva y prestación de servicios profesionales en soluciones de telecomunicaciones, seguridad electrónica, conectividad, desarrollo de aplicaciones empresariales y sitios web.",
+        "en": "Megatel SAS is a Colombian company with over 32 years of experience in consultative sales and professional services in telecommunications solutions, electronic security, connectivity, enterprise application development and websites."
     },
     "about_p2": {
         "es": "Contamos con personal certificado a nivel comercial y técnico con el fin de ofrecer soluciones que cumplan con las necesidades de nuestros clientes, garantizando siempre la máxima calidad y eficiencia en la ejecución de cada proyecto.",
@@ -906,6 +906,30 @@ const translations = {
     "opt_consulting": { "es": "Consultoría / Servicios", "en": "Consulting / Services" },
     "captcha_label": { "es": "Validación de seguridad: ¿Cuánto es ", "en": "Security validation: How much is " },
     "form_success": { "es": "¡Mensaje enviado con éxito!", "en": "Message sent successfully!" },
+
+    // ===== TEXTOS DEL FORMULARIO DE CONTACTO =====
+    "form_name": { "es": "Nombre completo", "en": "Full name" },
+    "form_entity": { "es": "Empresa / Entidad", "en": "Company / Entity" },
+    "form_email": { "es": "Correo electrónico", "en": "Email address" },
+    "form_phone": { "es": "Teléfono de contacto", "en": "Contact phone" },
+    "form_subject": { "es": "Asunto", "en": "Subject" },
+    "form_select_opt": { "es": "Seleccione una opción", "en": "Select an option" },
+    "form_message": { "es": "Mensaje", "en": "Message" },
+    "form_btn": { "es": "Enviar Mensaje", "en": "Send Message" },
+    "form_privacy_text": { "es": "Acepto la", "en": "I accept the" },
+    "form_privacy_link": { "es": "Política de Tratamiento de Datos", "en": "Data Processing Policy" },
+    "captcha_label": { "es": "Validación de seguridad: ¿Cuánto es ", "en": "Security validation: How much is " },
+
+    // Opciones del Selector
+    "opt_products": { "es": "Portafolio de Productos", "en": "Product Portfolio" },
+    "opt_services": { "es": "Portafolio de Servicios", "en": "Services Portfolio" },
+    "opt_consultancy": { "es": "Asesoría", "en": "Consultancy" },
+    "opt_tech_support": { "es": "Servicio Técnico", "en": "Technical Support" },
+    "opt_others": { "es": "Otros", "en": "Others" },
+
+    // Mensajes de respuesta
+    "form_success": { "es": "¡Mensaje enviado con éxito! Nos contactaremos pronto.", "en": "Message sent successfully! We will contact you soon." },
+    "form_error": { "es": "Hubo un error al enviar el mensaje. Intente de nuevo.", "en": "There was an error sending the message. Please try again." },
 
     // ===== PÁGINA TELEFONÍA IP =====
     "telephony_hero_title": {

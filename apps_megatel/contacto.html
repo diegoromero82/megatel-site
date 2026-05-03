@@ -145,165 +145,174 @@
 
     <!-- ========== CONTENIDO PRINCIPAL: CONTACTO (SCROLL NORMAL) ========== -->
     <main role="main">
-
-        <!-- 1. HERO DE CONTACTO -->
-        <section id="contact-hero" class="full-screen-section section-confidence"
-            aria-label="Sección de bienvenida a contacto">
-            <div class="container h-100 d-flex align-items-center">
-                <div class="row w-100">
-                    <div class="col-lg-10 col-md-10 col-12 mx-auto text-center">
-                        <div class="bg-dark bg-opacity-75 p-4 p-md-5 rounded-3 shadow-lg text-white">
-
-                            <h1 class="display-4 fw-bold mb-4" data-i18n="contact_hero_title">
-                                Estamos Listos para Escucharlo
-                            </h1>
-                            <p class="lead mb-4" data-i18n="contact_hero_subtitle">
-                                Elija el canal de comunicación que mejor se adapte a sus necesidades. Nuestro equipo
-                                responderá a la brevedad.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- 1. HERO DE CONTACTO (Fondo oscuro para contraste) -->
+        <section id="contact-hero" class="py-5 bg-dark text-white text-center">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold" data-i18n="contact_hero_title">Contacto</h1>
+                <p class="lead" data-i18n="contact_hero_subtitle">Estamos listos para potenciar su infraestructura
+                    tecnológica.</p>
             </div>
         </section>
 
-        <!-- 2. BLOQUE DE INFORMACIÓN DE CONTACTO DIRECTO -->
-        <section id="contact-info" class="py-5 bg-white" aria-label="Información de contacto">
-            <div class="container my-4">
-                <div class="row g-4">
+        <!-- 2. SECCIÓN PRINCIPAL DE CONTACTO (DISEÑO SEGÚN IMAGEN) -->
+        <section class="py-5 bg-light">
+            <div class="container py-4">
+                <!-- Contenedor Principal con Sombra y Bordes -->
+                <div class="row g-0 contact-main-container shadow-xl">
 
-                    <!-- Tarjeta 1: WhatsApp -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card p-3 shadow-sm contact-info-card h-100">
-                            <div class="card-body text-center">
-                                <i class="fab fa-whatsapp contact-icon-bg bg-success" aria-hidden="true"></i>
-                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_wa_title">WhatsApp</h2>
-                                <p class="mb-0 text-muted" data-i18n="contact_wa_text">Respuesta inmediata para
-                                    consultas rápidas.</p>
-                                <a href="https://wa.me/+573107630363" target="_blank" rel="noopener noreferrer"
-                                    class="btn btn-success btn-sm mt-3" data-i18n="contact_wa_cta">
-                                    Chatear Ahora
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- LATERAL IZQUIERDO: Información con tu Rojo Megatel -->
+                    <div class="col-lg-4 contact-sidebar-red">
+                        <div class="decor-circle top-right-red"></div>
+                        <div class="decor-circle bottom-left-red"></div>
 
-                    <!-- Tarjeta 2: Teléfono -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card p-3 shadow-sm contact-info-card h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-phone contact-icon-bg bg-primary" aria-hidden="true"></i>
-                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_phone_title">Teléfono</h2>
-                                <p class="mb-0 text-muted" data-i18n="contact_phone_text">Llámenos en horario de
-                                    oficina.</p>
-                                <a href="tel:+573107630363" class="btn btn-primary btn-sm mt-3"
-                                    data-i18n="contact_phone_cta">
-                                    Llamar Ahora
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tarjeta 3: Email -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card p-3 shadow-sm contact-info-card h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope contact-icon-bg bg-info" aria-hidden="true"></i>
-                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_email_title">Email</h2>
-                                <p class="mb-0 text-muted" data-i18n="contact_email_text">Para consultas detalladas por
-                                    escrito.</p>
-                                <a href="mailto:contacto@megatelsas.com" class="btn btn-info btn-sm mt-3"
-                                    data-i18n="contact_email_cta">
-                                    Enviar Email
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tarjeta 4: Ubicación -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card p-3 shadow-sm contact-info-card h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marker-alt contact-icon-bg bg-danger" aria-hidden="true"></i>
-                                <h2 class="h5 fw-bold mt-3" data-i18n="contact_location_title">Ubicación</h2>
-                                <p class="mb-0 text-muted" data-i18n="contact_location_text">Bogotá, Colombia</p>
-                                <p class="small text-muted mt-2" data-i18n="contact_location_hours">Lunes a Viernes,
-                                    8:00 AM - 6:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. FORMULARIO DE CONTACTO (INTEGRADO CON ORACLE APEX) -->
-        <section id="contact-form" class="py-5 bg-light" aria-label="Formulario de contacto">
-            <div class="container my-4">
-                <div class="row">
-                    <div class="col-lg-10 col-xl-8 mx-auto">
-
-                        <!-- Encabezado del Formulario -->
-                        <div class="text-center mb-4">
-                            <h2 class="h3 fw-bold" data-i18n="form_title">
-                                Envíenos su Consulta
-                            </h2>
-                            <p class="text-muted" data-i18n="form_subtitle">
-                                Complete el formulario y nos pondremos en contacto con usted en menos de 24 horas
+                        <div class="sidebar-content">
+                            <h2 class="h3 fw-bold mb-4" data-i18n="contact_info_title">Información de Contacto</h2>
+                            <p class="text-white-50 mb-5" data-i18n="contact_info_desc">
+                                Completa el formulario y nuestro equipo se pondrá en contacto contigo.
                             </p>
-                        </div>
 
-                        <!-- Contenedor del iFrame de APEX -->
-                        <div class="apex-iframe-container position-relative">
-                            <!-- Loader mientras carga -->
-                            <div class="iframe-loader">
-                                <div class="spinner-border" role="status">
-                                    <span class="visually-hidden">Cargando formulario...</span>
+                            <div class="contact-links-list">
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <p class="fw-bold small mb-0" data-i18n="contact_write_us">Escríbanos</p>
+                                        <a href="mailto:ventas@megatelsas.com"
+                                            class="text-white-50 text-decoration-none">ventas@megatelsas.com</a>
+                                    </div>
                                 </div>
-                                <p class="mt-3 text-muted">Cargando formulario...</p>
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <i class="fab fa-whatsapp mt-1"></i>
+                                    <div>
+                                        <p class="fw-bold small mb-0">WhatsApp</p>
+                                        <a href="https://wa.me/573107630363" target="_blank"
+                                            class="text-white-50 text-decoration-none">+57 310 763 0363</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="fas fa-map-marker-alt mt-1"></i>
+                                    <div>
+                                        <p class="fw-bold small mb-0" data-i18n="contact_location_label">Ubicación</p>
+                                        <p class="text-white-50 small mb-0">Bogotá D.C.<br>Colombia, Sur América</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <!-- iFrame del Formulario APEX - MEGATEL CRM -->
-                            <iframe 
-                                id="apex-contact-form"
-                                class="apex-iframe"
-                                src="https://oracleapex.com/ords/r/drstest/megatel-crm/leads-form"
-                                title="Formulario de Contacto Megatel"
-                                allowfullscreen
-                                loading="lazy">
-                            </iframe>
-                        </div>
-
-                        <!-- Nota de Privacidad -->
-                        <div class="text-center mt-3">
-                            <p class="small text-muted" data-i18n="form_privacy_note">
-                                <i class="fas fa-lock me-1"></i>
-                                Sus datos están protegidos y solo serán utilizados para responder a su consulta.
-                            </p>
-                        </div>
-
-                        <!-- Métodos Alternativos de Contacto -->
-                        <div class="mt-4 p-3 bg-white rounded shadow-sm">
-                            <p class="mb-2 fw-bold text-center" data-i18n="form_alternative_title">
-                                ¿Prefiere otro medio de contacto?
-                            </p>
-                            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                                <a href="https://wa.me/+573107630363" target="_blank" rel="noopener noreferrer"
-                                    class="btn btn-sm btn-outline-success">
-                                    <i class="fab fa-whatsapp me-1"></i>
-                                    <span data-i18n="contact_wa_short">WhatsApp</span>
-                                </a>
-                                <a href="tel:+573107630363" class="btn btn-sm btn-outline-primary">
-                                    <i class="fas fa-phone me-1"></i>
-                                    <span data-i18n="contact_phone_short">Llamar</span>
-                                </a>
-                                <a href="mailto:contacto@megatelsas.com" class="btn btn-sm btn-outline-info">
-                                    <i class="fas fa-envelope me-1"></i>
-                                    <span data-i18n="contact_email_short">Email</span>
-                                </a>
+                            <div class="sidebar-footer">
+                                <p class="fw-bold small mb-3" data-i18n="contact_follow_us">Síguenos</p>
+                                <div class="social-grid">
+                                    <a href="#" class="social-box"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-box"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-box"><i class="fab fa-facebook-f"></i></a>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
+                    <!-- LADO DERECHO: Formulario Limpio -->
+                    <div class="col-lg-8 bg-white p-4 p-md-5">
+                        <form id="contact-form-megatel"
+                            action="https://script.google.com/macros/s/AKfycbxA75irQLGabeNVkb0zzoOwG7HgW0UfKMG54nbfWalzEIJtx2UoHd_poKKcrXDaIRPeew/exec"
+                            method="POST" class="needs-validation" novalidate>
+                            <div class="row g-4">
+                                <!-- Nombre -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small" data-i18n="form_name">Nombre
+                                        completo</label>
+                                    <input type="text" name="nombre" class="form-control modern-input"
+                                        placeholder="Nombre Completo" required>
+                                    <div class="invalid-feedback small">Por favor, ingrese su nombre completo.</div>
+                                </div>
+
+                                <!-- Empresa (Ahora Obligatorio) -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small" data-i18n="form_entity">Empresa /
+                                        Entidad</label>
+                                    <input type="text" name="empresa" class="form-control modern-input"
+                                        placeholder="Empresa / Entidad" required>
+                                    <div class="invalid-feedback small">Por favor, ingrese el nombre de su empresa.
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small" data-i18n="form_email">Correo
+                                        electrónico</label>
+                                    <input type="email" name="email" class="form-control modern-input"
+                                        placeholder="tucorreo@ejemplo.com" required>
+                                    <div class="invalid-feedback small">Ingrese un correo electrónico válido.</div>
+                                </div>
+
+                                <!-- Teléfono -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small" data-i18n="form_phone">Teléfono de
+                                        contacto</label>
+                                    <input type="tel" name="telefono" class="form-control modern-input"
+                                        placeholder="Número de contacto" required>
+                                    <div class="invalid-feedback small">El teléfono es obligatorio.</div>
+                                </div>
+
+                                <!-- Asunto -->
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small" data-i18n="form_subject">Asunto</label>
+                                    <select name="asunto" class="form-select modern-input" required>
+                                        <option value="" disabled selected data-i18n="form_select_opt">Seleccione una
+                                            opción</option>
+                                        <option value="productos" data-i18n="opt_products">Portafolio de Productos
+                                        </option>
+                                        <option value="servicios" data-i18n="opt_services">Portafolio de Servicios
+                                        </option>
+                                        <option value="asesoria" data-i18n="opt_consultancy">Asesoría</option>
+                                        <option value="tecnico" data-i18n="opt_tech_support">Servicio Técnico</option>
+                                        <option value="otros" data-i18n="opt_others">Otros</option>
+                                    </select>
+                                    <div class="invalid-feedback small">Debe seleccionar un asunto.</div>
+                                </div>
+
+                                <!-- Mensaje -->
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small" data-i18n="form_message">Mensaje</label>
+                                    <textarea name="mensaje" rows="4" class="form-control modern-input"
+                                        placeholder="Escriba su mensaje aquí..." required></textarea>
+                                    <div class="invalid-feedback small">Escriba su consulta detallada.</div>
+                                </div>
+
+                                <!-- Captcha -->
+                                <div class="col-12">
+                                    <div class="captcha-box">
+                                        <label class="small fw-bold mb-2">
+                                            <span data-i18n="captcha_label">Validación de seguridad: ¿Cuánto es </span>
+                                            <span id="captcha-question" class="text-danger"></span>?
+                                        </label>
+                                        <input type="number" id="captcha-input" class="form-control w-auto"
+                                            placeholder="0" required>
+                                        <div id="captcha-error" class="text-danger small d-none">La respuesta es
+                                            incorrecta. Inténtelo de nuevo.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Checkbox Política -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                                        <label class="form-check-label small text-muted" for="privacy">
+                                            <span data-i18n="form_privacy_text">Acepto la</span> <a href="#"
+                                                class="text-danger fw-bold text-decoration-none"
+                                                data-i18n="form_privacy_link">Política de Tratamiento de Datos</a>.
+                                        </label>
+                                        <div class="invalid-feedback small">Debe aceptar la política de datos para
+                                            continuar.</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-end">
+                                    <button type="submit" id="submit-btn" class="btn btn-megatel-red btn-submit-modern">
+                                        <span data-i18n="form_btn">Enviar Mensaje</span>
+                                        <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="form-response" class="mt-3 d-none alert"></div>
                     </div>
                 </div>
             </div>
@@ -311,7 +320,6 @@
 
     </main>
 
-    <!-- Footer -->
     <!-- Footer -->
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
@@ -488,7 +496,7 @@
             const service = urlParams.get('service');
 
             if (service) {
-                console.log('🔗 Parámetro de servicio detectado:', service);                
+                console.log('🔗 Parámetro de servicio detectado:', service);
             }
         });
     </script>
