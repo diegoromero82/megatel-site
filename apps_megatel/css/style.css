@@ -182,15 +182,17 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 56px; /* Compensar navbar fijo */
+    padding-top: 56px;
+    /* Compensar navbar fijo */
     color: #333;
     background-color: #fff;
 }
 
 /* ===== 1.2 NAVBAR (HEADER) ===== */
 .navbar-dark.bg-dark {
-    background-color: #0274be !important; /* Azul corporativo Megatel */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #0274be !important;
+    /* Azul corporativo Megatel */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: all 0.3s ease;
 }
@@ -214,7 +216,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffc107 !important; /* Amarillo en hover */
+    color: #ffc107 !important;
 }
 
 .navbar-nav .nav-link.active {
@@ -224,7 +226,7 @@ body {
 
 /* Botón de idioma */
 .flag-icon {
-    margin-right: 5px; 
+    margin-right: 5px;
     font-size: 1.1em;
 }
 
@@ -233,6 +235,127 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
+
+/* Contenedor relativo para el grupo */
+.custom-dropdown {
+    position: relative;
+}
+
+/* Icono de flecha que rota al hacer hover */
+.nav-icon-sm {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.custom-dropdown:hover .nav-icon-sm {
+    transform: rotate(180deg);
+}
+
+/* Menú oculto por defecto con animación de entrada */
+.custom-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 240px;
+    background-color: #1e293b;
+    /* Slate-800 para modo oscuro */
+    border: 1px solid #334155;
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    padding: 0.5rem 0;
+    margin-top: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    /* shadow-xl */
+    z-index: 50;
+    transition: all 0.2s ease;
+    transform: translateY(10px);
+    /* slide-in-from-top-1 */
+}
+
+/* El "Puente" invisible: evita que el menú se cierre al mover el mouse hacia abajo */
+.custom-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+
+/* Estado Hover */
+.custom-dropdown:hover .custom-dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Items del menú */
+.custom-dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1.2rem;
+    color: #cbd5e1;
+    /* slate-300 */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.custom-dropdown-item:hover {
+    background-color: #334155;
+    /* slate-700 */
+    color: #0274be;
+    /* Color primario Megatel */
+    padding-left: 1.5rem;
+    /* Efecto de desplazamiento al hover */
+}
+
+.dropdown-divider-custom {
+    height: 1px;
+    margin: 0.5rem 0;
+    background-color: #334155;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 991px) {
+    .custom-dropdown-menu {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+}
+
+/* Ajuste de legibilidad para submenús en móviles */
+@media (max-width: 991.98px) {
+    /* Color blanco para los items del submenú */
+    .navbar-nav .dropdown-menu .dropdown-item {
+        color: #ffffff !important;
+        padding-left: 1.5rem; /* Sangría para diferenciar del menú principal */
+        font-weight: 400;
+        background: transparent !important;
+    }
+
+    /* Color amarillo para el hover o cuando está activo */
+    .navbar-nav .dropdown-menu .dropdown-item:hover,
+    .navbar-nav .dropdown-menu .dropdown-item:active {
+        color: #ffc107 !important; 
+    }
+
+    /* Quitar el borde o sombra que Bootstrap a veces pone en móviles */
+    .navbar-nav .dropdown-menu {
+        border: none;
+        background: transparent;
+    }
+}
+
 
 /* ===== 1.3 BOTONES FLOTANTES ===== */
 .floating-btn {
@@ -247,12 +370,12 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .floating-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .floating-btn i {
@@ -329,7 +452,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #0274be;
 }*/
 
-.display-1, .display-2, .display-3, .display-4 {
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
     font-weight: 700;
 }
 
@@ -385,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card:hover {
-    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .card-img-top {
@@ -425,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
-.section-with-overlay > .container {
+.section-with-overlay>.container {
     position: relative;
     z-index: 2;
 }
@@ -436,6 +562,7 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -447,6 +574,7 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -458,6 +586,7 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -465,12 +594,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-15px);
     }
+
     60% {
         transform: translateY(-7px);
     }
@@ -508,11 +644,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== 1.11 UTILIDADES ===== */
 .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .shadow-custom {
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .rounded-custom {
@@ -527,7 +663,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
 }
@@ -555,7 +691,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ajuste para el acento del título de sección */
 .border-primary {
-    border-color: #0056b3 !important; /* Ajusta este color al azul exacto de tu logo */
+    border-color: #0056b3 !important;
+    /* Ajusta este color al azul exacto de tu logo */
 }
 
 /* Espaciado para evitar que el ID de la sección quede debajo del Navbar al hacer scroll */
@@ -565,7 +702,8 @@ section[id] {
 
 /* Color Rojo Corporativo Megatel */
 .btn-megatel-red {
-    background-color: #e62e2d; /* Ajusta este código HEX al rojo exacto de tu logo */
+    background-color: #e62e2d;
+    /* Ajusta este código HEX al rojo exacto de tu logo */
     border-color: #e62e2d;
     color: #ffffff;
     transition: all 0.3s ease;
@@ -573,10 +711,12 @@ section[id] {
 }
 
 .btn-megatel-red:hover {
-    background-color: #c42625; /* Un tono más oscuro para el efecto de presión */
+    background-color: #c42625;
+    /* Un tono más oscuro para el efecto de presión */
     border-color: #c42625;
     color: #ffffff;
-    transform: translateY(-2px); /* Pequeña elevación al pasar el mouse */
+    transform: translateY(-2px);
+    /* Pequeña elevación al pasar el mouse */
     box-shadow: 0 5px 15px rgba(230, 46, 45, 0.3);
 }
 
@@ -590,6 +730,7 @@ section[id] {
 .bg-slate-100 .flip-card-front {
     background-color: #ffffff !important;
 }
+
 /* --- Estilos Carrusel Infinito --- */
 .brands-slider {
     width: 100%;
@@ -624,7 +765,8 @@ section[id] {
 
 .brands-track {
     display: flex;
-    width: calc(250px * 20); /* Ajustar según ancho del logo * cantidad total (incluyendo duplicados) */
+    width: calc(250px * 20);
+    /* Ajustar según ancho del logo * cantidad total (incluyendo duplicados) */
     animation: scrollInfinite 40s linear infinite;
 }
 
@@ -655,8 +797,10 @@ section[id] {
     0% {
         transform: translateX(0);
     }
+
     100% {
-        transform: translateX(calc(-250px * 10)); /* Debe ser la mitad del ancho total del track */
+        transform: translateX(calc(-250px * 10));
+        /* Debe ser la mitad del ancho total del track */
     }
 }
 
@@ -708,22 +852,22 @@ footer .border-secondary {
     width: 100%;
     height: calc(100vh - 56px);
     min-height: calc(100vh - 56px);
-    
+
     /* Scroll snap */
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    
+
     /* Centrado de contenido */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     /* Fondo */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+
     overflow: hidden;
     position: relative;
 }
@@ -740,7 +884,7 @@ footer .border-secondary {
     z-index: 1;
 }
 
-.full-screen-section > .container {
+.full-screen-section>.container {
     position: relative;
     z-index: 2;
 }
@@ -815,7 +959,7 @@ footer .border-secondary {
     z-index: 1;
 }
 
-#products-hero > .container {
+#products-hero>.container {
     position: relative;
     z-index: 2;
 }
@@ -865,7 +1009,8 @@ footer .border-secondary {
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -941,7 +1086,7 @@ footer .border-secondary {
     z-index: 1;
 }
 
-#contact-cta > .container {
+#contact-cta>.container {
     position: relative;
     z-index: 2;
 }
@@ -978,19 +1123,23 @@ footer .border-secondary {
 }
 
 .service-card-dev .service-icon {
-    color: #dc3545; /* Rojo */
+    color: #dc3545;
+    /* Rojo */
 }
 
 .service-card-web .service-icon {
-    color: #ffc107; /* Amarillo */
+    color: #ffc107;
+    /* Amarillo */
 }
 
 .service-card-support .service-icon {
-    color: #0274be; /* Azul */
+    color: #0274be;
+    /* Azul */
 }
 
 .service-card-repair .service-icon {
-    color: #28a745; /* Verde */
+    color: #28a745;
+    /* Verde */
 }
 
 /* Botones de las tarjetas */
@@ -1043,7 +1192,7 @@ footer .border-secondary {
 }
 
 /* Contenido sobre el overlay */
-#contact-hero > .container {
+#contact-hero>.container {
     position: relative;
     z-index: 2;
 }
@@ -1074,53 +1223,140 @@ footer .border-secondary {
 }
 
 /* ===== 5.3 FORMULARIO DE CONTACTO - ORACLE APEX ===== */
-    
-        .apex-iframe-container {
-            width: 100%;
-            min-height: 750px;
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
 
-        .apex-iframe {
-            width: 100%;
-            height: 750px;
-            border: none;
-            display: block;
-        }
+.apex-iframe-container {
+    width: 100%;
+    min-height: 750px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-        /* Ajuste responsivo del iframe */
-        @media (max-width: 768px) {
-            .apex-iframe-container {
-                min-height: 900px;
-            }
+.apex-iframe {
+    width: 100%;
+    height: 750px;
+    border: none;
+    display: block;
+}
 
-            .apex-iframe {
-                height: 900px;
-            }
-        }
+/* Ajuste responsivo del iframe */
+@media (max-width: 768px) {
+    .apex-iframe-container {
+        min-height: 900px;
+    }
 
-        /* Loader mientras carga el iframe */
-        .iframe-loader {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 1;
-        }
+    .apex-iframe {
+        height: 900px;
+    }
+}
 
-        .iframe-loader .spinner-border {
-            width: 3rem;
-            height: 3rem;
-            color: #0274be;
-        }
+/* Loader mientras carga el iframe */
+.iframe-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
 
-        .iframe-loaded .iframe-loader {
-            display: none;
-        }
+.iframe-loader .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #0274be;
+}
+
+.iframe-loaded .iframe-loader {
+    display: none;
+}
+
+/* DISEÑO DE CONTACTO PREMIUM */
+.contact-main-container {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.contact-sidebar-red {
+    background: linear-gradient(145deg, #8b121e 0%, #af1d2d 100%);
+    color: #fff;
+    padding: 3.5rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-content { position: relative; z-index: 5; }
+.sidebar-footer { margin-top: auto; padding-top: 2rem; position: relative; z-index: 5; }
+
+/* Inputs Modernos */
+.modern-input {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 0.8rem 1rem !important;
+    border-radius: 0.6rem !important;
+    transition: all 0.3s ease !important;
+    font-size: 0.95rem;
+}
+
+.modern-input:focus {
+    background-color: #fff !important;
+    border-color: #af1d2d !important;
+    box-shadow: 0 0 0 4px rgba(175, 29, 45, 0.1) !important;
+    outline: none;
+}
+
+/* Caja de Captcha */
+.captcha-box {
+    background: #f1f5f9;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+}
+
+/* Botón Moderno */
+.btn-submit-modern {
+    background-color: #af1d2d;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(175, 29, 45, 0.2);
+}
+
+.btn-submit-modern:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(175, 29, 45, 0.3);
+    background-color: #8b121e;
+    color: white;
+}
+
+/* Redes Sociales */
+.social-grid { display: flex; gap: 0.75rem; }
+.social-box {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.social-box:hover {
+    background: #fff;
+    color: #af1d2d;
+    transform: translateY(-5px);
+}
 
 
 /* ================================================================================
@@ -1162,7 +1398,8 @@ footer .border-secondary {
     align-items: center;
     justify-content: center;
     padding: 15px;
-    overflow: hidden; /* CRÍTICO: Evita que la imagen se salga */
+    overflow: hidden;
+    /* CRÍTICO: Evita que la imagen se salga */
     margin-bottom: 1rem;
 }
 
@@ -1172,7 +1409,8 @@ footer .border-secondary {
     max-height: 80px;
     width: auto;
     height: auto;
-    object-fit: contain; /* Mantiene proporción */
+    object-fit: contain;
+    /* Mantiene proporción */
     display: block;
     margin: 0 auto;
     filter: grayscale(20%);
@@ -1185,7 +1423,8 @@ footer .border-secondary {
     border: none;
     border-radius: 0.75rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* CRÍTICO: Evita desbordamiento */
+    overflow: hidden;
+    /* CRÍTICO: Evita desbordamiento */
     background-color: #fff;
 }
 
@@ -1251,8 +1490,9 @@ footer .border-secondary {
     .container {
         max-width: 1140px;
     }
-    
-    h1, .display-4 {
+
+    h1,
+    .display-4 {
         font-size: 3rem;
     }
 }
@@ -1262,11 +1502,12 @@ footer .border-secondary {
     .navbar-brand {
         font-size: 1.25rem;
     }
-    
-    h1, .display-4 {
+
+    h1,
+    .display-4 {
         font-size: 2.5rem;
     }
-    
+
     .product-card,
     .service-card,
     .contact-info-card {
@@ -1279,60 +1520,61 @@ footer .border-secondary {
     body {
         padding-top: 56px;
     }
-    
+
     .navbar-brand {
         font-size: 1.1rem;
     }
-    
+
     .navbar-brand img {
         height: 32px !important;
     }
-    
-    h1, .display-4 {
+
+    h1,
+    .display-4 {
         font-size: 2rem;
     }
-    
+
     .lead {
         font-size: 1rem;
     }
-    
+
     .btn {
         padding: 0.5rem 1.5rem;
         font-size: 0.9rem;
     }
-    
+
     /* Botones flotantes en móvil */
     .floating-btn {
         width: 50px;
         height: 50px;
     }
-    
+
     .floating-btn i {
         font-size: 20px;
     }
-    
+
     .whatsapp-btn {
         bottom: 20px;
         right: 20px;
     }
-    
+
     .top-btn {
         bottom: 80px;
         right: 20px;
     }
-    
+
     /* Full screen sections en móvil */
     .full-screen-section {
         min-height: auto;
         padding: 3rem 0;
     }
-    
+
     .section-services-hero,
     .section-contact-hero {
         padding-top: 80px;
         padding-bottom: 40px;
     }
-    
+
     /* Tarjetas en móvil */
     .product-card,
     .service-card,
@@ -1340,7 +1582,7 @@ footer .border-secondary {
     .partner-card {
         margin-bottom: 1.5rem;
     }
-    
+
     /* Formulario en móvil */
     .form-section {
         padding: 2rem 1rem;
@@ -1352,7 +1594,7 @@ footer .border-secondary {
     .full-screen-section h1 {
         font-size: 1.75rem;
     }
-    
+
     .full-screen-section p {
         font-size: 0.95rem;
     }
@@ -1364,6 +1606,7 @@ footer .border-secondary {
    ================================================================================ */
 
 @media print {
+
     /* Ocultar elementos no necesarios en impresión */
     .navbar,
     .floating-btn,
@@ -1371,12 +1614,12 @@ footer .border-secondary {
     footer {
         display: none !important;
     }
-    
+
     /* Ajustar body */
     body {
         padding-top: 0;
     }
-    
+
     /* Evitar saltos de página en elementos */
     .card,
     .product-card,
@@ -1384,7 +1627,7 @@ footer .border-secondary {
     .partner-card {
         page-break-inside: avoid;
     }
-    
+
     /* Asegurar que los links muestren la URL */
     a[href]:after {
         content: " (" attr(href) ")";
@@ -1415,7 +1658,7 @@ footer .border-secondary {
     z-index: 1;
 }
 
-#telephony-hero > .container {
+#telephony-hero>.container {
     position: relative;
     z-index: 2;
 }
@@ -1512,7 +1755,7 @@ footer .border-secondary {
     z-index: 1;
 }
 
-#contact-cta-ip > .container {
+#contact-cta-ip>.container {
     position: relative;
     z-index: 2;
 }
@@ -1530,11 +1773,11 @@ footer .border-secondary {
     #telephony-hero h1 {
         font-size: 2rem;
     }
-    
+
     #soluciones-ip .service-card {
         margin-bottom: 2rem;
     }
-    
+
     .service-icon {
         font-size: 2.5rem;
     }
@@ -1545,15 +1788,15 @@ footer .border-secondary {
         min-height: auto !important;
         padding: 3rem 0;
     }
-    
+
     #telephony-hero h1 {
         font-size: 1.75rem;
     }
-    
+
     #soluciones-ip .card-body {
         padding: 2rem !important;
     }
-    
+
     .service-icon,
     .product-icon {
         font-size: 2rem;
@@ -1562,9 +1805,12 @@ footer .border-secondary {
 
 /* ===== 9.9 ANIMACIONES ESPECÍFICAS ===== */
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.8;
     }
@@ -1578,161 +1824,168 @@ footer .border-secondary {
    FIN DE ESTILOS DE TELEFONÍA
    ================================================================================ */
 
-   /* ================================================================================
+/* ================================================================================
    10. VIDEOCONFERENCIA.HTML - PÁGINA DE VIDEOCONFERENCIA
    ================================================================================ */
- 
-   
-        :root {
-            --primary-color: #0274be;
-            --secondary-color: #6c757d;
-            --danger-color: #dc3545;
-            --success-color: #28a745;
-            --warning-color: #ffc107;
-            --dark-color: #212529;
-            --light-gray: #f8f9fa;
-        }
 
-        /* Hero Section Videoconferencia */
-        #videoconf-hero {
-            position: relative;
-            background-image: url('../images/videoconference-megatel.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            min-height: 60vh;
-        }
 
-        #videoconf-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;     
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(2, 116, 190, 0.8), rgba(0, 0, 0, 0.6));
-            z-index: 1;
-        }
+:root {
+    --primary-color: #0274be;
+    --secondary-color: #6c757d;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --dark-color: #212529;
+    --light-gray: #f8f9fa;
+}
 
-        #videoconf-hero > .container {
-            position: relative;
-            z-index: 2;
-        }
+/* Hero Section Videoconferencia */
+#videoconf-hero {
+    position: relative;
+    background-image: url('../images/videoconference-megatel.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 60vh;
+}
 
-        /* Sección de Beneficios */
-        #beneficios .feature-icon {
-            font-size: 3.5rem;
-            color: var(--danger-color);
-            transition: transform 0.3s ease;
-        }
+#videoconf-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(2, 116, 190, 0.8), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+}
 
-        #beneficios .col-md-4:hover .feature-icon {
-            transform: scale(1.1) rotate(5deg);
-        }
+#videoconf-hero>.container {
+    position: relative;
+    z-index: 2;
+}
 
-        /* Cards de Soluciones */
-        #soluciones .card {
-            transition: all 0.3s ease;
-            border-left: 4px solid transparent;
-        }
+/* Sección de Beneficios */
+#beneficios .feature-icon {
+    font-size: 3.5rem;
+    color: var(--danger-color);
+    transition: transform 0.3s ease;
+}
 
-        #soluciones .card.border-primary {
-            border-left-color: var(--primary-color);
-        }
+#beneficios .col-md-4:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+}
 
-        #soluciones .card.border-warning {
-            border-left-color: var(--warning-color);
-        }
+/* Cards de Soluciones */
+#soluciones .card {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
 
-        #soluciones .card.border-danger {
-            border-left-color: var(--danger-color);
-        }
+#soluciones .card.border-primary {
+    border-left-color: var(--primary-color);
+}
 
-        #soluciones .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
-        }
+#soluciones .card.border-warning {
+    border-left-color: var(--warning-color);
+}
 
-        /* Formulario CTA */
-        .cta-form-section {
-            background: linear-gradient(135deg, #0274be 0%, #025a9a 100%);
-            position: relative;
-        }
+#soluciones .card.border-danger {
+    border-left-color: var(--danger-color);
+}
 
-        .form-card {
-            background: white;
-            border-radius: 1rem;
-            transition: all 0.3s ease;
-        }
+#soluciones .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+}
 
-        .form-card:hover {
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
+/* Formulario CTA */
+.cta-form-section {
+    background: linear-gradient(135deg, #0274be 0%, #025a9a 100%);
+    position: relative;
+}
 
-        /* Sección de Plataformas */
-        #plataformas {
-            background-color: var(--dark-color);
-        }
+.form-card {
+    background: white;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
 
-        #plataformas i {
-            transition: all 0.3s ease;
-            opacity: 0.8;
-        }
+.form-card:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
 
-        #plataformas .col-3:hover i {
-            transform: scale(1.2);
-            opacity: 1;
-            color: var(--warning-color);
-        }
+/* Sección de Plataformas */
+#plataformas {
+    background-color: var(--dark-color);
+}
 
-        /* Animación suave en scroll */
-        .scroll-down-btn {
-            animation: bounce 2s infinite;
-        }
+#plataformas i {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
 
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
+#plataformas .col-3:hover i {
+    transform: scale(1.2);
+    opacity: 1;
+    color: var(--warning-color);
+}
 
-        /* Responsive */
-        @media (max-width: 992px) {
-            #videoconf-hero h1 {
-                font-size: 2rem;
-            }
+/* Animación suave en scroll */
+.scroll-down-btn {
+    animation: bounce 2s infinite;
+}
 
-            #beneficios .feature-icon {
-                font-size: 2.5rem;
-            }
-        }
+@keyframes bounce {
 
-        @media (max-width: 768px) {
-            #videoconf-hero {
-                min-height: auto !important;
-                padding: 3rem 0;
-            }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
 
-            #videoconf-hero h1 {
-                font-size: 1.75rem;
-            }
+    40% {
+        transform: translateY(-10px);
+    }
 
-            .feature-icon {
-                font-size: 2rem;
-            }
+    60% {
+        transform: translateY(-5px);
+    }
+}
 
-            #soluciones .card {
-                margin-bottom: 2rem;
-            }
-        }
+/* Responsive */
+@media (max-width: 992px) {
+    #videoconf-hero h1 {
+        font-size: 2rem;
+    }
 
-        /* ===== ESTILOS ADICIONALES PARA VIDEOCONFERENCIA ===== */
+    #beneficios .feature-icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #videoconf-hero {
+        min-height: auto !important;
+        padding: 3rem 0;
+    }
+
+    #videoconf-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    #soluciones .card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* ===== ESTILOS ADICIONALES PARA VIDEOCONFERENCIA ===== */
 
 /* Hover effect para tarjetas de tipos de sala */
 .hover-card {
@@ -1741,7 +1994,7 @@ footer .border-secondary {
 
 .hover-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Efecto para logos de partners (si usas imágenes reales más adelante) */
@@ -1762,27 +2015,22 @@ footer .border-secondary {
         display: none;
     }
 }
-    
 
-
-/* ================================================================================
-   FIN DEL ARCHIVO CSS
-   ================================================================================ */
 /* ===== RESPONSIVE ADICIONAL PARA PARTNERS ===== */
 @media (max-width: 992px) {
     .partner-logo-container {
         height: 80px;
         padding: 10px;
     }
-    
+
     .partner-logo {
         max-height: 60px;
     }
-    
+
     .partner-card .card-title {
         font-size: 1rem;
     }
-    
+
     .partner-card .card-text {
         font-size: 0.8rem;
     }
@@ -1793,19 +2041,19 @@ footer .border-secondary {
         height: 70px;
         padding: 8px;
     }
-    
+
     .partner-logo {
         max-height: 50px;
     }
-    
+
     .partner-card .card-body {
         padding: 0.75rem;
     }
-    
+
     .partner-card .card-title {
         font-size: 0.95rem;
     }
-    
+
     .partner-card .card-text {
         font-size: 0.75rem;
     }
@@ -1846,7 +2094,7 @@ footer .border-secondary {
     z-index: 1;
 }
 
-#desarrollo-hero > .container {
+#desarrollo-hero>.container {
     position: relative;
     z-index: 2;
 }
@@ -1985,7 +2233,7 @@ footer .border-secondary {
     z-index: 1;
 }
 
-#contact-cta-dev > .container {
+#contact-cta-dev>.container {
     position: relative;
     z-index: 2;
 }

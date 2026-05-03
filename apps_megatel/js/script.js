@@ -133,15 +133,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ===== EFECTOS DEL NAVBAR =====
+  // ===== EFECTOS DEL NAVBAR =====
     function initNavbarEffects() {
-        const navbar = document.querySelector('#mainNavbar');
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        const navbarCollapse = document.querySelector('#navbarNav');
+        const navbarCollapse = document.querySelector('#navbarNav'); //
         
-        // Cerrar menú al hacer clic en un enlace (móvil)
-        if (navbarCollapse) {
-            const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+        // 1. Cerrar menú al hacer clic en un enlace (móvil)
+        if (navbarCollapse) { //
+            const navLinks = navbarCollapse.querySelectorAll('.nav-link:not(.dropdown-toggle)');
             navLinks.forEach(link => {
                 link.addEventListener('click', function() {
                     if (window.innerWidth < 992) {
@@ -153,19 +151,44 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         }
+
+        // 2. Habilitar CLIC en el enlace principal de "Servicios" (Solo Desktop)
+        // Esto permite que el hover muestre el menú pero el clic abra la página
+        const servicesLink = document.querySelector('.custom-dropdown > .nav-link');
+        if (servicesLink) {
+            servicesLink.addEventListener('click', function(e) {
+                if (window.innerWidth >= 992) {
+                    window.location.href = this.getAttribute('href');
+                }
+            });
+        }
         
-        // Marcar enlace activo según la página actual
+        // 3. Marcar enlace activo según la página actual corregido
         markActiveNavLink();
     }
     
     function markActiveNavLink() {
-        const currentPath = window.location.pathname;
-        const navLinks = document.querySelectorAll('.nav-link');
+        const path = window.location.pathname;
+        // Obtenemos el nombre del archivo actual (ej: 'quienes-somos.html')
+        let filename = path.substring(path.lastIndexOf('/') + 1);
+        
+        // Normalizamos la raíz o index a 'index.html'
+        if (filename === '' || filename === '/') filename = 'index.html';
+
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
         
         navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href && currentPath.includes(href) && href !== '#') {
+            link.classList.remove('active'); // Limpieza preventiva
+            link.removeAttribute('aria-current');
+            
+            let href = link.getAttribute('href');
+            // Normalizamos el href del link para la comparación
+            if (href === '/' || href === '') href = 'index.html';
+
+            // Coincidencia exacta para evitar activaciones múltiples
+            if (href === filename && href !== '#') {
                 link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
             }
         });
     }
@@ -441,3 +464,94 @@ if (window.performance && window.performance.timing) {
         }, 0);
     });
 }
+
+// ===== FORMULARIO GOOGLE - MEGATEL SAS =====
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form-megatel');
+    const captchaInput = document.getElementById('captcha-input');
+    const captchaError = document.getElementById('captcha-error');
+    const resDiv = document.getElementById('form-response');
+    const submitBtn = document.getElementById('submit-btn');
+    let captchaAnswer;
+
+    // Generador de Captcha Matemático
+    function generateCaptcha() {
+        const a = Math.floor(Math.random() * 10) + 1;
+        const b = Math.floor(Math.random() * 10) + 1;
+        captchaAnswer = a + b;
+        const questionElement = document.getElementById('captcha-question');
+        if (questionElement) questionElement.innerText = `${a} + ${b}`;
+    }
+    
+    if (form) {
+        generateCaptcha();
+
+        form.addEventListener('submit', function(event) {
+            // 1. Validar Captcha manualmente
+            const userInput = parseInt(captchaInput.value);
+            const isCaptchaValid = userInput === captchaAnswer;
+
+            if (!isCaptchaValid) {
+                captchaError.classList.remove('d-none');
+                captchaInput.classList.add('is-invalid');
+            } else {
+                captchaError.classList.add('d-none');
+                captchaInput.classList.remove('is-invalid');
+            }
+
+            // 2. Validación nativa de Bootstrap y Captcha
+            if (!form.checkValidity() || !isCaptchaValid) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+
+            // 3. Preparar envío (AJAX)
+            event.preventDefault();
+            submitBtn.disabled = true;
+            const originalBtnContent = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span>Enviando...</span> <i class="fas fa-spinner fa-spin ms-2"></i>';
+
+            // Convertimos FormData a URLSearchParams para compatibilidad con e.parameter de Google
+            const formData = new FormData(form);
+            const urlEncodedData = new URLSearchParams(formData);
+
+            fetch(form.action, { 
+                method: 'POST', 
+                body: urlEncodedData,
+                mode: 'no-cors' // Evita errores de redirección de Google Apps Script
+            })
+            .then(() => {
+                // Al usar 'no-cors', asumimos éxito si la promesa se resuelve
+                resDiv.classList.remove('d-none', 'alert-danger');
+                resDiv.classList.add('alert-success');
+                
+                // Usamos la traducción oficial del data.js si está disponible
+                const successMsg = (typeof translations !== 'undefined' && translations["form_success"]) 
+                    ? translations["form_success"][document.documentElement.lang || 'es'] 
+                    : "¡Mensaje enviado con éxito!";
+                
+                resDiv.innerText = successMsg;
+                
+                // Reiniciar formulario y estado visual
+                form.reset();
+                form.classList.remove('was-validated');
+                generateCaptcha();
+
+                // Ocultar mensaje de éxito tras 6 segundos
+                setTimeout(() => resDiv.classList.add('d-none'), 6000);
+            })
+            .catch(error => {
+                console.error('Error de envío:', error);
+                resDiv.classList.remove('d-none', 'alert-success');
+                resDiv.classList.add('alert-danger');
+                resDiv.innerText = "Error al conectar con el servidor. Inténtelo de nuevo.";
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnContent;
+            });
+        });
+    }
+});
