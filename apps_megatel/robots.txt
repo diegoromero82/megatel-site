@@ -1,42 +1,35 @@
-# robots.txt para Megatel SAS
+# ============================================
+# robots.txt para Megatel SAS - 2026
 # Optimizado para SEO y rastreo eficiente
+# ============================================
 
 User-agent: *
 # Permitir acceso a todo el sitio
 Allow: /
 
-# Bloquear archivos y directorios que no deben indexarse
+# Bloquear directorios técnicos y de respaldo
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /private/
 Disallow: /_old/
 Disallow: /backup/
-Disallow: /author/
-Disallow: /comments/
-Disallow: /feed/
+
+# Bloquear rastros de la migración de WordPress (Limpieza SEO)
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /wp-content/
 Disallow: /wp-json/
+Disallow: /author/
+Disallow: /comments/
+Disallow: /feed/
+Disallow: /?s=
 Disallow: /*?s=
 Disallow: /sg_form/
-Disallow: /?s=
 
-# Bloquear archivos sensibles
+# Bloquear archivos sensibles y temporales
 Disallow: *.log$
 Disallow: *.sql$
 Disallow: *.bak$
-
-# ============================================
-# BLOQUEAR PARÁMETROS DE BÚSQUEDA
-# ============================================
-Disallow: /*?*s=*
-
-# Permitir acceso a recursos CSS y JS (importante para Google)
-Allow: /css/
-Allow: /js/
-Allow: /images/
-Allow: /fonts/
 
 # Bloquear parámetros de búsqueda y tracking que crean contenido duplicado
 Disallow: /*?*utm_source=
@@ -45,38 +38,28 @@ Disallow: /*?*utm_campaign=
 Disallow: /*?*ref=
 Disallow: /*?*sid=
 
-# Permitir el parámetro lang para versiones multilingües
+# Permitir acceso a recursos para renderizado (Crucial para Googlebot)
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# Permitir explícitamente parámetros de idioma[cite: 5]
 Allow: /*?lang=es
 Allow: /*?lang=en
 
-# Crawl-delay para evitar sobrecarga del servidor (opcional)
-# Crawl-delay: 1
-
-# Sitemap
-Sitemap: https://www.megatelsas.com/sitemap.xml
-
-# Configuración específica para bots principales
+# Bots principales: Permitir rastreo sin demora para máxima indexación[cite: 5]
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 0
 
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
-
-# Bloquear bots maliciosos conocidos
+# Bloquear bots de auditoría que consumen recursos (Opcional)[cite: 5]
 User-agent: AhrefsBot
 Disallow: /
-
 User-agent: SemrushBot
 Disallow: /
 
-User-agent: DotBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
+# Enlace al Sitemap actualizado[cite: 5]
+Sitemap: https://www.megatelsas.com/sitemap.xml
