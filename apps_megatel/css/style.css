@@ -333,6 +333,29 @@ body {
     }
 }
 
+/* Ajuste de legibilidad para submenús en móviles */
+@media (max-width: 991.98px) {
+    /* Color blanco para los items del submenú */
+    .navbar-nav .dropdown-menu .dropdown-item {
+        color: #ffffff !important;
+        padding-left: 1.5rem; /* Sangría para diferenciar del menú principal */
+        font-weight: 400;
+        background: transparent !important;
+    }
+
+    /* Color amarillo para el hover o cuando está activo */
+    .navbar-nav .dropdown-menu .dropdown-item:hover,
+    .navbar-nav .dropdown-menu .dropdown-item:active {
+        color: #ffc107 !important; 
+    }
+
+    /* Quitar el borde o sombra que Bootstrap a veces pone en móviles */
+    .navbar-nav .dropdown-menu {
+        border: none;
+        background: transparent;
+    }
+}
+
 
 /* ===== 1.3 BOTONES FLOTANTES ===== */
 .floating-btn {
