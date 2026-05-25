@@ -1429,6 +1429,226 @@ const translations = {
         "es": "Nuestros equipos se integran perfectamente con los ecosistemas de colaboración más utilizados.",
         "en": "Our equipment integrates seamlessly with the most widely used collaboration ecosystems."
     },
+    // ===== CONTINUACIÓN PÁGINA: VIDEOCONFERENCIA =====
+
+    // Sección Interactiva: Soluciones Adaptadas a Cada Espacio
+    "vc_types_title": {
+        "es": "Soluciones Adaptadas a Cada Espacio",
+        "en": "Solutions Tailored to Every Space"
+    },
+    "vc_types_subtitle": {
+        "es": "Entendemos que cada espacio tiene requerimientos únicos. Clasificamos nuestras soluciones para garantizar la mejor experiencia.",
+        "en": "We understand that every space has unique requirements. We classify our solutions to guarantee the best experience."
+    },
+    "vc_type_exec_title": {
+        "es": "Uso Gerencial",
+        "en": "Executive Use"
+    },
+    "vc_type_exec_desc": {
+        "es": "Dispositivos personales de alto rendimiento diseñados para ejecutivos.",
+        "en": "High-performance personal devices designed for executives."
+    },
+    "vc_type_exec_key": {
+        "es": "Clave: Privacidad y Audio HD",
+        "en": "Key: Privacy and HD Audio"
+    },
+    "vc_type_small_title": {
+        "es": "Salas Pequeñas",
+        "en": "Small Rooms"
+    },
+    "vc_type_small_desc": {
+        "es": "Barras \"Todo en Uno\" para espacios Huddle de 1 a 4 personas.",
+        "en": "\"All-in-One\" bars for Huddle spaces of 1 to 4 people."
+    },
+    "vc_type_small_key": {
+        "es": "Clave: Lente Gran Angular",
+        "en": "Key: Wide Angle Lens"
+    },
+    "vc_type_med_title": {
+        "es": "Salas Medianas",
+        "en": "Medium Rooms"
+    },
+    "vc_type_med_desc": {
+        "es": "Sistemas con zoom óptico para mesas de 5 a 12 participantes.",
+        "en": "Systems with optical zoom for tables of 5 to 12 participants."
+    },
+    "vc_type_med_key": {
+        "es": "Clave: Zoom y Micrófonos",
+        "en": "Key: Zoom and Microphones"
+    },
+    "vc_type_large_title": {
+        "es": "Auditorios",
+        "en": "Auditoriums"
+    },
+    "vc_type_large_desc": {
+        "es": "Sistemas modulares complejos para grandes grupos (+15).",
+        "en": "Complex modular systems for large groups (+15)."
+    },
+    "vc_type_large_key": {
+        "es": "Clave: Audio Distribuido",
+        "en": "Key: Distributed Audio"
+    },
+
+    // Páneles Desplegables de las Salas (Títulos y Descripciones)
+    "vc_panel_exec_title": {
+        "es": "Infraestructura Ejecutiva",
+        "en": "Executive Infrastructure"
+    },
+    "vc_panel_exec_desc": {
+        "es": "Sistemas de escritorio integrados de alta gama, ideales para oficinas principales y directores que exigen máxima fidelidad acústica y cancelación de ruido activa sin perder la estética del entorno empresarial.",
+        "en": "High-end integrated desktop systems, ideal for main offices and directors who demand maximum acoustic fidelity and active noise cancellation without losing the aesthetics of the business environment."
+    },
+    "vc_panel_small_title": {
+        "es": "Huddle Rooms Optimizados",
+        "en": "Optimized Huddle Rooms"
+    },
+    "vc_panel_small_desc": {
+        "es": "Barras de sonido y video inteligentes compactas. Gracias a sus lentes de gran angular y encuadre automático por IA (Auto-Framing), cubren perfectamente a todos los asistentes a distancias cortas del monitor.",
+        "en": "Compact smart sound and video bars. Thanks to their wide-angle lenses and automatic AI framing (Auto-Framing), they perfectly cover all attendees at short distances from the monitor."
+    },
+    "vc_panel_med_title": {
+        "es": "Salas de Juntas Estándar",
+        "en": "Standard Meeting Rooms"
+    },
+    "vc_panel_med_desc": {
+        "es": "Equipamiento con cámaras PTZ de zoom óptico motorizado y micrófonos de expansión en cascada. Ideales para salas donde los integrantes se sientan a lo largo de una mesa corporativa tradicional.",
+        "en": "Equipment with motorized optical zoom PTZ cameras and cascade expansion microphones. Ideal for rooms where members sit along a traditional corporate table."
+    },
+    "vc_panel_large_title": {
+        "es": "Espacios de Alta Concurrencia",
+        "en": "High Concurrency Spaces"
+    },
+    "vc_panel_large_desc": {
+        "es": "Proyectos de ingeniería audiovisual con microfonía de techo omnidireccional, procesadores digitales de señales (DSP) y múltiples cámaras con seguimiento de voz (Speaker Tracking) para auditorios y salones de capacitación.",
+        "en": "Audiovisual engineering projects with omnidirectional ceiling microphones, digital signal processors (DSP) and multiple cameras with voice tracking (Speaker Tracking) for auditoriums and training rooms."
+    },
+
+    // Pies de fotos e Ilustraciones de Productos
+    "img_caption_meetingboard": {
+        "es": "Ilustración: Pizarra Interactiva All-in-One",
+        "en": "Illustration: All-in-One Interactive Whiteboard"
+    },
+    "img_alt_meetingboard": {
+        "es": "Yealink MeetingBoard 65 - Pizarra Interactiva All-in-One",
+        "en": "Yealink MeetingBoard 65 - All-in-One Interactive Whiteboard"
+    },
+
+    // Campos del Formulario de Contacto Inferior
+    "form_label_name": {
+        "es": "Nombre Completo *",
+        "en": "Full Name *"
+    },
+    "form_ph_name": {
+        "es": "Ej. Juan Pérez",
+        "en": "e.g. John Doe"
+    },
+    "form_label_email": {
+        "es": "Correo Electrónico Corporativo *",
+        "en": "Corporate Email *"
+    },
+    "form_ph_email": {
+        "es": "ejemplo@empresa.com",
+        "en": "example@company.com"
+    },
+    "form_label_phone": {
+        "es": "Número de Teléfono / WhatsApp *",
+        "en": "Phone Number / WhatsApp *"
+    },
+    "form_ph_phone": {
+        "es": "Ej. +57 300 123 4567",
+        "en": "e.g. +57 300 123 4567"
+    },
+    "form_label_company": {
+        "es": "Nombre de la Empresa",
+        "en": "Company Name"
+    },
+    "form_ph_company": {
+        "es": "Ej. Megatel SAS",
+        "en": "e.g. Megatel SAS"
+    },
+    "form_label_msg": {
+        "es": "¿En qué podemos ayudarle? *",
+        "en": "How can we help you? *"
+    },
+    "form_ph_msg": {
+        "es": "Cuéntenos sobre las necesidades de su sala de juntas...",
+        "en": "Tell us about your meeting room needs..."
+    },
+
+    // ===== SECCIÓN: PANTALLAS INTERACTIVAS =====
+    "vc_badge_touch": {
+        "es": "Interactividad y Colaboración",
+        "en": "Touch & Collaboration"
+    },
+    "vc_interactive_title": {
+        "es": "Pantallas Interactivas y Pizarras Digitales",
+        "en": "Interactive Screens and Digital Whiteboards"
+    },
+    "vc_interactive_subtitle": {
+        "es": "Lleve la colaboración al siguiente nivel.",
+        "en": "Take collaboration to the next level."
+    },
+    "vc_interactive_desc": {
+        "es": "Más que una videoconferencia, es un espacio de cocreación. Estas soluciones combinan una pantalla táctil 4K, cámara inteligente y sistema operativo integrado para permitir anotaciones en tiempo real y pizarra blanca infinita.",
+        "en": "More than a video conference, it is a co-creation space. These solutions combine a 4K touch screen, smart camera, and integrated operating system to allow real-time annotations and an infinite whiteboard."
+    },
+    "vc_interactive_feat1": {
+        "es": "Escritura natural y táctil.",
+        "en": "Natural touch and writing."
+    },
+    "vc_interactive_feat2": {
+        "es": "Todo integrado: Sin necesidad de PC externa.",
+        "en": "All integrated: No external PC needed."
+    },
+    "vc_interactive_feat3": {
+        "es": "Compatibilidad certificada con Teams y Zoom.",
+        "en": "Certified compatibility with Teams and Zoom."
+    },
+    // ===== SECCIÓN: PROCESO DE VENTA CONSULTIVA =====
+    "vc_process_title": {
+        "es": "Nuestro Proceso de Venta Consultiva",
+        "en": "Our Consultative Sales Process"
+    },
+    "vc_process_intro": {
+        "es": "Diseñamos experiencias y acompañamos su proyecto de principio a fin.",
+        "en": "We design experiences and accompany your project from start to finish."
+    },
+    "vc_step1_title": {
+        "es": "Diagnóstico",
+        "en": "Assessment"
+    },
+    "vc_step1_desc": {
+        "es": "Evaluación de acústica, iluminación y dimensiones.",
+        "en": "Evaluation of acoustics, lighting, and dimensions."
+    },
+    "vc_step2_title": {
+        "es": "Diseño",
+        "en": "Design"
+    },
+    "vc_step2_desc": {
+        "es": "Selección de tecnología agnóstica a la marca.",
+        "en": "Selection of brand-agnostic technology."
+    },
+    "vc_step3_title": {
+        "es": "Implementación",
+        "en": "Implementation"
+    },
+    "vc_step3_desc": {
+        "es": "Instalación limpia y configuración certificada.",
+        "en": "Clean installation and certified configuration."
+    },
+    "vc_step4_title": {
+        "es": "Soporte",
+        "en": "Support"
+    },
+    "vc_step4_desc": {
+        "es": "Capacitación y acompañamiento post-venta.",
+        "en": "Training and post-sale support."
+    },
+    "vc_cta_consult": {
+        "es": "Iniciar mi Proyecto",
+        "en": "Start My Project"
+    },
 
     // Labels de formulario (compartidos con otras páginas)
     "form_label_name": {
