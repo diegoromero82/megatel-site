@@ -465,6 +465,25 @@ if (window.performance && window.performance.timing) {
     });
 }
 
+/**
+ * Controla el despliegue mutuo de los paneles de salas de videoconferencia
+ * @param {string} targetId - ID del elemento collapse a mantener abierto
+ */
+function toggleSalaCollapse(targetId) {
+    // Buscar todos los páneles de información dentro del contenedor
+    const panes = document.querySelectorAll('.sala-details-container .sala-collapse-pane');
+    
+    panes.forEach(pane => {
+        if (pane.id !== targetId) {
+            // Instanciar y ocultar los elementos de Bootstrap que no corresponden al clic actual
+            const bsCollapse = bootstrap.Collapse.getInstance(pane);
+            if (bsCollapse) {
+                bsCollapse.hide();
+            }
+        }
+    });
+}
+
 // ===== FORMULARIO GOOGLE - MEGATEL SAS =====
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form-megatel');
